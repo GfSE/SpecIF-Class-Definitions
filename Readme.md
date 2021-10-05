@@ -57,6 +57,11 @@ Currently the following digits are assigned with the SpecIF metatypes. It is pos
 |   4 | Resource classes |
 |   5 | Statement classes |
 
+## The folder `_Packages`
+
+The folder packages contains merges of class definitions to one single SpecIF file. 
+In the class definitions the data types and class definitions are seperated into single files. 
+To have all rlevant data together in one SpecIF file, the _Packages folder contains SpecIF files, that are generated from the class definition files.
 
 ## What about the file `Empty.specif` ?
 
