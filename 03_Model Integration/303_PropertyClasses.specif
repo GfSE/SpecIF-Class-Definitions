@@ -28,6 +28,22 @@
             },
             "multiple": false,
             "changedAt": "2019-09-10T08:59:00+02:00"
+        },
+        {
+            "id": "PC-ImplementationLanguage",
+            "title": "SpecIF:ImplementationLanguage",
+            "description": [
+                {
+                    "text": "The name of an used implementation language (e.g. C, C++, C#, Java, ADA, OCL, ALF etc.)"
+                }
+            ],
+            "dataType": {
+                "id": "DT-ShortString",
+                "revision": "1.1"
+            },
+            "revision": "1.1",
+            "replaces": [],
+            "changedAt": "2019-03-31T21:00:00+02:00"
         }
     ],
     "resourceClasses": [],

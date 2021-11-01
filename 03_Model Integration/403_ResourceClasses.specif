@@ -72,7 +72,8 @@
             "icon": "&#9632;",
             "isHeading": false,
             "instantiation": [
-                "auto"
+                "auto", 
+                "user"
             ],
             "propertyClasses": [
                 {
@@ -123,7 +124,8 @@
             "icon": "&#9679;",
             "isHeading": false,
             "instantiation": [
-                "auto"
+                "auto", 
+                "user"
             ],
             "propertyClasses": [
                 {
@@ -166,7 +168,7 @@
             "title": "FMC:Event",
             "description": [
                 {
-                    "text": "An 'Event' is a fundamental model element type representing a time reference, a change in condition/value or more generally a synchronisation primitive."
+                    "text": "An 'Event' is a fundamental model element type representing a time reference, a change in condition/value or more generally a synchronization primitive."
                 }
             ],
             "revision": "1.1",
@@ -174,7 +176,8 @@
             "icon": "&#11047;",
             "isHeading": false,
             "instantiation": [
-                "auto"
+                "auto", 
+                "user"
             ],
             "propertyClasses": [
                 {
@@ -225,7 +228,8 @@
             "icon": "&#128447;",
             "isHeading": false,
             "instantiation": [
-                "auto"
+                "auto", 
+                "user"
             ],
             "propertyClasses": [
                 {
@@ -262,6 +266,32 @@
                 }
             ],
             "changedAt": "2021-01-02T18:59:00+02:00"
+        },
+        {
+            "id": "RC-SourceCode",
+            "title": "SpecIF:SourceCode",
+            "description": [
+                {
+                    "text": "Source code assigned to a model element (e.g. an activity or operation). Typically used for model-based code generation to provide some code snippets inside the model."
+                }
+            ],
+            "propertyClasses": [
+                {
+                    "id": "PC-Name",
+                    "revision": "1.1"
+                },
+                {
+                    "id": "PC-ImplementationLanguage",
+                    "revision": "1.1"
+                },
+                {
+                    "id": "PC-Value",
+                    "revision": "1.1"
+                }
+            ],
+            "revision": "1.1",
+            "replaces": [],
+            "changedAt": "2019-03-24T12:00:00+02:00"
         }
     ],
     "statementClasses": [],

@@ -330,6 +330,51 @@
                 }
             ],
             "changedAt": "2021-03-30T08:59:00+02:00"
+        },
+        {
+            "id": "SC-isAssociatedWith",
+            "title": "SpecIF:isAssociatedWith",
+            "description": [
+                {
+                    "text": "The subject is associated with the object."
+                }
+            ],
+            "instantiation": [ "auto", "user" ],
+            "subjectClasses": [
+                {
+                    "id": "RC-Actor",
+                    "revision": "1.1"
+                },
+                {
+                    "id": "RC-State",
+                    "revision": "1.1"
+                },
+                {
+                    "id": "RC-Event",
+                    "revision": "1.1"
+                }
+            ],
+            "objectClasses": [
+                {
+                    "id": "RC-Actor",
+                    "revision": "1.1"
+                },
+                {
+                    "id": "RC-State",
+                    "revision": "1.1"
+                },
+                {
+                    "id": "RC-Event",
+                    "revision": "1.1"
+                }
+            ],
+            "propertyClasses": [
+                {
+                    "id": "PC-Type",
+                    "revision": "1.1"
+                }
+            ],
+            "changedAt": "2021-11-01T08:59:00+02:00"
         }
     ],
     "resources": [],
