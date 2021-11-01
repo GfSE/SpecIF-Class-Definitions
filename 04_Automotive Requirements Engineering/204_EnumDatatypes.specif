@@ -37,7 +37,7 @@
                             "text": "VDA:toClarify"
                         }
 
-                    ],
+                    ]
 
                 },
                 {
@@ -64,7 +64,6 @@
                         {
                             "text": "VDA:notAgreed"
                         }
-
                     ]
                 }
             ],

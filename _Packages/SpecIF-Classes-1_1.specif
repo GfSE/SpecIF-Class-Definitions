@@ -3,14 +3,14 @@
   "id": "_d89d4735_be09_40c7_ac57_0d93956510b8",
   "title": [
     {
-      "text": "SpecIF classes for SpecIF 1.1",
+      "text": "Normative data type and class definitions for SpecIF 1.1",
       "format": "plain",
       "language": "en"
     }
   ],
   "isExtension": false,
   "generator": "SpecIFicator Vocabulary Generator",
-  "createdAt": "2021-05-27T12:05:21.3553801+02:00",
+  "createdAt": "2021-11-01T15:43:46.6818022+01:00",
   "dataTypes": [
     {
       "id": "DT-Boolean",
@@ -647,6 +647,7 @@
         "revision": "1.1"
       },
       "format": "plain",
+      "values": [],
       "changedAt": "2016-05-26T08:59:00+02:00"
     },
     {
@@ -666,6 +667,7 @@
         "revision": "1.1"
       },
       "format": "plain",
+      "values": [],
       "changedAt": "2016-05-26T08:59:00+02:00"
     },
     {
@@ -685,6 +687,7 @@
         "revision": "1.1"
       },
       "format": "xhtml",
+      "values": [],
       "changedAt": "2016-05-26T08:59:00+02:00"
     },
     {
@@ -704,6 +707,7 @@
         "revision": "1.1"
       },
       "format": "plain",
+      "values": [],
       "changedAt": "2017-06-10T15:47:24+02:00"
     },
     {
@@ -723,6 +727,7 @@
         "revision": "1.1"
       },
       "format": "xhtml",
+      "values": [],
       "changedAt": "2021-02-21T07:59:00+01:00"
     },
     {
@@ -742,6 +747,7 @@
         "revision": "1.1"
       },
       "format": "plain",
+      "values": [],
       "changedAt": "2016-05-26T08:59:00+02:00"
     },
     {
@@ -761,6 +767,7 @@
         "revision": "1.1"
       },
       "format": "plain",
+      "values": [],
       "changedAt": "2021-02-21T07:59:00+01:00"
     },
     {
@@ -780,6 +787,7 @@
         "revision": "1.1"
       },
       "format": "plain",
+      "values": [],
       "changedAt": "2016-05-26T08:59:00+02:00"
     },
     {
@@ -800,6 +808,187 @@
       },
       "multiple": true,
       "format": "plain",
+      "values": [],
+      "changedAt": "2016-05-26T08:59:00+02:00"
+    },
+    {
+      "id": "PC-Responsible",
+      "title": "SpecIF:Responsible",
+      "description": [
+        {
+          "text": "The 'Person' being responsible for the resource.",
+          "format": "plain",
+          "language": "en"
+        }
+      ],
+      "revision": "1.1",
+      "replaces": [],
+      "dataType": {
+        "id": "DT-ShortString",
+        "revision": "1.1"
+      },
+      "format": "plain",
+      "values": [],
+      "changedAt": "2016-05-26T08:59:00+02:00"
+    },
+    {
+      "id": "PC-DueDate",
+      "title": "SpecIF:DueDate",
+      "description": [
+        {
+          "text": "A 'Due Date' for the resource.",
+          "format": "plain",
+          "language": "en"
+        }
+      ],
+      "revision": "1.1",
+      "replaces": [],
+      "dataType": {
+        "id": "DT-DateTime",
+        "revision": "1.1"
+      },
+      "format": "plain",
+      "values": [],
+      "changedAt": "2016-05-26T08:59:00+02:00"
+    },
+    {
+      "id": "PC-Stereotype",
+      "title": "UML:Stereotype",
+      "description": [
+        {
+          "text": "A stereotype gives an element an additional/different meaning.",
+          "format": "plain",
+          "language": "en"
+        }
+      ],
+      "revision": "1.1",
+      "replaces": [],
+      "dataType": {
+        "id": "DT-ShortString",
+        "revision": "1.1"
+      },
+      "format": "plain",
+      "values": [],
+      "changedAt": "2019-03-31T17:10:23.443Z"
+    },
+    {
+      "id": "PC-Abbreviation",
+      "title": "SpecIF:Abbreviation",
+      "description": [
+        {
+          "text": "An abbreviation for the resource or statement.",
+          "format": "plain",
+          "language": "en"
+        }
+      ],
+      "revision": "1.1",
+      "replaces": [],
+      "dataType": {
+        "id": "DT-ShortString",
+        "revision": "1.1"
+      },
+      "format": "plain",
+      "values": [],
+      "changedAt": "2019-04-26T12:00:00+02:00"
+    },
+    {
+      "id": "PC-Type",
+      "title": "dcterms:type",
+      "description": [
+        {
+          "text": "The element type resp. the metamodel element (e.g. OMG:UML:2.5.1:Class)",
+          "format": "plain",
+          "language": "en"
+        }
+      ],
+      "revision": "1.1",
+      "replaces": [],
+      "dataType": {
+        "id": "DT-ShortString",
+        "revision": "1.1"
+      },
+      "format": "plain",
+      "values": [],
+      "changedAt": "2019-08-20T20:32:25.411Z"
+    },
+    {
+      "id": "PC-Alias",
+      "title": "SpecIF:Alias",
+      "description": [
+        {
+          "text": "An alias name for the resource.",
+          "format": "plain",
+          "language": "en"
+        }
+      ],
+      "revision": "1.1",
+      "replaces": [],
+      "dataType": {
+        "id": "DT-ShortString",
+        "revision": "1.1"
+      },
+      "format": "plain",
+      "values": [],
+      "changedAt": "2019-04-26T12:00:00+02:00"
+    },
+    {
+      "id": "PC-Value",
+      "title": "rdf:value",
+      "description": [
+        {
+          "text": "A value of different meaning, depending on the element type (attribute default value, a taggedValue value etc.)",
+          "format": "plain",
+          "language": "en"
+        }
+      ],
+      "revision": "1.1",
+      "replaces": [],
+      "dataType": {
+        "id": "DT-Text",
+        "revision": "1.1"
+      },
+      "format": "plain",
+      "values": [],
+      "changedAt": "2019-09-10T20:32:25.411Z"
+    },
+    {
+      "id": "PC-RequirementType",
+      "title": "IREB:RequirementType",
+      "description": [
+        {
+          "text": "Enumerated value for the Requirement type according IREB",
+          "format": "plain",
+          "language": "en"
+        }
+      ],
+      "revision": "1.1",
+      "replaces": [],
+      "dataType": {
+        "id": "DT-RequirementType",
+        "revision": "1.1"
+      },
+      "format": "plain",
+      "values": [],
+      "changedAt": "2020-03-29T20:32:25.411Z"
+    },
+    {
+      "id": "PC-Perspective",
+      "title": "SpecIF:Perspective",
+      "description": [
+        {
+          "text": "Enumerated values for the perspective (of a requirement)",
+          "format": "plain",
+          "language": "en"
+        }
+      ],
+      "revision": "1.1",
+      "replaces": [],
+      "dataType": {
+        "id": "DT-Perspective",
+        "revision": "1.1"
+      },
+      "format": "plain",
+      "values": [],
       "changedAt": "2016-05-26T08:59:00+02:00"
     },
     {
@@ -820,14 +1009,15 @@
       },
       "multiple": false,
       "format": "plain",
+      "values": [],
       "changedAt": "2019-09-10T08:59:00+02:00"
     },
     {
-      "id": "PC-Responsible",
-      "title": "SpecIF:Responsible",
+      "id": "PC-ImplementationLanguage",
+      "title": "SpecIF:ImplementationLanguage",
       "description": [
         {
-          "text": "The 'Person' being responsible for the resource.",
+          "text": "The name of an used implementation language (e.g. C, C++, C#, Java, ADA, OCL, ALF etc.)",
           "format": "plain",
           "language": "en"
         }
@@ -839,159 +1029,8 @@
         "revision": "1.1"
       },
       "format": "plain",
-      "changedAt": "2016-05-26T08:59:00+02:00"
-    },
-    {
-      "id": "PC-DueDate",
-      "title": "SpecIF:DueDate",
-      "description": [
-        {
-          "text": "A 'Due Date' for the resource.",
-          "format": "plain",
-          "language": "en"
-        }
-      ],
-      "revision": "1.1",
-      "replaces": [],
-      "dataType": {
-        "id": "DT-DateTime",
-        "revision": "1.1"
-      },
-      "format": "plain",
-      "changedAt": "2016-05-26T08:59:00+02:00"
-    },
-    {
-      "id": "PC-Stereotype",
-      "title": "UML:Stereotype",
-      "description": [
-        {
-          "text": "A stereotype gives an element an additional/different meaning.",
-          "format": "plain",
-          "language": "en"
-        }
-      ],
-      "revision": "1.1",
-      "replaces": [],
-      "dataType": {
-        "id": "DT-ShortString",
-        "revision": "1.1"
-      },
-      "format": "plain",
-      "changedAt": "2019-03-31T17:10:23.443Z"
-    },
-    {
-      "id": "PC-Abbreviation",
-      "title": "SpecIF:Abbreviation",
-      "description": [
-        {
-          "text": "An abbreviation for the resource or statement.",
-          "format": "plain",
-          "language": "en"
-        }
-      ],
-      "revision": "1.1",
-      "replaces": [],
-      "dataType": {
-        "id": "DT-ShortString",
-        "revision": "1.1"
-      },
-      "format": "plain",
-      "changedAt": "2019-04-26T12:00:00+02:00"
-    },
-    {
-      "id": "PC-Type",
-      "title": "dcterms:type",
-      "description": [
-        {
-          "text": "The element type resp. the metamodel element (e.g. OMG:UML:2.5.1:Class)",
-          "format": "plain",
-          "language": "en"
-        }
-      ],
-      "revision": "1.1",
-      "replaces": [],
-      "dataType": {
-        "id": "DT-ShortString",
-        "revision": "1.1"
-      },
-      "format": "plain",
-      "changedAt": "2019-08-20T20:32:25.411Z"
-    },
-    {
-      "id": "PC-Alias",
-      "title": "SpecIF:Alias",
-      "description": [
-        {
-          "text": "An alias name for the resource.",
-          "format": "plain",
-          "language": "en"
-        }
-      ],
-      "revision": "1.1",
-      "replaces": [],
-      "dataType": {
-        "id": "DT-ShortString",
-        "revision": "1.1"
-      },
-      "format": "plain",
-      "changedAt": "2019-04-26T12:00:00+02:00"
-    },
-    {
-      "id": "PC-Value",
-      "title": "rdf:value",
-      "description": [
-        {
-          "text": "A value of different meaning, depending on the element type (attribute default value, a taggedValue value etc.)",
-          "format": "plain",
-          "language": "en"
-        }
-      ],
-      "revision": "1.1",
-      "replaces": [],
-      "dataType": {
-        "id": "DT-Text",
-        "revision": "1.1"
-      },
-      "format": "plain",
-      "changedAt": "2019-09-10T20:32:25.411Z"
-    },
-    {
-      "id": "PC-RequirementType",
-      "title": "IREB:RequirementType",
-      "description": [
-        {
-          "text": "Enumerated value for the Requirement type according IREB",
-          "format": "plain",
-          "language": "en"
-        }
-      ],
-      "revision": "1.1",
-      "replaces": [],
-      "dataType": {
-        "id": "DT-RequirementType",
-        "revision": "1.1"
-      },
-      "format": "plain",
-      "changedAt": "2020-03-29T20:32:25.411Z"
-    },
-    {
-      "id": "PC-Perspective",
-      "title": "SpecIF:Perspective",
-      "description": [
-        {
-          "text": "Enumerated values for the perspective (of a requirement)",
-          "format": "plain",
-          "language": "en"
-        }
-      ],
-      "revision": "1.1",
-      "replaces": [],
-      "dataType": {
-        "id": "DT-Perspective",
-        "revision": "1.1"
-      },
-      "format": "plain",
-      "changedAt": "2016-05-26T08:59:00+02:00"
+      "values": [],
+      "changedAt": "2019-03-31T21:00:00+02:00"
     }
   ],
   "resourceClasses": [
@@ -1284,7 +1323,8 @@
       "icon": "&#9632;",
       "isHeading": false,
       "instantiation": [
-        "auto"
+        "auto",
+        "user"
       ],
       "propertyClasses": [
         {
@@ -1337,7 +1377,8 @@
       "icon": "&#9679;",
       "isHeading": false,
       "instantiation": [
-        "auto"
+        "auto",
+        "user"
       ],
       "propertyClasses": [
         {
@@ -1380,7 +1421,7 @@
       "title": "FMC:Event",
       "description": [
         {
-          "text": "An 'Event' is a fundamental model element type representing a time reference, a change in condition/value or more generally a synchronisation primitive.",
+          "text": "An 'Event' is a fundamental model element type representing a time reference, a change in condition/value or more generally a synchronization primitive.",
           "format": "plain",
           "language": "en"
         }
@@ -1390,7 +1431,8 @@
       "icon": "&#11047;",
       "isHeading": false,
       "instantiation": [
-        "auto"
+        "auto",
+        "user"
       ],
       "propertyClasses": [
         {
@@ -1443,7 +1485,8 @@
       "icon": "&#128447;",
       "isHeading": false,
       "instantiation": [
-        "auto"
+        "auto",
+        "user"
       ],
       "propertyClasses": [
         {
@@ -1480,6 +1523,35 @@
         }
       ],
       "changedAt": "2021-01-02T17:59:00+01:00"
+    },
+    {
+      "id": "RC-SourceCode",
+      "title": "SpecIF:SourceCode",
+      "description": [
+        {
+          "text": "Source code assigned to a model element (e.g. an activity or operation). Typically used for model-based code generation to provide some code snippets inside the model.",
+          "format": "plain",
+          "language": "en"
+        }
+      ],
+      "revision": "1.1",
+      "replaces": [],
+      "isHeading": false,
+      "propertyClasses": [
+        {
+          "id": "PC-Name",
+          "revision": "1.1"
+        },
+        {
+          "id": "PC-ImplementationLanguage",
+          "revision": "1.1"
+        },
+        {
+          "id": "PC-Value",
+          "revision": "1.1"
+        }
+      ],
+      "changedAt": "2019-03-24T11:00:00+01:00"
     }
   ],
   "statementClasses": [
@@ -1994,6 +2066,59 @@
         "user"
       ],
       "changedAt": "2021-03-30T08:59:00+02:00"
+    },
+    {
+      "id": "SC-isAssociatedWith",
+      "title": "SpecIF:isAssociatedWith",
+      "description": [
+        {
+          "text": "The subject is associated with the object.",
+          "format": "plain",
+          "language": "en"
+        }
+      ],
+      "revision": "e699bbc5-e3e5-4506-aafa-2e5d45be22e9",
+      "replaces": [],
+      "subjectClasses": [
+        {
+          "id": "RC-Actor",
+          "revision": "1.1"
+        },
+        {
+          "id": "RC-State",
+          "revision": "1.1"
+        },
+        {
+          "id": "RC-Event",
+          "revision": "1.1"
+        }
+      ],
+      "objectClasses": [
+        {
+          "id": "RC-Actor",
+          "revision": "1.1"
+        },
+        {
+          "id": "RC-State",
+          "revision": "1.1"
+        },
+        {
+          "id": "RC-Event",
+          "revision": "1.1"
+        }
+      ],
+      "isHeading": false,
+      "instantiation": [
+        "auto",
+        "user"
+      ],
+      "propertyClasses": [
+        {
+          "id": "PC-Type",
+          "revision": "1.1"
+        }
+      ],
+      "changedAt": "2021-11-01T07:59:00+01:00"
     }
   ],
   "resources": [],
