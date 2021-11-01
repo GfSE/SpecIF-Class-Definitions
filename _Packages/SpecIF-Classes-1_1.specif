@@ -10,7 +10,7 @@
   ],
   "isExtension": false,
   "generator": "SpecIFicator Vocabulary Generator",
-  "createdAt": "2021-11-01T15:43:46.6818022+01:00",
+  "createdAt": "2021-11-01T17:01:34.0911708+01:00",
   "dataTypes": [
     {
       "id": "DT-Boolean",
@@ -2077,7 +2077,7 @@
           "language": "en"
         }
       ],
-      "revision": "e699bbc5-e3e5-4506-aafa-2e5d45be22e9",
+      "revision": "1.1",
       "replaces": [],
       "subjectClasses": [
         {

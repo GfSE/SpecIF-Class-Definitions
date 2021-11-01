@@ -339,6 +339,8 @@
                     "text": "The subject is associated with the object."
                 }
             ],
+            "revision": "1.1",
+            "replaces": [],
             "instantiation": [ "auto", "user" ],
             "subjectClasses": [
                 {
