@@ -12,6 +12,58 @@
     "propertyClasses": [],
     "resourceClasses": [
         {
+            "id": "RC-Package",
+            "title": "UML:Package",
+            "description": [
+                {
+                    "text": "A 'Package' is used to bring structure into a model. Packages can contain further packages and/or (model-)elements. It corresponds to a Package in UML/SysML or a folder in a file system."
+                }
+            ],
+            "revision": "1.1",
+            "replaces": [],
+            "icon": "&#128447;",
+            "isHeading": false,
+            "instantiation": [
+                "auto",
+                "user"
+            ],
+            "propertyClasses": [
+                {
+                    "id": "PC-Name",
+                    "revision": "1.1"
+                },
+                {
+                    "id": "PC-Description",
+                    "revision": "1.1"
+                },
+                {
+                    "id": "PC-LifeCycleStatus",
+                    "revision": "1.1"
+                },
+                {
+                    "id": "PC-Visibility",
+                    "revision": "1.1"
+                },
+                {
+                    "id": "PC-Type",
+                    "revision": "1.1"
+                },
+                {
+                    "id": "PC-Stereotype",
+                    "revision": "1.1"
+                },
+                {
+                    "id": "PC-Value",
+                    "revision": "1.1"
+                },
+                {
+                    "id": "PC-Alias",
+                    "revision": "1.1"
+                }
+            ],
+            "changedAt": "2021-11-02T18:59:00+02:00"
+        },
+        {
             "id": "RC-Diagram",
             "title": "SpecIF:Diagram",
             "description": [
@@ -72,7 +124,7 @@
             "icon": "&#9632;",
             "isHeading": false,
             "instantiation": [
-                "auto", 
+                "auto",
                 "user"
             ],
             "propertyClasses": [
@@ -124,7 +176,7 @@
             "icon": "&#9679;",
             "isHeading": false,
             "instantiation": [
-                "auto", 
+                "auto",
                 "user"
             ],
             "propertyClasses": [
@@ -176,7 +228,7 @@
             "icon": "&#11047;",
             "isHeading": false,
             "instantiation": [
-                "auto", 
+                "auto",
                 "user"
             ],
             "propertyClasses": [
@@ -220,15 +272,15 @@
             "title": "SpecIF:Collection",
             "description": [
                 {
-                    "text": "A 'Collection' is a logic (often conceptual) group of resources linked with a SpecIF:contains statement. It corresponds to a 'Group' in BPMN Diagrams."
+                    "text": "A 'Collection' is a logic (often conceptual) group of resources linked with a SpecIF:contains statement. It corresponds to a 'Group' in BPMN diagrams or a 'Boundary' in UML diagrams."
                 }
             ],
             "revision": "1.1",
             "replaces": [],
-            "icon": "&#128447;",
+            "icon": "&#11034;",
             "isHeading": false,
             "instantiation": [
-                "auto", 
+                "auto",
                 "user"
             ],
             "propertyClasses": [
