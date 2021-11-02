@@ -11,7 +11,7 @@
     "resourceClasses": [
         {
             "id": "RC-ResourceTerm",
-            "title": "SpecIF:ResourceTerm",
+            "title": "SpecIF:TermResourceClass",
             "description": [
                 {
                     "text": "A term for resources (objects, entities) belonging to the SpecIF vocabulary"
@@ -46,7 +46,7 @@
         },
         {
             "id": "RC-PredicateTerm",
-            "title": "SpecIF:PredicateTerm",
+            "title": "SpecIF:TermStatementClass",
             "description": [
                 {
                     "text": "A term for statements (relations) belonging to the SpecIF vocabulary"
@@ -80,7 +80,7 @@
             "changedAt": "2021-06-27T15:47:24+02:00"
         },
         {
-            "id": "RC-PropertyTerm",
+            "id": "RC-TermProperty",
             "title": "SpecIF:PropertyTerm",
             "description": [
                 {
@@ -116,7 +116,7 @@
         },
         {
             "id": "RC-ValueTerm",
-            "title": "SpecIF:ValueTerm",
+            "title": "SpecIF:TermPropertyValue",
             "description": [
                 {
                     "text": "A term for property values belonging to the SpecIF vocabulary"
