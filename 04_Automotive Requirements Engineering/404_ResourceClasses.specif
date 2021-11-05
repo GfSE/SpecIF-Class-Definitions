@@ -95,7 +95,7 @@
             "title": "VDA:Feature",
             "description": [
                 {
-                    "text": "A 'VDA:Feature' is a Feature with automotiev specific properties."
+                    "text": "A 'VDA:Feature' is a Feature with automotive specific properties."
                 }
             ],
             "revision": "1.1",
