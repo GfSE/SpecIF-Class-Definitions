@@ -31,7 +31,7 @@
             "title": "Byte",
             "description": [
                 {
-                    "text": "A byte is an integer value in range between 0 and 255.",
+                    "text": "A byte is an integer value between 0 and 255.",
                     "format": "plain",
                     "language": "en"
                 }
@@ -48,7 +48,7 @@
             "title": "Integer",
             "description": [
                 {
-                    "text": "A numerical integer value from -32768 to 32768.",
+                    "text": "A numerical integer value from -32768 to 32767.",
                     "format": "plain",
                     "language": "en"
                 }
@@ -96,7 +96,7 @@
             "title": "Date or Timestamp",
             "description": [
                 {
-                    "text": "Date or Timestamp in ISO-Format",
+                    "text": "Date or timestamp in ISO-format",
                     "format": "plain",
                     "language": "en"
                 }
@@ -158,7 +158,7 @@
             "title": "E-mail",
             "description": [
                 {
-                    "text": "Data type to represent an E-mail address.",
+                    "text": "Data type to represent an e-mail address.",
                     "format": "plain",
                     "language": "en"
                 }

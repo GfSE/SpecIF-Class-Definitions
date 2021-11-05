@@ -17,7 +17,7 @@
             "title": "SpecIF:dependsOn",
             "description": [
                 {
-                    "text": "Statement: Requirement/Feature depends on Requirement/Feature"
+                    "text": "Statement: Requirement/feature depends on requirement/feature."
                 }
             ],
             "revision": "1.1",

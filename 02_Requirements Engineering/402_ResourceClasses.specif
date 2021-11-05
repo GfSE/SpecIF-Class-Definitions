@@ -16,7 +16,7 @@
             "title": "IREB:Requirement",
             "description": [
                 {
-                    "text": "A 'Requirement' is a singular documented physical and functional need that a particular design, product or process must be able to perform."
+                    "text": "A 'requirement' is a singular documented physical and functional need that a particular design, product or process must be able to perform."
                 }
             ],
             "revision": "1.1",
@@ -67,7 +67,7 @@
             "title": "SpecIF:Feature",
             "description": [
                 {
-                    "text": "A 'Feature' is an intentional distinguishing characteristic of a system, often a unique selling proposition."
+                    "text": "A 'feature' is an intentional distinguishing characteristic of a system, often a unique selling proposition."
                 }
             ],
             "revision": "1.1",

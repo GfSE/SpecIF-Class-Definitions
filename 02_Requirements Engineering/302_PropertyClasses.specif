@@ -3,7 +3,7 @@
     "id": "_C9426323_BA53_492D_96EC_77D42A2FBA2A",
     "title": [
         {
-            "text": "SpecIF property class definitions for domain 01-Base Definitions"
+            "text": "SpecIF property class definitions for domain 01-Base definitions"
         }
     ],
     "isExtension": true,
@@ -15,7 +15,7 @@
             "title": "IREB:RequirementType",
             "description": [
                 {
-                    "text": "Enumerated value for the Requirement type according IREB"
+                    "text": "Enumerated value for the requirement type according to IREB."
                 }
             ],
             "revision": "1.1",
@@ -31,7 +31,7 @@
             "title": "SpecIF:Perspective",
             "description": [
                 {
-                    "text": "Enumerated values for the perspective (of a requirement)"
+                    "text": "Enumerated values for the perspective (of a requirement)."
                 }
             ],
             "revision": "1.1",

@@ -15,7 +15,7 @@
             "title": "SpecIF:Visibility",
             "description": [
                 {
-                    "text": "The visibility of a resource (e.g. Public, Private, Protected,...) as known from object orientation.",
+                    "text": "The visibility of a resource (e.g. public, private, protected,...) as known from object orientation.",
                     "format": "plain",
                     "language": "en"
                 }
@@ -34,7 +34,7 @@
             "title": "SpecIF:ImplementationLanguage",
             "description": [
                 {
-                    "text": "The name of an used implementation language (e.g. C, C++, C#, Java, ADA, OCL, ALF etc.)"
+                    "text": "The name of an used implementation language (e.g. C, C++, C#, Java, ADA, OCL, ALF etc.)."
                 }
             ],
             "dataType": {

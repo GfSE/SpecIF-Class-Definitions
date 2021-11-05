@@ -3,7 +3,7 @@
     "id": "_C9426323_BA53_492D_96EC_77D42A2FBA2A",
     "title": [
         {
-            "text": "SpecIF property class definitions for domain 01-Base Definitions"
+            "text": "SpecIF property class definitions for domain 01-Base definitions"
         }
     ],
     "isExtension": true,
@@ -72,7 +72,7 @@
             "title": "SpecIF:Origin",
             "description": [
                 {
-                    "text": "The origin (source, reference) of an information or requirement",
+                    "text": "The origin (source, reference) of an information or requirement.",
                     "format": "plain",
                     "language": "en"
                 }
@@ -128,7 +128,7 @@
             "title": "SpecIF:LifeCycleStatus",
             "description": [
                 {
-                    "text": "The 'Status', e.g. lifecycle state, of the resource.",
+                    "text": "The 'status', e.g. lifecycle state, of the resource.",
                     "format": "plain",
                     "language": "en"
                 }
@@ -146,7 +146,7 @@
             "title": "SpecIF:Priority",
             "description": [
                 {
-                    "text": "The 'Priority' of the resource.",
+                    "text": "The 'priority' of the resource.",
                     "format": "plain",
                     "language": "en"
                 }
@@ -183,7 +183,7 @@
             "title": "SpecIF:Responsible",
             "description": [
                 {
-                    "text": "The 'Person' being responsible for the resource.",
+                    "text": "The 'person' being responsible for the resource.",
                     "format": "plain",
                     "language": "en"
                 }
@@ -201,7 +201,7 @@
             "title": "SpecIF:DueDate",
             "description": [
                 {
-                    "text": "A 'Due Date' for the resource.",
+                    "text": "A 'due date' for the resource.",
                     "format": "plain",
                     "language": "en"
                 }
@@ -291,7 +291,7 @@
             "title": "rdf:value",
             "description": [
                 {
-                    "text": "A value of different meaning, depending on the element type (attribute default value, a taggedValue value etc.)",
+                    "text": "A value of different meaning, depending on the element type (attribute default value, a taggedValue value etc.).",
                     "format": "plain",
                     "language": "en"
                 }

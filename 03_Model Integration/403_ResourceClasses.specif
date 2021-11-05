@@ -16,7 +16,7 @@
             "title": "UML:Package",
             "description": [
                 {
-                    "text": "A 'Package' is used to bring structure into a model. Packages can contain further packages and/or (model-)elements. It corresponds to a Package in UML/SysML or a folder in a file system."
+                    "text": "A 'package' is used to bring structure into a model. Packages can contain further packages and/or (model-)elements. It corresponds to a package in UML/SysML or a folder in a file system."
                 }
             ],
             "revision": "1.1",
@@ -68,7 +68,7 @@
             "title": "SpecIF:Diagram",
             "description": [
                 {
-                    "text": "A 'Diagram' is a graphical model view with a specific communication purpose, e.g. a business process or system composition."
+                    "text": "A 'diagram' is a graphical model view with a specific communication purpose, e.g. a business process or system composition."
                 }
             ],
             "revision": "1.1",
@@ -116,7 +116,7 @@
             "title": "FMC:Actor",
             "description": [
                 {
-                    "text": "An 'Actor' is a fundamental model element type representing an active entity, be it an activity, a process step, a function, a system component or a role."
+                    "text": "An 'actor' is a fundamental model element type representing an active entity, be it an activity, a process step, a function, a system component or a role."
                 }
             ],
             "revision": "1.1",
@@ -168,7 +168,7 @@
             "title": "FMC:State",
             "description": [
                 {
-                    "text": "A 'State' is a fundamental model element type representing a passive entity, be it a value, a condition, an information storage or even a physical shape."
+                    "text": "A 'state' is a fundamental model element type representing a passive entity, be it a value, a condition, an information storage or even a physical shape."
                 }
             ],
             "revision": "1.1",
@@ -220,7 +220,7 @@
             "title": "FMC:Event",
             "description": [
                 {
-                    "text": "An 'Event' is a fundamental model element type representing a time reference, a change in condition/value or more generally a synchronization primitive."
+                    "text": "An 'event' is a fundamental model element type representing a time reference, a change in condition/value or more generally a synchronization primitive."
                 }
             ],
             "revision": "1.1",
@@ -272,7 +272,7 @@
             "title": "SpecIF:Collection",
             "description": [
                 {
-                    "text": "A 'Collection' is a logic (often conceptual) group of resources linked with a SpecIF:contains statement. It corresponds to a 'Group' in BPMN diagrams or a 'Boundary' in UML diagrams."
+                    "text": "A 'collection' is a logic (often conceptual) group of resources linked with a SpecIF:contains statement. It corresponds to a 'group' in BPMN diagrams or a 'boundary' in UML diagrams."
                 }
             ],
             "revision": "1.1",

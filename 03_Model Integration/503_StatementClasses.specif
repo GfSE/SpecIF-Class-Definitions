@@ -17,7 +17,7 @@
             "title": "SpecIF:shows",
             "description": [
                 {
-                    "text": "Statement: Plan resp. diagram shows Model-Element"
+                    "text": "Statement: Plan resp. diagram shows model element."
                 }
             ],
             "revision": "1.1",
@@ -52,7 +52,7 @@
             "title": "SpecIF:contains",
             "description": [
                 {
-                    "text": "Statement: Model-Element contains Model-Element"
+                    "text": "Statement: Model element contains model element."
                 }
             ],
             "revision": "1.1",
@@ -96,7 +96,7 @@
             "title": "SpecIF:stores",
             "description": [
                 {
-                    "text": "Statement: Actor (Role, Function) writes and reads State (Information)"
+                    "text": "Statement: Actor (role, function) writes and reads state (information)."
                 }
             ],
             "revision": "1.1",
@@ -123,7 +123,7 @@
             "title": "SpecIF:writes",
             "description": [
                 {
-                    "text": "Statement: Actor (Role, Function) writes State (Information)"
+                    "text": "Statement: Actor (role, function) writes state (information)."
                 }
             ],
             "revision": "1.1",
@@ -150,7 +150,7 @@
             "title": "SpecIF:reads",
             "description": [
                 {
-                    "text": "Statement: Actor (Role, Function) reads State (Information)"
+                    "text": "Statement: Actor (role, function) reads state (information)."
                 }
             ],
             "revision": "1.1",
@@ -177,7 +177,7 @@
             "title": "SpecIF:precedes",
             "description": [
                 {
-                    "text": "An FMC:Actor 'precedes' an FMC:Actor or an FMC:Actor 'precedes' and FMC:Event or an FMC:Event 'precedes' an FMC:Actor. The rdf:type property specifies if it is a simple precedes, a SpecIF:signals or a SpecIF:triggers."
+                    "text": "An FMC:Actor 'precedes' an FMC:Actor or an FMC:Actor 'precedes' an FMC:Event or an FMC:Event 'precedes' an FMC:Actor. The rdf:type property specifies if it is a simple precedes, a SpecIF:signals or a SpecIF:triggers."
                 }
             ],
             "revision": "1.1",
@@ -219,7 +219,7 @@
             "title": "oslc_rm:satisfies",
             "description": [
                 {
-                    "text": "Statement: Model-Element satisfies Requirement"
+                    "text": "Statement: Model element satisfies requirement."
                 }
             ],
             "revision": "1.1",
@@ -254,7 +254,7 @@
             "title": "SpecIF:allocates",
             "description": [
                 {
-                    "text": "Statement: Model-Element is allocated to Model-Element. The semantics is equal to the Allocation in SysML or the deployment relation in UML."
+                    "text": "Statement: Model element is allocated to model element. The semantics are equal to allocation in SysML or deployment relation in UML."
                 }
             ],
             "revision": "1.1",
