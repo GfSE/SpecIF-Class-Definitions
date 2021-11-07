@@ -3,8 +3,8 @@
   "title": "SpecIF Vocabulary",
   "$schema": "https://specif.de/v1.0/schema.json",
   "generator": "SpecIF Editor",
-  "generatorVersion": "1.0.t",
-  "createdAt": "2021-10-12T14:29:23.206Z",
+  "generatorVersion": "1.0.v",
+  "createdAt": "2021-11-07T19:26:35.441Z",
   "description": "The SpecIF Vocabulary (or Glossary) collects terms used in the domain of systems engineering and requirements management. Agreed-upon terms help both collaborators to communicate more clearly and systems to match data fields automatically.",
   "rights": {
     "title": "Creative Commons 4.0 CC BY-SA",
@@ -12,11 +12,10 @@
   },
   "dataTypes": [
     {
-      "id": "DT-ShortText",
-      "changedAt": "2017-06-10T15:47:24+02:00",
-      "title": "Short Text",
+      "id": "DT-ShortString",
+      "changedAt": "2016-05-26T08:59:00+02:00",
+      "title": "String [256]",
       "description": "String with length 256",
-      "revision": "1",
       "type": "xs:string",
       "maxLength": 256
     },
@@ -123,7 +122,7 @@
       "changedAt": "2017-06-10T15:47:24+02:00",
       "title": "dcterms:title",
       "revision": "1",
-      "dataType": "DT-ShortText"
+      "dataType": "DT-ShortString"
     },
     {
       "id": "PC-Description",
@@ -137,7 +136,7 @@
       "changedAt": "2017-06-10T15:47:24+02:00",
       "title": "SpecIF:Origin",
       "revision": "1",
-      "dataType": "DT-ShortText"
+      "dataType": "DT-ShortString"
     },
     {
       "id": "PC-TermStatus",
@@ -263,6 +262,9 @@
       "title": "SpecIF:Outline",
       "description": "Document root",
       "revision": "1",
+      "propertyClasses": [
+        "PC-Name"
+      ],
       "isHeading": true
     }
   ],
@@ -469,7 +471,13 @@
       "changedAt": "2018-02-17T14:52:15+01:00",
       "title": "SpecIF Vocabulary",
       "revision": "114",
-      "class": "RC-Hierarchy"
+      "class": "RC-Hierarchy",
+      "properties": [
+        {
+          "class": "PC-Name",
+          "value": "SpecIF Vocabulary"
+        }
+      ]
     },
     {
       "id": "F-Property_Values",
@@ -498,6 +506,10 @@
       "class": "RC-ValueTerm",
       "properties": [
         {
+          "class": "PC-Name",
+          "value": "bpmn:timer"
+        },
+        {
           "class": "PC-Description",
           "value": "<p>A defined value for the [[dcterms:type]] property of [[FMC:Actor]] when used to represent a 'Timer' element in models created with BPMN.</p>"
         },
@@ -515,6 +527,10 @@
       "changedBy": "od",
       "class": "RC-ValueTerm",
       "properties": [
+        {
+          "class": "PC-Name",
+          "value": "bpmn:join"
+        },
         {
           "class": "PC-Description",
           "value": "<p>A defined value for the [[dcterms:type]] property of [[FMC:Actor]] when used to represent a 'Join' element in models created with BPMN.</p>"
@@ -534,6 +550,10 @@
       "class": "RC-ValueTerm",
       "properties": [
         {
+          "class": "PC-Name",
+          "value": "bpmn:processStep"
+        },
+        {
           "class": "PC-Description",
           "value": "<p>A defined value for the [[dcterms:type]] property of [[FMC:Actor]] when used to represent a process step.</p>"
         },
@@ -551,6 +571,10 @@
       "changedBy": "od",
       "class": "RC-ValueTerm",
       "properties": [
+        {
+          "class": "PC-Name",
+          "value": "bpmn:endEvent"
+        },
         {
           "class": "PC-Description",
           "value": "<p>A defined value for the [[dcterms:type]] property of [[FMC:Event]] when used to represent a general end event.</p>"
@@ -574,6 +598,10 @@
       "class": "RC-ValueTerm",
       "properties": [
         {
+          "class": "PC-Name",
+          "value": "bpmn:intermediateEvent"
+        },
+        {
           "class": "PC-Description",
           "value": "<p>A defined value for the [[dcterms:type]] property of [[FMC:Event]] when used to represent a general intermediate event.</p>"
         },
@@ -595,6 +623,10 @@
       "changedBy": "od",
       "class": "RC-ValueTerm",
       "properties": [
+        {
+          "class": "PC-Name",
+          "value": "bpmn:startEvent"
+        },
         {
           "class": "PC-Description",
           "value": "<p>A defined value for the [[dcterms:type]] property of [[FMC:Event]] when used to represent a general start event.</p>"
@@ -1859,6 +1891,10 @@
       "class": "RC-PropertyTerm",
       "properties": [
         {
+          "class": "PC-Name",
+          "value": "SpecIF:Probability"
+        },
+        {
           "class": "PC-Origin",
           "value": "http://specif.de"
         },
@@ -1876,6 +1912,10 @@
       "changedBy": "od",
       "class": "RC-PropertyTerm",
       "properties": [
+        {
+          "class": "PC-Name",
+          "value": "SpecIF:LifecycleStatus"
+        },
         {
           "class": "PC-Description",
           "value": "The 'Lifecycle Status' of the resource."
@@ -3224,10 +3264,10 @@
     },
     {
       "id": "R-1756321089",
-      "changedAt": "2018-02-17T14:51:47+01:00",
+      "changedAt": "2021-11-07T18:51:56.859Z",
       "title": "SpecIF:triggers",
+      "description": "A [[FMC:Event]] 'triggers' a [[FMC:Actor]].",
       "revision": "31",
-      "changedBy": "od",
       "class": "RC-PredicateTerm",
       "properties": [
         {
@@ -3243,17 +3283,21 @@
           "value": "http://specif.de"
         },
         {
+          "class": "PC-Domain",
+          "value": "V-Domain-4"
+        },
+        {
           "class": "PC-TermStatus",
-          "value": "V-TermStatus-6"
+          "value": "V-TermStatus-9"
         }
       ]
     },
     {
       "id": "R-1756321088",
-      "changedAt": "2018-02-17T14:51:47+01:00",
+      "changedAt": "2021-11-07T18:52:06.767Z",
       "title": "SpecIF:signals",
+      "description": "A [[FMC:Actor]] 'signals' a [[FMC:Event]].",
       "revision": "30",
-      "changedBy": "od",
       "class": "RC-PredicateTerm",
       "properties": [
         {
@@ -3269,17 +3313,21 @@
           "value": "http://specif.de"
         },
         {
+          "class": "PC-Domain",
+          "value": "V-Domain-4"
+        },
+        {
           "class": "PC-TermStatus",
-          "value": "V-TermStatus-6"
+          "value": "V-TermStatus-9"
         }
       ]
     },
     {
       "id": "R-ior1aP0HS9zfiBkoYok4rx9GiZw",
-      "changedAt": "2018-03-21T18:03:15+01:00",
+      "changedAt": "2021-11-07T18:53:50.492Z",
       "title": "SpecIF:precedes",
+      "description": "A [[FMC:Actor]] 'precedes' a [[FMC:Actor]]; e.g. in a business process or activity flow.",
       "revision": "190",
-      "changedBy": "od",
       "class": "RC-PredicateTerm",
       "properties": [
         {
@@ -3296,7 +3344,7 @@
         },
         {
           "class": "PC-TermStatus",
-          "value": "V-TermStatus-1"
+          "value": "V-TermStatus-6"
         }
       ]
     },
@@ -4055,6 +4103,10 @@
       "class": "RC-ResourceTerm",
       "properties": [
         {
+          "class": "PC-Name",
+          "value": "bpmn:group"
+        },
+        {
           "class": "PC-Description",
           "value": "<p>BPMN: An arbitrary set of objects can be defined as a Group to show that they logically belong together. Like all BPMN 'artifacts', a group does not influence execution semantics. In PBMN, a group can be freely applied, even across pool boundaries. <small>(<i>source: <a href=\"https://camunda.com/bpmn/reference/#overview\">BPMN Reference</a></i>)</small></p>"
         },
@@ -4614,6 +4666,182 @@
           "value": "V-TermStatus-1"
         }
       ]
+    },
+    {
+      "id": "R-JqmEMlXGMp7bGuaLdQoJ6EcOhqc",
+      "changedAt": "2021-11-07T18:57:20.426Z",
+      "title": "SpecIF:sendsTo",
+      "description": "A [[FMC:Actor]] 'sends' a message to a [[FMC:Actor]].",
+      "class": "RC-PredicateTerm",
+      "properties": [
+        {
+          "class": "PC-Name",
+          "value": "SpecIF:sendsTo"
+        },
+        {
+          "class": "PC-Description",
+          "value": "A [[FMC:Actor]] 'sends' a message to a [[FMC:Actor]]."
+        },
+        {
+          "class": "PC-Origin",
+          "value": "http://specif.de"
+        },
+        {
+          "class": "PC-Domain",
+          "value": "V-Domain-4"
+        },
+        {
+          "class": "PC-TermStatus",
+          "value": "V-TermStatus-6"
+        }
+      ]
+    },
+    {
+      "id": "R-epP6KdUsc1J7HHuq4ChWGvd3TVk",
+      "changedAt": "2021-11-07T18:57:50.530Z",
+      "title": "SpecIF:receivesFrom",
+      "description": "A [[FMC:Actor]] 'receives' a message from a [[FMC:Actor]].",
+      "class": "RC-PredicateTerm",
+      "properties": [
+        {
+          "class": "PC-Name",
+          "value": "SpecIF:receivesFrom"
+        },
+        {
+          "class": "PC-Description",
+          "value": "A [[FMC:Actor]] 'receives' a message from a [[FMC:Actor]]."
+        },
+        {
+          "class": "PC-Origin",
+          "value": "http://specif.de"
+        },
+        {
+          "class": "PC-Domain",
+          "value": "V-Domain-4"
+        },
+        {
+          "class": "PC-TermStatus",
+          "value": "V-TermStatus-6"
+        }
+      ]
+    },
+    {
+      "id": "R-wHJdaUoL1OblRkwOFfDvjeJuEI5",
+      "changedAt": "2021-11-07T18:59:41.158Z",
+      "title": "SpecIF:communicatesWith",
+      "description": "A [[FMC:Actor]] 'communicates' with a [[FMC:Actor]].",
+      "class": "RC-PredicateTerm",
+      "properties": [
+        {
+          "class": "PC-Name",
+          "value": "SpecIF:communicatesWith"
+        },
+        {
+          "class": "PC-Description",
+          "value": "A [[FMC:Actor]] 'communicates' with a [[FMC:Actor]]."
+        },
+        {
+          "class": "PC-Origin",
+          "value": "http://specif.de"
+        },
+        {
+          "class": "PC-Domain",
+          "value": "V-Domain-4"
+        },
+        {
+          "class": "PC-TermStatus",
+          "value": "V-TermStatus-6"
+        }
+      ]
+    },
+    {
+      "id": "R-6FTOPvcMAO1yPYW4BfJNyTvnQcm",
+      "changedAt": "2021-11-07T19:11:04.490Z",
+      "title": "SpecIF:influences",
+      "description": "The influence relationship represents that an element affects the implementation or achievement of some motivation element.",
+      "class": "RC-PredicateTerm",
+      "properties": [
+        {
+          "class": "PC-Name",
+          "value": "SpecIF:influences"
+        },
+        {
+          "class": "PC-Description",
+          "value": "The influence relationship represents that an element affects the implementation or achievement of some motivation element."
+        },
+        {
+          "class": "PC-Origin",
+          "value": "https://pubs.opengroup.org/architecture/archimate3-doc/chap05.html"
+        },
+        {
+          "class": "PC-Domain",
+          "value": "V-Domain-4"
+        },
+        {
+          "class": "PC-TermStatus",
+          "value": "V-TermStatus-1"
+        }
+      ]
+    },
+    {
+      "id": "R-OZvSiGmgwEIwM8pxT3wwzWHtjRf",
+      "changedAt": "2021-11-07T19:24:51.398Z",
+      "title": "SysML:isSpecialisationOf",
+      "description": "An [[FMC:Actor]] is a specialization of another [[FMC:Actor]]; similarly for [[FMC:State]] and [[FMC:Event]].",
+      "revision": "36",
+      "class": "RC-PredicateTerm",
+      "properties": [
+        {
+          "class": "PC-Name",
+          "value": "SysML:isSpecialisationOf"
+        },
+        {
+          "class": "PC-Description",
+          "value": "<p>An [[FMC:Actor]] is a specialization of another [[FMC:Actor]]; similarly for [[FMC:State]] and [[FMC:Event]].</p>"
+        },
+        {
+          "class": "PC-Origin",
+          "value": "http://specif.de"
+        },
+        {
+          "class": "PC-Domain",
+          "value": "V-Domain-39"
+        },
+        {
+          "class": "PC-TermStatus",
+          "value": "V-TermStatus-9"
+        }
+      ]
+    },
+    {
+      "id": "R-3YVqYkzhtVVysNFh8YWH9yl99HL",
+      "changedAt": "2021-11-07T19:25:45.484Z",
+      "title": "SysML:isGeneralisationOf",
+      "description": "An [[FMC:Actor]] is a generalization of another [[FMC:Actor]]; similarly for [[FMC:State]] and [[FMC:Event]].",
+      "revision": "36",
+      "class": "RC-PredicateTerm",
+      "properties": [
+        {
+          "class": "PC-Name",
+          "value": "SysML:isGeneralisationOf"
+        },
+        {
+          "class": "PC-Description",
+          "value": "<p>An [[FMC:Actor]] is a generalization of another [[FMC:Actor]]; similarly for [[FMC:State]] and [[FMC:Event]].</p>"
+        },
+        {
+          "class": "PC-Origin",
+          "value": "http://specif.de"
+        },
+        {
+          "class": "PC-Domain",
+          "value": "V-Domain-39"
+        },
+        {
+          "class": "PC-TermStatus",
+          "value": "V-TermStatus-9"
+        }
+      ]
     }
   ],
   "statements": [
@@ -4961,6 +5189,69 @@
       "class": "SC-isEligibleAsObject",
       "subject": "R-155140547",
       "object": "R-LfS1sqHpaj2SBAGEG1MX8yIJTwV"
+    },
+    {
+      "id": "S-7QdyTdGYoA2zHn33kScEb1ajyLg",
+      "changedAt": "2021-11-07T18:53:04.862Z",
+      "class": "SC-isSpecializationOfPredicate",
+      "subject": "R-1756321088",
+      "object": "R-ior1aP0HS9zfiBkoYok4rx9GiZw"
+    },
+    {
+      "id": "S-uFgqIwOcs9ksWdtVqOjPYlxncDR",
+      "changedAt": "2021-11-07T18:53:19.402Z",
+      "class": "SC-isSpecializationOfPredicate",
+      "subject": "R-1756321089",
+      "object": "R-ior1aP0HS9zfiBkoYok4rx9GiZw"
+    },
+    {
+      "id": "S-GpkxISeyVwf5uNQ7cBW4aWlqAeD",
+      "changedAt": "2021-11-07T18:58:50.394Z",
+      "class": "SC-isAntonymousPredicate",
+      "subject": "R-epP6KdUsc1J7HHuq4ChWGvd3TVk",
+      "object": "R-JqmEMlXGMp7bGuaLdQoJ6EcOhqc"
+    },
+    {
+      "id": "S-JzrV2yN1PfohUs1PqWPvY4e6MOP",
+      "changedAt": "2021-11-07T19:00:12.683Z",
+      "class": "SC-isSpecializationOfPredicate",
+      "subject": "R-JqmEMlXGMp7bGuaLdQoJ6EcOhqc",
+      "object": "R-wHJdaUoL1OblRkwOFfDvjeJuEI5"
+    },
+    {
+      "id": "S-MQvE9GrqQONp4glUqlKhWhl29C7",
+      "changedAt": "2021-11-07T19:00:25.923Z",
+      "class": "SC-isSpecializationOfPredicate",
+      "subject": "R-epP6KdUsc1J7HHuq4ChWGvd3TVk",
+      "object": "R-wHJdaUoL1OblRkwOFfDvjeJuEI5"
+    },
+    {
+      "id": "S-WGQzfCG3sTW1WjHX7cVzaAs116B",
+      "changedAt": "2021-11-07T19:06:03.170Z",
+      "class": "SC-isEligibleAsSubject",
+      "subject": "R-155140546",
+      "object": "R-3KHuQVdvw7pEuacDmKP3XWo2YDB"
+    },
+    {
+      "id": "S-WhMy3pwT1IlH7zzootAV5QhW7Jd",
+      "changedAt": "2021-11-07T19:06:11.904Z",
+      "class": "SC-isEligibleAsObject",
+      "subject": "R-155140546",
+      "object": "R-3KHuQVdvw7pEuacDmKP3XWo2YDB"
+    },
+    {
+      "id": "S-yjVFdYjaS7CccjzmdwfDQwPp1wd",
+      "changedAt": "2021-11-07T19:25:21.935Z",
+      "class": "SC-isSynonymousPredicate",
+      "subject": "R-OZvSiGmgwEIwM8pxT3wwzWHtjRf",
+      "object": "R-isSpecializationOf"
+    },
+    {
+      "id": "S-q4rQJ1QQnP5PCi5hcAFNo57pPq7",
+      "changedAt": "2021-11-07T19:26:00.898Z",
+      "class": "SC-isSynonymousPredicate",
+      "subject": "R-3YVqYkzhtVVysNFh8YWH9yl99HL",
+      "object": "R-isGeneralizationOf"
     }
   ],
   "hierarchies": [
@@ -5153,6 +5444,11 @@
               "revision": "114"
             },
             {
+              "id": "N-kYtQXpijizbrwaHc3gPkukE7mMt",
+              "resource": "R-6FTOPvcMAO1yPYW4BfJNyTvnQcm",
+              "changedAt": "2021-11-07T19:11:04.489Z"
+            },
+            {
               "id": "N-YShAhKHuxcyBV85xnVLD1iXE53o",
               "resource": "R-852227586",
               "changedAt": "2018-02-17T14:52:25+01:00",
@@ -5265,6 +5561,21 @@
               "changedAt": "2020-11-09T13:56:22.423Z"
             },
             {
+              "id": "N-qOI8VZuvXXefKrBhu5CET1QBVgd",
+              "resource": "R-wHJdaUoL1OblRkwOFfDvjeJuEI5",
+              "changedAt": "2021-11-07T18:59:46.202Z"
+            },
+            {
+              "id": "N-ZIErPdIsyyEer2Udv827IChErke",
+              "resource": "R-JqmEMlXGMp7bGuaLdQoJ6EcOhqc",
+              "changedAt": "2021-11-07T18:55:50.651Z"
+            },
+            {
+              "id": "N-umc733Ng2PptgJHjruZcJkcV8Tb",
+              "resource": "R-epP6KdUsc1J7HHuq4ChWGvd3TVk",
+              "changedAt": "2021-11-07T18:57:50.529Z"
+            },
+            {
               "id": "N-sAslV9Rfa6y0QRhdd5lkXtQM8KP",
               "resource": "R-07g3XWyx81s5KxMfyzzP2tM1brk",
               "changedAt": "2018-02-17T14:52:25+01:00",
@@ -5373,10 +5684,20 @@
               "revision": "114"
             },
             {
+              "id": "N-wJnegdKeVui7ymc6fXKRbrMNM1B",
+              "resource": "R-OZvSiGmgwEIwM8pxT3wwzWHtjRf",
+              "changedAt": "2021-11-07T19:24:51.396Z"
+            },
+            {
               "id": "N-qEgSojoH8KY2IPsmY49TGtgVWmc",
               "resource": "R-isGeneralizationOf",
               "changedAt": "2019-05-30T14:52:25+01:00",
               "revision": "114"
+            },
+            {
+              "id": "N-R1qTM3581nwGOaNPJ8gcxB2xOzJ",
+              "resource": "R-3YVqYkzhtVVysNFh8YWH9yl99HL",
+              "changedAt": "2021-11-07T19:25:45.483Z"
             },
             {
               "id": "N-BSQa9h5AoCUdhDRQ0QCodbesRwM",
