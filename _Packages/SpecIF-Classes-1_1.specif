@@ -10,7 +10,7 @@
   ],
   "isExtension": false,
   "generator": "SpecIFicator Vocabulary Generator",
-  "createdAt": "2021-11-01T17:01:34.0911708+01:00",
+  "createdAt": "2021-11-08T22:26:05.1347548+01:00",
   "dataTypes": [
     {
       "id": "DT-Boolean",
@@ -32,7 +32,7 @@
       "title": "Byte",
       "description": [
         {
-          "text": "A byte is an integer value in range between 0 and 255.",
+          "text": "A byte is an integer value between 0 and 255.",
           "format": "plain",
           "language": "en"
         }
@@ -49,7 +49,7 @@
       "title": "Integer",
       "description": [
         {
-          "text": "A numerical integer value from -32768 to 32768.",
+          "text": "A numerical integer value from -32768 to 32767.",
           "format": "plain",
           "language": "en"
         }
@@ -97,7 +97,7 @@
       "title": "Date or Timestamp",
       "description": [
         {
-          "text": "Date or Timestamp in ISO-Format",
+          "text": "Date or timestamp in ISO-format",
           "format": "plain",
           "language": "en"
         }
@@ -159,7 +159,7 @@
       "title": "E-mail",
       "description": [
         {
-          "text": "Data type to represent an E-mail address.",
+          "text": "Data type to represent an e-mail address.",
           "format": "plain",
           "language": "en"
         }
@@ -439,7 +439,7 @@
       "title": "IREB:RequirementType",
       "description": [
         {
-          "text": "Enumerated values for the Requirement type according IREB",
+          "text": "Enumerated values for the requirement type according to IREB.",
           "format": "plain",
           "language": "en"
         }
@@ -555,7 +555,7 @@
       "title": "SpecIF:VisibilityKind",
       "description": [
         {
-          "text": "Enumerated values for visibility",
+          "text": "Enumerated values for visibility.",
           "format": "plain",
           "language": "en"
         }
@@ -695,7 +695,7 @@
       "title": "SpecIF:Origin",
       "description": [
         {
-          "text": "The origin (source, reference) of an information or requirement",
+          "text": "The origin (source, reference) of an information or requirement.",
           "format": "plain",
           "language": "en"
         }
@@ -755,7 +755,7 @@
       "title": "SpecIF:LifeCycleStatus",
       "description": [
         {
-          "text": "The 'Status', e.g. lifecycle state, of the resource.",
+          "text": "The 'status', e.g. lifecycle state, of the resource.",
           "format": "plain",
           "language": "en"
         }
@@ -775,7 +775,7 @@
       "title": "SpecIF:Priority",
       "description": [
         {
-          "text": "The 'Priority' of the resource.",
+          "text": "The 'priority' of the resource.",
           "format": "plain",
           "language": "en"
         }
@@ -816,7 +816,7 @@
       "title": "SpecIF:Responsible",
       "description": [
         {
-          "text": "The 'Person' being responsible for the resource.",
+          "text": "The 'person' being responsible for the resource.",
           "format": "plain",
           "language": "en"
         }
@@ -836,7 +836,7 @@
       "title": "SpecIF:DueDate",
       "description": [
         {
-          "text": "A 'Due Date' for the resource.",
+          "text": "A 'due date' for the resource.",
           "format": "plain",
           "language": "en"
         }
@@ -936,7 +936,7 @@
       "title": "rdf:value",
       "description": [
         {
-          "text": "A value of different meaning, depending on the element type (attribute default value, a taggedValue value etc.)",
+          "text": "A value of different meaning, depending on the element type (attribute default value, a taggedValue value etc.).",
           "format": "plain",
           "language": "en"
         }
@@ -956,7 +956,7 @@
       "title": "IREB:RequirementType",
       "description": [
         {
-          "text": "Enumerated value for the Requirement type according IREB",
+          "text": "Enumerated value for the requirement type according to IREB.",
           "format": "plain",
           "language": "en"
         }
@@ -976,7 +976,7 @@
       "title": "SpecIF:Perspective",
       "description": [
         {
-          "text": "Enumerated values for the perspective (of a requirement)",
+          "text": "Enumerated values for the perspective (of a requirement).",
           "format": "plain",
           "language": "en"
         }
@@ -996,7 +996,7 @@
       "title": "SpecIF:Visibility",
       "description": [
         {
-          "text": "The visibility of a resource (e.g. Public, Private, Protected,...) as known from object orientation.",
+          "text": "The visibility of a resource (e.g. public, private, protected,...) as known from object orientation.",
           "format": "plain",
           "language": "en"
         }
@@ -1017,7 +1017,7 @@
       "title": "SpecIF:ImplementationLanguage",
       "description": [
         {
-          "text": "The name of an used implementation language (e.g. C, C++, C#, Java, ADA, OCL, ALF etc.)",
+          "text": "The name of an used implementation language (e.g. C, C++, C#, Java, ADA, OCL, ALF etc.).",
           "format": "plain",
           "language": "en"
         }
@@ -1110,7 +1110,7 @@
       ],
       "revision": "1.1",
       "replaces": [],
-      "icon": "&#11034;",
+      "icon": "&#128441;",
       "isHeading": false,
       "instantiation": [
         "auto",
@@ -1140,6 +1140,7 @@
       ],
       "revision": "1.1",
       "replaces": [],
+      "icon": "&#128453;",
       "isHeading": false,
       "instantiation": [
         "auto"
@@ -1161,7 +1162,7 @@
       "title": "IREB:Requirement",
       "description": [
         {
-          "text": "A 'Requirement' is a singular documented physical and functional need that a particular design, product or process must be able to perform.",
+          "text": "A 'requirement' is a singular documented physical and functional need that a particular design, product or process must be able to perform.",
           "format": "plain",
           "language": "en"
         }
@@ -1214,7 +1215,7 @@
       "title": "SpecIF:Feature",
       "description": [
         {
-          "text": "A 'Feature' is an intentional distinguishing characteristic of a system, often a unique selling proposition.",
+          "text": "A 'feature' is an intentional distinguishing characteristic of a system, often a unique selling proposition.",
           "format": "plain",
           "language": "en"
         }
@@ -1259,11 +1260,65 @@
       "changedAt": "2021-02-22T07:59:00+01:00"
     },
     {
+      "id": "RC-Package",
+      "title": "UML:Package",
+      "description": [
+        {
+          "text": "A 'package' is used to bring structure into a model. Packages can contain further packages and/or (model-)elements. It corresponds to a package in UML/SysML or a folder in a file system.",
+          "format": "plain",
+          "language": "en"
+        }
+      ],
+      "revision": "1.1",
+      "replaces": [],
+      "icon": "&#128447;",
+      "isHeading": false,
+      "instantiation": [
+        "auto",
+        "user"
+      ],
+      "propertyClasses": [
+        {
+          "id": "PC-Name",
+          "revision": "1.1"
+        },
+        {
+          "id": "PC-Description",
+          "revision": "1.1"
+        },
+        {
+          "id": "PC-LifeCycleStatus",
+          "revision": "1.1"
+        },
+        {
+          "id": "PC-Visibility",
+          "revision": "1.1"
+        },
+        {
+          "id": "PC-Type",
+          "revision": "1.1"
+        },
+        {
+          "id": "PC-Stereotype",
+          "revision": "1.1"
+        },
+        {
+          "id": "PC-Value",
+          "revision": "1.1"
+        },
+        {
+          "id": "PC-Alias",
+          "revision": "1.1"
+        }
+      ],
+      "changedAt": "2021-11-02T17:59:00+01:00"
+    },
+    {
       "id": "RC-Diagram",
       "title": "SpecIF:Diagram",
       "description": [
         {
-          "text": "A 'Diagram' is a graphical model view with a specific communication purpose, e.g. a business process or system composition.",
+          "text": "A 'diagram' is a graphical model view with a specific communication purpose, e.g. a business process or system composition.",
           "format": "plain",
           "language": "en"
         }
@@ -1313,7 +1368,7 @@
       "title": "FMC:Actor",
       "description": [
         {
-          "text": "An 'Actor' is a fundamental model element type representing an active entity, be it an activity, a process step, a function, a system component or a role.",
+          "text": "An 'actor' is a fundamental model element type representing an active entity, be it an activity, a process step, a function, a system component or a role.",
           "format": "plain",
           "language": "en"
         }
@@ -1367,7 +1422,7 @@
       "title": "FMC:State",
       "description": [
         {
-          "text": "A 'State' is a fundamental model element type representing a passive entity, be it a value, a condition, an information storage or even a physical shape.",
+          "text": "A 'state' is a fundamental model element type representing a passive entity, be it a value, a condition, an information storage or even a physical shape.",
           "format": "plain",
           "language": "en"
         }
@@ -1421,7 +1476,7 @@
       "title": "FMC:Event",
       "description": [
         {
-          "text": "An 'Event' is a fundamental model element type representing a time reference, a change in condition/value or more generally a synchronization primitive.",
+          "text": "An 'event' is a fundamental model element type representing a time reference, a change in condition/value or more generally a synchronization primitive.",
           "format": "plain",
           "language": "en"
         }
@@ -1475,14 +1530,14 @@
       "title": "SpecIF:Collection",
       "description": [
         {
-          "text": "A 'Collection' is a logic (often conceptual) group of resources linked with a SpecIF:contains statement. It corresponds to a 'Group' in BPMN Diagrams.",
+          "text": "A 'collection' is a logic (often conceptual) group of resources linked with a SpecIF:contains statement. It corresponds to a 'group' in BPMN diagrams or a 'boundary' in UML diagrams.",
           "format": "plain",
           "language": "en"
         }
       ],
       "revision": "1.1",
       "replaces": [],
-      "icon": "&#128447;",
+      "icon": "&#11034;",
       "isHeading": false,
       "instantiation": [
         "auto",
@@ -1603,7 +1658,7 @@
       "title": "SpecIF:dependsOn",
       "description": [
         {
-          "text": "Statement: Requirement/Feature depends on Requirement/Feature",
+          "text": "Statement: Requirement/feature depends on requirement/feature.",
           "format": "plain",
           "language": "en"
         }
@@ -1723,7 +1778,7 @@
       "title": "SpecIF:shows",
       "description": [
         {
-          "text": "Statement: Plan resp. diagram shows Model-Element",
+          "text": "Statement: Plan resp. diagram shows model element.",
           "format": "plain",
           "language": "en"
         }
@@ -1761,7 +1816,7 @@
       "title": "SpecIF:contains",
       "description": [
         {
-          "text": "Statement: Model-Element contains Model-Element",
+          "text": "Statement: Model element contains model element.",
           "format": "plain",
           "language": "en"
         }
@@ -1804,11 +1859,41 @@
       "changedAt": "2016-05-26T08:59:00+02:00"
     },
     {
+      "id": "SC-serves",
+      "title": "SpecIF:serves",
+      "description": [
+        {
+          "text": "Statement: An actor serves an actor.",
+          "format": "plain",
+          "language": "en"
+        }
+      ],
+      "revision": "1.1",
+      "replaces": [],
+      "subjectClasses": [
+        {
+          "id": "RC-Actor",
+          "revision": "1.1"
+        }
+      ],
+      "objectClasses": [
+        {
+          "id": "RC-Actor",
+          "revision": "1.1"
+        }
+      ],
+      "isHeading": false,
+      "instantiation": [
+        "auto"
+      ],
+      "changedAt": "2021-11-07T18:59:00+01:00"
+    },
+    {
       "id": "SC-stores",
       "title": "SpecIF:stores",
       "description": [
         {
-          "text": "Statement: Actor (Role, Function) writes and reads State (Information)",
+          "text": "Statement: Actor (role, function) writes and reads state (information).",
           "format": "plain",
           "language": "en"
         }
@@ -1838,7 +1923,7 @@
       "title": "SpecIF:writes",
       "description": [
         {
-          "text": "Statement: Actor (Role, Function) writes State (Information)",
+          "text": "Statement: Actor (role, function) writes state (information).",
           "format": "plain",
           "language": "en"
         }
@@ -1868,7 +1953,7 @@
       "title": "SpecIF:reads",
       "description": [
         {
-          "text": "Statement: Actor (Role, Function) reads State (Information)",
+          "text": "Statement: Actor (role, function) reads state (information).",
           "format": "plain",
           "language": "en"
         }
@@ -1889,16 +1974,17 @@
       ],
       "isHeading": false,
       "instantiation": [
-        "auto"
+        "auto",
+        "user"
       ],
       "changedAt": "2016-05-26T08:59:00+02:00"
     },
     {
-      "id": "SC-signals",
-      "title": "SpecIF:signals",
+      "id": "SC-influences",
+      "title": "SpecIF:influences",
       "description": [
         {
-          "text": "A FMC:Actor 'signals' a FMC:Event.",
+          "text": "Statement: A state (information) influences a state (information).",
           "format": "plain",
           "language": "en"
         }
@@ -1907,58 +1993,29 @@
       "replaces": [],
       "subjectClasses": [
         {
-          "id": "RC-Actor",
+          "id": "RC-State",
           "revision": "1.1"
         }
       ],
       "objectClasses": [
         {
-          "id": "RC-Event",
+          "id": "RC-State",
           "revision": "1.1"
         }
       ],
       "isHeading": false,
       "instantiation": [
-        "auto"
+        "auto",
+        "user"
       ],
-      "changedAt": "2019-08-20T20:32:25+02:00"
-    },
-    {
-      "id": "SC-triggers",
-      "title": "SpecIF:triggers",
-      "description": [
-        {
-          "text": "A FMC:Event 'triggers' an FMC:Actor.",
-          "format": "plain",
-          "language": "en"
-        }
-      ],
-      "revision": "1.1",
-      "replaces": [],
-      "subjectClasses": [
-        {
-          "id": "RC-Event",
-          "revision": "1.1"
-        }
-      ],
-      "objectClasses": [
-        {
-          "id": "RC-Actor",
-          "revision": "1.1"
-        }
-      ],
-      "isHeading": false,
-      "instantiation": [
-        "auto"
-      ],
-      "changedAt": "2020-02-17T19:32:25+01:00"
+      "changedAt": "2021-11-07T18:59:00+01:00"
     },
     {
       "id": "SC-precedes",
       "title": "SpecIF:precedes",
       "description": [
         {
-          "text": "An FMC:Actor 'precedes' an FMC:Actor.",
+          "text": "An FMC:Actor 'precedes' an FMC:Actor or an FMC:Actor 'precedes' an FMC:Event or an FMC:Event 'precedes' an FMC:Actor. The rdf:type property specifies if it is a simple precedes, a SpecIF:signals or a SpecIF:triggers.",
           "format": "plain",
           "language": "en"
         }
@@ -1969,17 +2026,32 @@
         {
           "id": "RC-Actor",
           "revision": "1.1"
+        },
+        {
+          "id": "RC-Event",
+          "revision": "1.1"
         }
       ],
       "objectClasses": [
         {
           "id": "RC-Actor",
           "revision": "1.1"
+        },
+        {
+          "id": "RC-Event",
+          "revision": "1.1"
         }
       ],
       "isHeading": false,
       "instantiation": [
-        "auto"
+        "auto",
+        "user"
+      ],
+      "propertyClasses": [
+        {
+          "id": "PC-Type",
+          "revision": "1.1"
+        }
       ],
       "changedAt": "2020-02-17T19:32:25+01:00"
     },
@@ -1988,7 +2060,7 @@
       "title": "oslc_rm:satisfies",
       "description": [
         {
-          "text": "Statement: Model-Element satisfies Requirement",
+          "text": "Statement: Model element satisfies requirement.",
           "format": "plain",
           "language": "en"
         }
@@ -2026,7 +2098,7 @@
       "title": "SpecIF:allocates",
       "description": [
         {
-          "text": "Statement: Model-Element is allocated to Model-Element. The semantics is equal to the Allocation in SysML or the deployment relation in UML.",
+          "text": "Statement: Model element is allocated to model element. The semantics are equal to allocation in SysML or deployment relation in UML.",
           "format": "plain",
           "language": "en"
         }
@@ -2066,6 +2138,40 @@
         "user"
       ],
       "changedAt": "2021-03-30T08:59:00+02:00"
+    },
+    {
+      "id": "SC-implements",
+      "title": "SpecIF:implements",
+      "description": [
+        {
+          "text": "A FMC:Actor or FMC:State 'implements' a SpecIF:Feature.",
+          "format": "plain",
+          "language": "en"
+        }
+      ],
+      "revision": "1.1",
+      "replaces": [],
+      "subjectClasses": [
+        {
+          "id": "RC-Actor",
+          "revision": "1.1"
+        },
+        {
+          "id": "RC-State",
+          "revision": "1.1"
+        }
+      ],
+      "objectClasses": [
+        {
+          "id": "RC-Feature",
+          "revision": "1.1"
+        }
+      ],
+      "isHeading": false,
+      "instantiation": [
+        "user"
+      ],
+      "changedAt": "2021-11-03T07:59:00+01:00"
     },
     {
       "id": "SC-isAssociatedWith",
@@ -2119,6 +2225,37 @@
         }
       ],
       "changedAt": "2021-11-01T07:59:00+01:00"
+    },
+    {
+      "id": "SC-isSpecializationOf",
+      "title": "SpecIF:isSpecializationOf",
+      "description": [
+        {
+          "text": "A term is a specialization of another, such as 'Passenger Car' and 'Vehicle'.",
+          "format": "plain",
+          "language": "en"
+        }
+      ],
+      "revision": "1.0",
+      "replaces": [],
+      "subjectClasses": [
+        {
+          "id": "RC-ResourceTerm",
+          "revision": "1.1"
+        }
+      ],
+      "objectClasses": [
+        {
+          "id": "RC-ResourceTerm",
+          "revision": "1.1"
+        }
+      ],
+      "isHeading": false,
+      "instantiation": [
+        "user"
+      ],
+      "changedAt": "2018-03-21T18:06:20+01:00",
+      "changedBy": "od"
     }
   ],
   "resources": [],

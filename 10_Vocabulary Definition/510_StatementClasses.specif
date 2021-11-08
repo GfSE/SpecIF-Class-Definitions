@@ -135,33 +135,7 @@
                     "revision": "1.1"
                 }
             ]
-        },
-        {
-            "id": "SC-isSpecializationOf",
-            "title": "SpecIF:isSpecializationOf",
-            "description": [
-                {
-                    "text": "A term is a specialization of another, such as 'Passenger Car' and 'Vehicle'."
-                }
-            ],
-            "instantiation": [ "user" ],
-            "revision": "1.0",
-            "replaces": [],
-            "changedAt": "2018-03-21T18:06:20+01:00",
-            "changedBy": "od",
-            "subjectClasses": [
-                {
-                    "id": "RC-ResourceTerm",
-                    "revision": "1.1"
-                }
-            ],
-            "objectClasses": [
-                {
-                    "id": "RC-ResourceTerm",
-                    "revision": "1.1"
-                }
-            ]
-        }
+        }        
     ],
     "resources": [],
     "statements": [],

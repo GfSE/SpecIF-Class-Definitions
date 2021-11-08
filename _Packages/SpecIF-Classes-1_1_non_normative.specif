@@ -10,7 +10,7 @@
   ],
   "isExtension": false,
   "generator": "SpecIFicator Vocabulary Generator",
-  "createdAt": "2021-11-01T17:01:34.3040694+01:00",
+  "createdAt": "2021-11-08T22:26:05.3688947+01:00",
   "dataTypes": [
     {
       "id": "DT-SupplierStatus",
@@ -939,7 +939,7 @@
       "title": "VDA:Feature",
       "description": [
         {
-          "text": "A 'VDA:Feature' is a Feature with automotiev specific properties.",
+          "text": "A 'VDA:Feature' is a Feature with automotive specific properties.",
           "format": "plain",
           "language": "en"
         }
@@ -1185,7 +1185,7 @@
     },
     {
       "id": "RC-ResourceTerm",
-      "title": "SpecIF:ResourceTerm",
+      "title": "SpecIF:TermResourceClass",
       "description": [
         {
           "text": "A term for resources (objects, entities) belonging to the SpecIF vocabulary",
@@ -1222,7 +1222,7 @@
     },
     {
       "id": "RC-PredicateTerm",
-      "title": "SpecIF:PredicateTerm",
+      "title": "SpecIF:TermStatementClass",
       "description": [
         {
           "text": "A term for statements (relations) belonging to the SpecIF vocabulary",
@@ -1258,7 +1258,7 @@
       "changedAt": "2021-06-27T15:47:24+02:00"
     },
     {
-      "id": "RC-PropertyTerm",
+      "id": "RC-TermProperty",
       "title": "SpecIF:PropertyTerm",
       "description": [
         {
@@ -1296,7 +1296,7 @@
     },
     {
       "id": "RC-ValueTerm",
-      "title": "SpecIF:ValueTerm",
+      "title": "SpecIF:TermPropertyValue",
       "description": [
         {
           "text": "A term for property values belonging to the SpecIF vocabulary",
@@ -1672,37 +1672,6 @@
       "objectClasses": [
         {
           "id": "RC-PredicateTerm",
-          "revision": "1.1"
-        }
-      ],
-      "isHeading": false,
-      "instantiation": [
-        "user"
-      ],
-      "changedAt": "2018-03-21T18:06:20+01:00",
-      "changedBy": "od"
-    },
-    {
-      "id": "SC-isSpecialisationOf",
-      "title": "SpecIF:isSpecialisationOf",
-      "description": [
-        {
-          "text": "A term is a specialization of another, such as 'Passenger Car' and 'Vehicle'.",
-          "format": "plain",
-          "language": "en"
-        }
-      ],
-      "revision": "1.0",
-      "replaces": [],
-      "subjectClasses": [
-        {
-          "id": "RC-ResourceTerm",
-          "revision": "1.1"
-        }
-      ],
-      "objectClasses": [
-        {
-          "id": "RC-ResourceTerm",
           "revision": "1.1"
         }
       ],
