@@ -4,7 +4,7 @@
   "$schema": "https://specif.de/v1.0/schema.json",
   "generator": "SpecIF Editor",
   "generatorVersion": "1.0.v",
-  "createdAt": "2021-11-07T19:26:35.441Z",
+  "createdAt": "2021-11-08T00:04:01.463Z",
   "description": "The SpecIF Vocabulary (or Glossary) collects terms used in the domain of systems engineering and requirements management. Agreed-upon terms help both collaborators to communicate more clearly and systems to match data fields automatically.",
   "rights": {
     "title": "Creative Commons 4.0 CC BY-SA",
@@ -4785,9 +4785,9 @@
     },
     {
       "id": "R-OZvSiGmgwEIwM8pxT3wwzWHtjRf",
-      "changedAt": "2021-11-07T19:24:51.398Z",
+      "changedAt": "2021-11-08T00:03:17.669Z",
       "title": "SysML:isSpecialisationOf",
-      "description": "An [[FMC:Actor]] is a specialization of another [[FMC:Actor]]; similarly for [[FMC:State]] and [[FMC:Event]].",
+      "description": "An FMC:Actor is a specialization of another FMC:Actor; similarly for FMC:State and FMC:Event.",
       "revision": "36",
       "class": "RC-PredicateTerm",
       "properties": [
@@ -4797,7 +4797,7 @@
         },
         {
           "class": "PC-Description",
-          "value": "<p>An [[FMC:Actor]] is a specialization of another [[FMC:Actor]]; similarly for [[FMC:State]] and [[FMC:Event]].</p>"
+          "value": "An FMC:Actor is a specialization of another FMC:Actor; similarly for FMC:State and FMC:Event."
         },
         {
           "class": "PC-Origin",
@@ -4815,9 +4815,9 @@
     },
     {
       "id": "R-3YVqYkzhtVVysNFh8YWH9yl99HL",
-      "changedAt": "2021-11-07T19:25:45.484Z",
+      "changedAt": "2021-11-08T00:03:33.549Z",
       "title": "SysML:isGeneralisationOf",
-      "description": "An [[FMC:Actor]] is a generalization of another [[FMC:Actor]]; similarly for [[FMC:State]] and [[FMC:Event]].",
+      "description": "An FMC:Actor is a generalization of another FMC:Actor; similarly for FMC:State and FMC:Event.",
       "revision": "36",
       "class": "RC-PredicateTerm",
       "properties": [
@@ -4827,7 +4827,7 @@
         },
         {
           "class": "PC-Description",
-          "value": "<p>An [[FMC:Actor]] is a generalization of another [[FMC:Actor]]; similarly for [[FMC:State]] and [[FMC:Event]].</p>"
+          "value": "An FMC:Actor is a generalization of another FMC:Actor; similarly for FMC:State and FMC:Event."
         },
         {
           "class": "PC-Origin",
