@@ -1,15 +1,22 @@
-SpecIF class and data type definitions
-===========================
-This folder contains the data type and class definitions for the SpecIF metatypes:
+![SpecIF logo](https://github.com/GfSE/SpecIF/blob/master/logo/SpecIF_Logo_small.png?raw=true)
+
+# SpecIF class and data type definitions
+
+This repository is part of the SpecIF initiative (https://specif.de).
+It is included as submodule in the main SpecIF repository located at https://github.com/GfSE/SpecIF.
+
+If you want to support the SpecIF standardization process, join us and take a look at https://specif.de.
+
+It contains the vocabulary and the data type and class definitions for the SpecIF metatypes:
 * Primitive data types
 * Enumeration data types
 * Property classes
 * Resource classes
 * Statement classes
 
-<b>It is currently still under development and under discussion and can change fast and widely until the first release version of SpecIF!</b>
+The vocabulary and the class definitions form the semantic definitions of SpecIF.
 
-If you want to support the SpecIF standardization process, join us and take a look at https://specif.de.
+<b>It is currently still under development. Have a look at the table below for release status.</b>
 
 ## Domains
 
@@ -22,12 +29,12 @@ The following list shows the currently identified domains and their IDs:
 
 |Domain ID|Domain|Description|Release status|
 |---------|-|-|-|
-|01|Base definitions|Common definitions relevant for all domains (e.g. primitive data types)|Unreleased|
-|02|Requirements Engineering|Classical requirements engineering following the IREB definitions|Unreleased|
-|03|FMC modeling|SpecIF mapping for the Fundamental Modeling Concepts appoach|Unreleased|
+|01|Base definitions|Common definitions relevant for all domains (e.g. primitive data types)|Released in 1.1|
+|02|Requirements Engineering|Classical requirements engineering following the IREB definitions|Released in 1.1|
+|03|Model Integration|SpecIF mapping for model integration based on the Fundamental Modeling Concepts approach|Released in 1.1|
 |04|Automotive Requirements Engineering|Automotive-specific requirements engineering extensions (VDA)|Unreleased|
 |05|Agile Requirements Engineering|Requirements engineering for agile development (e.g. epics and user stories)|Unreleased|
-|06|UML-SpecIF mapping|Extensions to map UML (Unified Modeling Lanaguage) models to SpecIF|Unreleased|
+|06|UML-SpecIF mapping|Extensions to map UML (Unified Modeling Lanaguage) models to SpecIF|Deprecated. Use Model Integration types.|
 |07|Issue Management|Issue and Task management|Unreleased|
 |08|BOM|Bill of materials|Unreleased|
 |09|Variant Management|Feature model-based variant management|Unreleased|
@@ -43,7 +50,7 @@ For the discussion process the metadata files have a special naming schema with 
 
 This makes it possible to define a metatype by a set of files with the same first digit describing the class definition kind and the next digits referencing the domain.
 
-<i>Example:</i> The files starting with `101_` is teh definition of primitive data types for the domain 01-Base definitions. 
+<i>Example:</i> The files starting with `101_` is the definition of primitive data types for the domain 01-Base definitions. 
 The superset of all files starting with the same digit are building the complete specification for one metatype.
 
 ## Current file naming schema
@@ -60,8 +67,14 @@ Currently the following digits are assigned with the SpecIF metatypes. It is pos
 ## The folder `_Packages`
 
 The folder packages contains merges of class definitions to one single SpecIF file. 
-In the class definitions the data types and class definitions are seperated into single files. 
-To have all rlevant data together in one SpecIF file, the _Packages folder contains SpecIF files, that are generated from the class definition files.
+In the class definitions the data types and class definitions are separated into single files. 
+To have all relevant data together in one SpecIF file, the _Packages folder contains SpecIF files, that are generated from the class definition files.
+
+## The folder `vocabulary`
+
+The folder vocabulary contains the SpecIF vocabulary defining a set of terms used for SpecIF.
+
+<b>The vocabulary is currently only available in SpecIF 1.0 JSON-format. We work to provide it as soon as possible using the SpecIF schema format 1.1.</b> 
 
 ## What about the file `Empty.specif` ?
 
