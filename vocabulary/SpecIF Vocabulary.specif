@@ -156,7 +156,7 @@
   ],
   "resourceClasses": [
     {
-      "id": "RC-Heading",
+      "id": "RC-Folder",
       "changedAt": "2017-06-10T15:47:24+02:00",
       "title": "SpecIF:Heading",
       "description": "Object type for folders",
@@ -172,7 +172,7 @@
       "isHeading": true
     },
     {
-      "id": "RC-ResourceTerm",
+      "id": "RC-TermResourceClass",
       "changedAt": "2017-06-10T15:47:24+02:00",
       "title": "SpecIF:TermResourceClass",
       "description": "A term for resources belonging to the SpecIF vocabulary",
@@ -190,7 +190,7 @@
       ]
     },
     {
-      "id": "RC-PredicateTerm",
+      "id": "RC-TermStatementClass",
       "changedAt": "2017-06-10T15:47:24+02:00",
       "title": "SpecIF:TermStatementClass",
       "description": "A term for statements belonging to the SpecIF vocabulary",
@@ -208,10 +208,10 @@
       ]
     },
     {
-      "id": "RC-PropertyTerm",
+      "id": "RC-TermPropertyClass",
       "changedAt": "2017-06-10T15:47:24+02:00",
-      "title": "SpecIF:TermProperty",
-      "description": "A term for attributes belonging to the SpecIF vocabulary",
+      "title": "SpecIF:TermPropertyClass",
+      "description": "A term for properties belonging to the SpecIF vocabulary",
       "revision": "1",
       "instantiation": [
         "auto",
@@ -226,7 +226,7 @@
       ]
     },
     {
-      "id": "RC-ValueTerm",
+      "id": "RC-TermPropertyValue",
       "changedAt": "2018-02-05T00:29:45+01:00",
       "title": "SpecIF:TermPropertyValue",
       "description": "A term for property values belonging to the SpecIF vocabulary",
@@ -279,10 +279,10 @@
         "user"
       ],
       "subjectClasses": [
-        "RC-ResourceTerm"
+        "RC-TermResourceClass"
       ],
       "objectClasses": [
-        "RC-ResourceTerm"
+        "RC-TermResourceClass"
       ]
     },
     {
@@ -295,10 +295,10 @@
         "user"
       ],
       "subjectClasses": [
-        "RC-PredicateTerm"
+        "RC-TermStatementClass"
       ],
       "objectClasses": [
-        "RC-PredicateTerm"
+        "RC-TermStatementClass"
       ]
     },
     {
@@ -311,11 +311,11 @@
         "user"
       ],
       "subjectClasses": [
-        "RC-ResourceTerm",
-        "RC-PredicateTerm"
+        "RC-TermResourceClass",
+        "RC-TermStatementClass"
       ],
       "objectClasses": [
-        "RC-PredicateTerm"
+        "RC-TermStatementClass"
       ]
     },
     {
@@ -328,11 +328,11 @@
         "user"
       ],
       "subjectClasses": [
-        "RC-ResourceTerm",
-        "RC-PredicateTerm"
+        "RC-TermResourceClass",
+        "RC-TermStatementClass"
       ],
       "objectClasses": [
-        "RC-PredicateTerm"
+        "RC-TermStatementClass"
       ]
     },
     {
@@ -345,10 +345,10 @@
         "user"
       ],
       "subjectClasses": [
-        "RC-PropertyTerm"
+        "RC-TermPropertyClass"
       ],
       "objectClasses": [
-        "RC-PropertyTerm"
+        "RC-TermPropertyClass"
       ]
     },
     {
@@ -361,10 +361,10 @@
         "user"
       ],
       "subjectClasses": [
-        "RC-ValueTerm"
+        "RC-TermPropertyValue"
       ],
       "objectClasses": [
-        "RC-ValueTerm"
+        "RC-TermPropertyValue"
       ]
     },
     {
@@ -378,10 +378,10 @@
         "user"
       ],
       "subjectClasses": [
-        "RC-PredicateTerm"
+        "RC-TermStatementClass"
       ],
       "objectClasses": [
-        "RC-PredicateTerm"
+        "RC-TermStatementClass"
       ]
     },
     {
@@ -394,10 +394,10 @@
         "user"
       ],
       "subjectClasses": [
-        "RC-ValueTerm"
+        "RC-TermPropertyValue"
       ],
       "objectClasses": [
-        "RC-ValueTerm"
+        "RC-TermPropertyValue"
       ]
     },
     {
@@ -410,10 +410,10 @@
         "user"
       ],
       "subjectClasses": [
-        "RC-PropertyTerm"
+        "RC-TermPropertyClass"
       ],
       "objectClasses": [
-        "RC-ValueTerm"
+        "RC-TermPropertyValue"
       ]
     },
     {
@@ -427,10 +427,10 @@
         "user"
       ],
       "subjectClasses": [
-        "RC-ResourceTerm"
+        "RC-TermResourceClass"
       ],
       "objectClasses": [
-        "RC-ResourceTerm"
+        "RC-TermResourceClass"
       ]
     },
     {
@@ -444,10 +444,10 @@
         "user"
       ],
       "subjectClasses": [
-        "RC-PredicateTerm"
+        "RC-TermStatementClass"
       ],
       "objectClasses": [
-        "RC-PredicateTerm"
+        "RC-TermStatementClass"
       ]
     },
     {
@@ -480,16 +480,70 @@
       ]
     },
     {
-      "id": "F-Property_Values",
-      "changedAt": "2021-10-12T12:38:51.268Z",
-      "title": "Value Terms",
-      "description": "These are terms for certain enumerated property values. Not only the property titles, but also any enumerated value must be mapped between different systems or domains; therefore using defined terms is beneficial. Of course, like any other vocabulary term, any term used as property value for transmission or storage can be translated for display.This is still experimental. Please let us know what you think: Dr. Oskar von Dungern.",
-      "revision": "199",
-      "class": "RC-Heading",
+      "id": "F-Resource_Class_Terms",
+      "changedAt": "2021-10-12T12:37:46.567Z",
+      "title": "Resource Class Terms",
+      "description": "A resource represents an artefact, e.g. a model element or a requirement. The terms listed in this chapter may be used to distinguish different classes (types) of artefacts constituting a system specification. A resource may serve as subject or as object in a subject-predicate-object statement. Each resource class may define an individual set of properties for carrying the information 'payload'.A resource class corresponds to a 'SPEC-OBJECT-TYPE' and a resource is a 'SPEC-OBJECT' in the Requirements Interchange Format (ReqIF). In ArchiMate® 3.0, a resource is an Element.",
+      "revision": "201",
+      "class": "RC-Folder",
       "properties": [
         {
           "class": "PC-Name",
-          "value": "Value Terms"
+          "value": "Resource Class Terms"
+        },
+        {
+          "class": "PC-Description",
+          "value": "<p>A resource represents an artefact, e.g. a model element or a requirement. The terms listed in this chapter may be used to distinguish different classes (types) of artefacts constituting a system specification. A resource may serve as subject or as object in a subject-predicate-object statement. Each resource class may define an individual set of properties for carrying the information 'payload'.</p><p>A resource class corresponds to a 'SPEC-OBJECT-TYPE' and a resource is a 'SPEC-OBJECT' in the Requirements Interchange Format (ReqIF). In ArchiMate® 3.0, a resource is an <a href=\"http://pubs.opengroup.org/architecture/archimate3-doc/chap04.html\"><em>Element</em></a>.</p>"
+        }
+      ]
+    },
+    {
+      "id": "F-Statement_Class_Terms",
+      "changedAt": "2021-10-12T12:38:13.480Z",
+      "title": "Statement Class Terms",
+      "description": "A statement represents a logic affinity or association between two resources, i.e. system specification artefacts. The terms listed in this chapter may be used as predicates to distinguish different classes (types) of statements. Each statement class may define an individual set of properties for carrying the information 'payload'.In SpecIF, a statement is first order predicate logic. For each predicate (statement class), a list of eligible resource classes may be defined for subjects and objects, respectively. For example, the predicate [[oslc_rm:satisfies]] is usually confined to [[FMC:Actor]] and [[FMC:State]] as subject and [[IREB:Requirement]] as object.A statement consisting of subject-predicate-object (where a resource may serve as subject or object) can be directly mapped to a ReqIF relation, a RDF triple in OSLC or 'linked data' in general.A statement class corresponds to a 'SPEC-RELATION-TYPE' and a statement is a 'SPEC-RELATION' in the Requirements Interchange Format (ReqIF). In ArchiMate® 3.0, a statement is a Relationship.",
+      "revision": "200",
+      "class": "RC-Folder",
+      "properties": [
+        {
+          "class": "PC-Name",
+          "value": "Statement Class Terms"
+        },
+        {
+          "class": "PC-Description",
+          "value": "<p>A statement represents a logic affinity or association between two resources, i.e. system specification artefacts. The terms listed in this chapter may be used as predicates to distinguish different classes (types) of statements. Each statement class may define an individual set of properties for carrying the information 'payload'.</p><p>In SpecIF, a statement is first order predicate logic. For each predicate (statement class), a list of eligible resource classes may be defined for subjects and objects, respectively. For example, the predicate [[oslc_rm:satisfies]] is usually confined to [[FMC:Actor]] and [[FMC:State]] as subject and [[IREB:Requirement]] as object.</p><p>A statement consisting of subject-predicate-object (where a resource may serve as subject or object) can be directly mapped to a ReqIF relation, a RDF triple in OSLC or 'linked data' in general.</p><p>A statement class corresponds to a 'SPEC-RELATION-TYPE' and a statement is a 'SPEC-RELATION' in the Requirements Interchange Format (ReqIF). In ArchiMate® 3.0, a statement is a <a href=\"http://pubs.opengroup.org/architecture/archimate3-doc/chap05.html\"><em>Relationship</em></a>.</p>"
+        }
+      ]
+    },
+    {
+      "id": "F-Property_Class_Terms",
+      "changedAt": "2021-10-12T12:38:25.138Z",
+      "title": "Property Class Terms",
+      "description": "A property carries information 'payload' and may be applied to resources or statements. The SpecIF terms listed in this chapter are used as property name/title, whereas the information is provided as 'value'. Usually a combination of complimentary properties is used per resource or statement class.A property corresponds to an 'ATTRIBUTE-DEFINITION' resp. 'ATTRIBUTE-VALUE' in the Requirements Interchange Format (ReqIF).",
+      "revision": "169",
+      "class": "RC-Folder",
+      "properties": [
+        {
+          "class": "PC-Name",
+          "value": "Property Class Terms"
+        },
+        {
+          "class": "PC-Description",
+          "value": "<p>A property carries information 'payload' and may be applied to resources or statements. The SpecIF terms listed in this chapter are used as property name/title, whereas the information is provided as 'value'. Usually a combination of complimentary properties is used per resource or statement class.</p><p>A property corresponds to an 'ATTRIBUTE-DEFINITION' resp. 'ATTRIBUTE-VALUE' in the Requirements Interchange Format (ReqIF).</p>"
+        }
+      ]
+    },
+    {
+     "id": "F-Property_Values_Terms",
+      "changedAt": "2021-10-12T12:38:51.268Z",
+      "title": "Property Value Terms",
+      "description": "These are terms for certain enumerated property values. Not only the property titles, but also any enumerated value must be mapped between different systems or domains; therefore using defined terms is beneficial. Of course, like any other vocabulary term, any term used as property value for transmission or storage can be translated for display.This is still experimental. Please let us know what you think: Dr. Oskar von Dungern.",
+      "revision": "199",
+      "class": "RC-Folder",
+      "properties": [
+        {
+          "class": "PC-Name",
+          "value": "Property Value Terms"
         },
         {
           "class": "PC-Description",
@@ -503,7 +557,7 @@
       "title": "bpmn:timer",
       "revision": "160",
       "changedBy": "od",
-      "class": "RC-ValueTerm",
+      "class": "RC-TermPropertyValue",
       "properties": [
         {
           "class": "PC-Name",
@@ -525,7 +579,7 @@
       "title": "bpmn:join",
       "revision": "159",
       "changedBy": "od",
-      "class": "RC-ValueTerm",
+      "class": "RC-TermPropertyValue",
       "properties": [
         {
           "class": "PC-Name",
@@ -547,7 +601,7 @@
       "title": "bpmn:processStep",
       "revision": "175",
       "changedBy": "od",
-      "class": "RC-ValueTerm",
+      "class": "RC-TermPropertyValue",
       "properties": [
         {
           "class": "PC-Name",
@@ -569,7 +623,7 @@
       "title": "bpmn:endEvent",
       "revision": "187",
       "changedBy": "od",
-      "class": "RC-ValueTerm",
+      "class": "RC-TermPropertyValue",
       "properties": [
         {
           "class": "PC-Name",
@@ -595,7 +649,7 @@
       "title": "bpmn:intermediateEvent",
       "revision": "185",
       "changedBy": "od",
-      "class": "RC-ValueTerm",
+      "class": "RC-TermPropertyValue",
       "properties": [
         {
           "class": "PC-Name",
@@ -621,7 +675,7 @@
       "title": "bpmn:startEvent",
       "revision": "186",
       "changedBy": "od",
-      "class": "RC-ValueTerm",
+      "class": "RC-TermPropertyValue",
       "properties": [
         {
           "class": "PC-Name",
@@ -647,7 +701,7 @@
       "title": "SpecIF:UserRole",
       "revision": "174",
       "changedBy": "od",
-      "class": "RC-ValueTerm",
+      "class": "RC-TermPropertyValue",
       "properties": [
         {
           "class": "PC-Name",
@@ -669,7 +723,7 @@
       "title": "IREB:Stakeholder",
       "description": "A person or organization that has a (direct or indirect) influence on a system’s requirements. Indirect influence also includes situations where a person or organization is impacted by the system.This is a subclass of [[FMC:Actor]], more precisely a value of it's property [[dcterms:type]].",
       "revision": "168",
-      "class": "RC-ValueTerm",
+      "class": "RC-TermPropertyValue",
       "properties": [
         {
           "class": "PC-Name",
@@ -694,7 +748,7 @@
       "changedAt": "2020-11-08T16:14:07.376Z",
       "title": "IREB:RequirementTypeConstraint",
       "description": "A [[IREB:Requirement]] that limits the solution space beyond what is necessary for meeting the given functional requirements and quality requirements.",
-      "class": "RC-ValueTerm",
+      "class": "RC-TermPropertyValue",
       "properties": [
         {
           "class": "PC-Name",
@@ -719,7 +773,7 @@
       "changedAt": "2020-11-08T16:11:44.933Z",
       "title": "IREB:RequirementTypeQuality",
       "description": "A [[IREB:Requirement]] that pertains to a quality concern that is not covered by functional requirements.",
-      "class": "RC-ValueTerm",
+      "class": "RC-TermPropertyValue",
       "properties": [
         {
           "class": "PC-Name",
@@ -744,7 +798,7 @@
       "changedAt": "2020-11-08T16:09:07.057Z",
       "title": "IREB:RequirementTypeFunction",
       "description": "A requirement concerning a result of behavior that shall be provided by a functionof a system(or of a component or service).",
-      "class": "RC-ValueTerm",
+      "class": "RC-TermPropertyValue",
       "properties": [
         {
           "class": "PC-Name",
@@ -769,7 +823,7 @@
       "changedAt": "2020-11-08T16:13:57.182Z",
       "title": "IREB:Constraint",
       "description": "A [[IREB:Requirement]] that limits the solution space beyond what is necessary for meeting the given functional requirements and quality requirements.",
-      "class": "RC-ValueTerm",
+      "class": "RC-TermPropertyValue",
       "properties": [
         {
           "class": "PC-Name",
@@ -794,7 +848,7 @@
       "changedAt": "2020-11-08T16:11:01.890Z",
       "title": "IREB:QualityRequirement",
       "description": "A [[IREB:Requirement]] that pertains to a quality concern that is not covered by functional requirements.",
-      "class": "RC-ValueTerm",
+      "class": "RC-TermPropertyValue",
       "properties": [
         {
           "class": "PC-Name",
@@ -819,7 +873,7 @@
       "changedAt": "2020-11-08T16:12:06.448Z",
       "title": "IREB:FunctionalRequirement",
       "description": "A [[IREB:Requirement]] concerning a result of behavior that shall be provided by a functionof a system(or of a component or service).",
-      "class": "RC-ValueTerm",
+      "class": "RC-TermPropertyValue",
       "properties": [
         {
           "class": "PC-Name",
@@ -844,7 +898,7 @@
       "changedAt": "2020-11-08T16:21:51.926Z",
       "title": "SpecIF:LifecycleStatusWithdrawn",
       "description": "A lifecycle status of a development artefact.",
-      "class": "RC-ValueTerm",
+      "class": "RC-TermPropertyValue",
       "properties": [
         {
           "class": "PC-Name",
@@ -865,7 +919,7 @@
       "changedAt": "2020-11-08T16:21:37.422Z",
       "title": "SpecIF:LifecycleStatusDeprecated",
       "description": "A lifecycle status of a development artefact.",
-      "class": "RC-ValueTerm",
+      "class": "RC-TermPropertyValue",
       "properties": [
         {
           "class": "PC-Name",
@@ -886,7 +940,7 @@
       "changedAt": "2020-11-08T16:21:25.914Z",
       "title": "SpecIF:LifecycleStatusReleased",
       "description": "A lifecycle status of a development artefact.",
-      "class": "RC-ValueTerm",
+      "class": "RC-TermPropertyValue",
       "properties": [
         {
           "class": "PC-Name",
@@ -907,7 +961,7 @@
       "changedAt": "2020-11-08T16:21:16.994Z",
       "title": "SpecIF:LifecycleStatusValidated",
       "description": "A lifecycle status of a development artefact.",
-      "class": "RC-ValueTerm",
+      "class": "RC-TermPropertyValue",
       "properties": [
         {
           "class": "PC-Name",
@@ -928,7 +982,7 @@
       "changedAt": "2020-11-08T16:21:03.920Z",
       "title": "SpecIF:LifecycleStatusDone",
       "description": "A lifecycle status of a development artefact. Meets the requirements of the \"Definition of Done\" of the agile development method.",
-      "class": "RC-ValueTerm",
+      "class": "RC-TermPropertyValue",
       "properties": [
         {
           "class": "PC-Name",
@@ -949,7 +1003,7 @@
       "changedAt": "2020-11-08T16:20:52.954Z",
       "title": "SpecIF:LifecycleStatusReady",
       "description": "A lifecycle status of a development artefact. Meets the requirements of the \"Definition of Ready\" of the agile development method.",
-      "class": "RC-ValueTerm",
+      "class": "RC-TermPropertyValue",
       "properties": [
         {
           "class": "PC-Name",
@@ -970,7 +1024,7 @@
       "changedAt": "2020-11-08T16:20:40.854Z",
       "title": "SpecIF:LifecycleStatusApproved",
       "description": "A lifecycle status of a development artefact.",
-      "class": "RC-ValueTerm",
+      "class": "RC-TermPropertyValue",
       "properties": [
         {
           "class": "PC-Name",
@@ -991,7 +1045,7 @@
       "changedAt": "2020-11-08T16:20:30.222Z",
       "title": "SpecIF:LifecycleStatusSubmitted",
       "description": "A lifecycle status of a development artefact.",
-      "class": "RC-ValueTerm",
+      "class": "RC-TermPropertyValue",
       "properties": [
         {
           "class": "PC-Name",
@@ -1012,7 +1066,7 @@
       "changedAt": "2020-11-08T16:20:09.588Z",
       "title": "SpecIF:LifecycleStatusDrafted",
       "description": "A lifecycle status of a development artefact.",
-      "class": "RC-ValueTerm",
+      "class": "RC-TermPropertyValue",
       "properties": [
         {
           "class": "PC-Name",
@@ -1033,7 +1087,7 @@
       "changedAt": "2020-11-08T16:20:18.171Z",
       "title": "SpecIF:LifecycleStatusInitial",
       "description": "A lifecycle status of a development artefact.",
-      "class": "RC-ValueTerm",
+      "class": "RC-TermPropertyValue",
       "properties": [
         {
           "class": "PC-Name",
@@ -1054,7 +1108,7 @@
       "changedAt": "2020-11-08T16:34:16.573Z",
       "title": "SpecIF:LifecycleStatusRejected",
       "description": "A lifecycle status of a development artefact.",
-      "class": "RC-ValueTerm",
+      "class": "RC-TermPropertyValue",
       "properties": [
         {
           "class": "PC-Name",
@@ -1076,7 +1130,7 @@
       "title": "SpecIF:sizeXS",
       "revision": "106",
       "changedBy": "od",
-      "class": "RC-ValueTerm",
+      "class": "RC-TermPropertyValue",
       "properties": [
         {
           "class": "PC-Name",
@@ -1102,7 +1156,7 @@
       "title": "SpecIF:sizeS",
       "revision": "105",
       "changedBy": "od",
-      "class": "RC-ValueTerm",
+      "class": "RC-TermPropertyValue",
       "properties": [
         {
           "class": "PC-Name",
@@ -1128,7 +1182,7 @@
       "title": "SpecIF:sizeM",
       "revision": "105",
       "changedBy": "od",
-      "class": "RC-ValueTerm",
+      "class": "RC-TermPropertyValue",
       "properties": [
         {
           "class": "PC-Name",
@@ -1154,7 +1208,7 @@
       "title": "SpecIF:sizeL",
       "revision": "104",
       "changedBy": "od",
-      "class": "RC-ValueTerm",
+      "class": "RC-TermPropertyValue",
       "properties": [
         {
           "class": "PC-Name",
@@ -1180,7 +1234,7 @@
       "title": "SpecIF:sizeXL",
       "revision": "103",
       "changedBy": "od",
-      "class": "RC-ValueTerm",
+      "class": "RC-TermPropertyValue",
       "properties": [
         {
           "class": "PC-Name",
@@ -1206,7 +1260,7 @@
       "title": "SpecIF:priorityLow",
       "description": "A value for property [[SpecIF:Priority]].",
       "revision": "102",
-      "class": "RC-ValueTerm",
+      "class": "RC-TermPropertyValue",
       "properties": [
         {
           "class": "PC-Name",
@@ -1236,7 +1290,7 @@
       "title": "SpecIF:priorityRatherLow",
       "description": "A value for property [[SpecIF:Priority]].",
       "revision": "101",
-      "class": "RC-ValueTerm",
+      "class": "RC-TermPropertyValue",
       "properties": [
         {
           "class": "PC-Name",
@@ -1266,7 +1320,7 @@
       "title": "SpecIF:priorityMedium",
       "description": "A value for property [[SpecIF:Priority]].",
       "revision": "100",
-      "class": "RC-ValueTerm",
+      "class": "RC-TermPropertyValue",
       "properties": [
         {
           "class": "PC-Name",
@@ -1296,7 +1350,7 @@
       "title": "SpecIF:priorityRatherHigh",
       "description": "A value for property [[SpecIF:Priority]].",
       "revision": "99",
-      "class": "RC-ValueTerm",
+      "class": "RC-TermPropertyValue",
       "properties": [
         {
           "class": "PC-Name",
@@ -1326,7 +1380,7 @@
       "title": "SpecIF:priorityHigh",
       "description": "A value for property [[SpecIF:Priority]].",
       "revision": "98",
-      "class": "RC-ValueTerm",
+      "class": "RC-TermPropertyValue",
       "properties": [
         {
           "class": "PC-Name",
@@ -1351,30 +1405,12 @@
       ]
     },
     {
-      "id": "F-Property_Names",
-      "changedAt": "2021-10-12T12:38:25.138Z",
-      "title": "Property Terms",
-      "description": "A property carries information 'payload' and may be applied to resources or statements. The SpecIF terms listed in this chapter are used as property name/title, whereas the information is provided as 'value'. Usually a combination of complimentary properties is used per resource or statement class.A property corresponds to an 'ATTRIBUTE-DEFINITION' resp. 'ATTRIBUTE-VALUE' in the Requirements Interchange Format (ReqIF).",
-      "revision": "169",
-      "class": "RC-Heading",
-      "properties": [
-        {
-          "class": "PC-Name",
-          "value": "Property Terms"
-        },
-        {
-          "class": "PC-Description",
-          "value": "<p>A property carries information 'payload' and may be applied to resources or statements. The SpecIF terms listed in this chapter are used as property name/title, whereas the information is provided as 'value'. Usually a combination of complimentary properties is used per resource or statement class.</p><p>A property corresponds to an 'ATTRIBUTE-DEFINITION' resp. 'ATTRIBUTE-VALUE' in the Requirements Interchange Format (ReqIF).</p>"
-        }
-      ]
-    },
-    {
       "id": "R-852227375",
       "changedAt": "2018-02-17T14:52:05+01:00",
       "title": "HIS:SupplierStatus",
       "revision": "97",
       "changedBy": "od",
-      "class": "RC-PropertyTerm",
+      "class": "RC-TermPropertyClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -1396,7 +1432,7 @@
       "title": "HIS:SupplierComment",
       "revision": "96",
       "changedBy": "od",
-      "class": "RC-PropertyTerm",
+      "class": "RC-TermPropertyClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -1418,7 +1454,7 @@
       "title": "HIS:OemStatus",
       "revision": "95",
       "changedBy": "od",
-      "class": "RC-PropertyTerm",
+      "class": "RC-TermPropertyClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -1440,7 +1476,7 @@
       "title": "HIS:OemComment",
       "revision": "94",
       "changedBy": "od",
-      "class": "RC-PropertyTerm",
+      "class": "RC-TermPropertyClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -1462,7 +1498,7 @@
       "title": "SpecIF:OrdinalMark",
       "revision": "148",
       "changedBy": "od",
-      "class": "RC-PropertyTerm",
+      "class": "RC-TermPropertyClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -1488,7 +1524,7 @@
       "title": "SpecIF:FitCriteria",
       "revision": "93",
       "changedBy": "od",
-      "class": "RC-PropertyTerm",
+      "class": "RC-TermPropertyClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -1510,7 +1546,7 @@
       "title": "SpecIF:Target",
       "revision": "92",
       "changedBy": "od",
-      "class": "RC-PropertyTerm",
+      "class": "RC-TermPropertyClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -1536,7 +1572,7 @@
       "title": "SpecIF:Object",
       "revision": "91",
       "changedBy": "od",
-      "class": "RC-PropertyTerm",
+      "class": "RC-TermPropertyClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -1562,7 +1598,7 @@
       "title": "SpecIF:Source",
       "revision": "90",
       "changedBy": "od",
-      "class": "RC-PropertyTerm",
+      "class": "RC-TermPropertyClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -1588,7 +1624,7 @@
       "title": "SpecIF:Subject",
       "revision": "89",
       "changedBy": "od",
-      "class": "RC-PropertyTerm",
+      "class": "RC-TermPropertyClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -1614,7 +1650,7 @@
       "title": "SpecIF:Origin",
       "revision": "88",
       "changedBy": "od",
-      "class": "RC-PropertyTerm",
+      "class": "RC-TermPropertyClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -1640,7 +1676,7 @@
       "title": "SpecIF:Creation",
       "revision": "87",
       "changedBy": "od",
-      "class": "RC-PropertyTerm",
+      "class": "RC-TermPropertyClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -1666,7 +1702,7 @@
       "title": "SpecIF:Instantiation",
       "revision": "86",
       "changedBy": "od",
-      "class": "RC-PropertyTerm",
+      "class": "RC-TermPropertyClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -1692,7 +1728,7 @@
       "title": "SpecIF:Tag",
       "revision": "85",
       "changedBy": "od",
-      "class": "RC-PropertyTerm",
+      "class": "RC-TermPropertyClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -1714,7 +1750,7 @@
       "title": "SpecIF:Icon",
       "revision": "84",
       "changedBy": "od",
-      "class": "RC-PropertyTerm",
+      "class": "RC-TermPropertyClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -1740,7 +1776,7 @@
       "title": "SpecIF:Damage",
       "revision": "83",
       "changedBy": "od",
-      "class": "RC-PropertyTerm",
+      "class": "RC-TermPropertyClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -1762,7 +1798,7 @@
       "title": "SpecIF:Benefit",
       "revision": "82",
       "changedBy": "od",
-      "class": "RC-PropertyTerm",
+      "class": "RC-TermPropertyClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -1784,7 +1820,7 @@
       "title": "SpecIF:DueDate",
       "revision": "81",
       "changedBy": "od",
-      "class": "RC-PropertyTerm",
+      "class": "RC-TermPropertyClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -1810,7 +1846,7 @@
       "title": "SpecIF:Milestone",
       "revision": "80",
       "changedBy": "od",
-      "class": "RC-PropertyTerm",
+      "class": "RC-TermPropertyClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -1836,7 +1872,7 @@
       "title": "SpecIF:Responsible",
       "revision": "79",
       "changedBy": "od",
-      "class": "RC-PropertyTerm",
+      "class": "RC-TermPropertyClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -1862,7 +1898,7 @@
       "title": "SpecIF:Priority",
       "revision": "78",
       "changedBy": "od",
-      "class": "RC-PropertyTerm",
+      "class": "RC-TermPropertyClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -1888,7 +1924,7 @@
       "title": "SpecIF:Probability",
       "revision": "77",
       "changedBy": "od",
-      "class": "RC-PropertyTerm",
+      "class": "RC-TermPropertyClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -1910,7 +1946,7 @@
       "title": "SpecIF:LifecycleStatus",
       "revision": "76",
       "changedBy": "od",
-      "class": "RC-PropertyTerm",
+      "class": "RC-TermPropertyClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -1936,7 +1972,7 @@
       "title": "SpecIF:SubClass",
       "revision": "152",
       "changedBy": "od",
-      "class": "RC-PropertyTerm",
+      "class": "RC-TermPropertyClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -1961,7 +1997,7 @@
       "changedAt": "2020-12-10T09:52:29.779Z",
       "title": "IREB:RequirementType",
       "description": "Requirements are typically sub-classified into functional requirements ([[IREB:FunctionalRequirement]]), quality requirements ([[IREB:QualityRequirement]]) and constraints ([[IREB:Constraint]]). The latter two are also called non-functional requirements.",
-      "class": "RC-PropertyTerm",
+      "class": "RC-TermPropertyClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -1988,7 +2024,7 @@
       "description": "Describes the role or sub-type of a model-element. For example, a [[FMC:Actor]] may represent a System Function, a System Component or a User Role. Similarly, in the context of process modelling, a FMC:Actor may represent a Process Step or again a User Role. So, all of these are meaningful values for a FMC:Actor's property named UML:Stereotype.",
       "revision": "152",
       "changedBy": "od",
-      "class": "RC-PropertyTerm",
+      "class": "RC-TermPropertyClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -2014,7 +2050,7 @@
       "title": "SpecIF:Stereotype",
       "revision": "152",
       "changedBy": "od",
-      "class": "RC-PropertyTerm",
+      "class": "RC-TermPropertyClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -2040,7 +2076,7 @@
       "title": "dcterms:type",
       "revision": "152",
       "changedBy": "od",
-      "class": "RC-PropertyTerm",
+      "class": "RC-TermPropertyClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -2066,7 +2102,7 @@
       "title": "SpecIF:Notation",
       "revision": "75",
       "changedBy": "od",
-      "class": "RC-PropertyTerm",
+      "class": "RC-TermPropertyClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -2092,7 +2128,7 @@
       "title": "SpecIF:Category",
       "revision": "189",
       "changedBy": "od",
-      "class": "RC-PropertyTerm",
+      "class": "RC-TermPropertyClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -2118,7 +2154,7 @@
       "title": "SpecIF:Type",
       "revision": "73",
       "changedBy": "od",
-      "class": "RC-PropertyTerm",
+      "class": "RC-TermPropertyClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -2140,7 +2176,7 @@
       "title": "oslc:instanceShape",
       "revision": "61",
       "changedBy": "od",
-      "class": "RC-PropertyTerm",
+      "class": "RC-TermPropertyClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -2162,7 +2198,7 @@
       "title": "oslc:serviceProvider",
       "revision": "60",
       "changedBy": "od",
-      "class": "RC-PropertyTerm",
+      "class": "RC-TermPropertyClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -2184,7 +2220,7 @@
       "title": "oslc:shortTitle",
       "revision": "59",
       "changedBy": "od",
-      "class": "RC-PropertyTerm",
+      "class": "RC-TermPropertyClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -2206,7 +2242,7 @@
       "title": "dcterms:rights",
       "revision": "57",
       "changedBy": "od",
-      "class": "RC-PropertyTerm",
+      "class": "RC-TermPropertyClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -2232,7 +2268,7 @@
       "title": "dcterms:rightsHolder",
       "revision": "56",
       "changedBy": "od",
-      "class": "RC-PropertyTerm",
+      "class": "RC-TermPropertyClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -2258,7 +2294,7 @@
       "title": "dcterms:contributor",
       "revision": "55",
       "changedBy": "od",
-      "class": "RC-PropertyTerm",
+      "class": "RC-TermPropertyClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -2284,7 +2320,7 @@
       "title": "SpecIF:changedAt",
       "revision": "54",
       "changedBy": "od",
-      "class": "RC-PropertyTerm",
+      "class": "RC-TermPropertyClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -2310,7 +2346,7 @@
       "title": "dcterms:modified",
       "revision": "53",
       "changedBy": "od",
-      "class": "RC-PropertyTerm",
+      "class": "RC-TermPropertyClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -2336,7 +2372,7 @@
       "title": "SpecIF:changedBy",
       "revision": "53",
       "changedBy": "od",
-      "class": "RC-PropertyTerm",
+      "class": "RC-TermPropertyClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -2362,7 +2398,7 @@
       "title": "SpecIF:createdAt",
       "revision": "52",
       "changedBy": "od",
-      "class": "RC-PropertyTerm",
+      "class": "RC-TermPropertyClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -2388,7 +2424,7 @@
       "title": "dcterms:created",
       "revision": "51",
       "changedBy": "od",
-      "class": "RC-PropertyTerm",
+      "class": "RC-TermPropertyClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -2414,7 +2450,7 @@
       "title": "SpecIF:createdBy",
       "revision": "50",
       "changedBy": "od",
-      "class": "RC-PropertyTerm",
+      "class": "RC-TermPropertyClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -2440,7 +2476,7 @@
       "title": "dcterms:creator",
       "revision": "115",
       "changedBy": "od",
-      "class": "RC-PropertyTerm",
+      "class": "RC-TermPropertyClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -2466,7 +2502,7 @@
       "title": "dcterms:subject",
       "revision": "48",
       "changedBy": "od",
-      "class": "RC-PropertyTerm",
+      "class": "RC-TermPropertyClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -2492,7 +2528,7 @@
       "title": "SpecIF:Id",
       "revision": "47",
       "changedBy": "od",
-      "class": "RC-PropertyTerm",
+      "class": "RC-TermPropertyClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -2518,7 +2554,7 @@
       "title": "dcterms:identifier",
       "revision": "46",
       "changedBy": "od",
-      "class": "RC-PropertyTerm",
+      "class": "RC-TermPropertyClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -2544,7 +2580,7 @@
       "title": "dcterms:description",
       "revision": "45",
       "changedBy": "od",
-      "class": "RC-PropertyTerm",
+      "class": "RC-TermPropertyClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -2570,7 +2606,7 @@
       "title": "dcterms:title",
       "revision": "44",
       "changedBy": "od",
-      "class": "RC-PropertyTerm",
+      "class": "RC-TermPropertyClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -2591,30 +2627,12 @@
       ]
     },
     {
-      "id": "F-Statement_Class_Names",
-      "changedAt": "2021-10-12T12:38:13.480Z",
-      "title": "Statement Class Terms",
-      "description": "A statement represents a logic affinity or association between two resources, i.e. system specification artefacts. The terms listed in this chapter may be used as predicates to distinguish different classes (types) of statements. Each statement class may define an individual set of properties for carrying the information 'payload'.In SpecIF, a statement is first order predicate logic. For each predicate (statement class), a list of eligible resource classes may be defined for subjects and objects, respectively. For example, the predicate [[oslc_rm:satisfies]] is usually confined to [[FMC:Actor]] and [[FMC:State]] as subject and [[IREB:Requirement]] as object.A statement consisting of subject-predicate-object (where a resource may serve as subject or object) can be directly mapped to a ReqIF relation, a RDF triple in OSLC or 'linked data' in general.A statement class corresponds to a 'SPEC-RELATION-TYPE' and a statement is a 'SPEC-RELATION' in the Requirements Interchange Format (ReqIF). In ArchiMate® 3.0, a statement is a Relationship.",
-      "revision": "200",
-      "class": "RC-Heading",
-      "properties": [
-        {
-          "class": "PC-Name",
-          "value": "Statement Class Terms"
-        },
-        {
-          "class": "PC-Description",
-          "value": "<p>A statement represents a logic affinity or association between two resources, i.e. system specification artefacts. The terms listed in this chapter may be used as predicates to distinguish different classes (types) of statements. Each statement class may define an individual set of properties for carrying the information 'payload'.</p><p>In SpecIF, a statement is first order predicate logic. For each predicate (statement class), a list of eligible resource classes may be defined for subjects and objects, respectively. For example, the predicate [[oslc_rm:satisfies]] is usually confined to [[FMC:Actor]] and [[FMC:State]] as subject and [[IREB:Requirement]] as object.</p><p>A statement consisting of subject-predicate-object (where a resource may serve as subject or object) can be directly mapped to a ReqIF relation, a RDF triple in OSLC or 'linked data' in general.</p><p>A statement class corresponds to a 'SPEC-RELATION-TYPE' and a statement is a 'SPEC-RELATION' in the Requirements Interchange Format (ReqIF). In ArchiMate® 3.0, a statement is a <a href=\"http://pubs.opengroup.org/architecture/archimate3-doc/chap05.html\"><em>Relationship</em></a>.</p>"
-        }
-      ]
-    },
-    {
       "id": "R-852227620",
       "changedAt": "2018-02-17T14:51:55+01:00",
       "title": "rdf:type",
       "revision": "58",
       "changedBy": "od",
-      "class": "RC-PropertyTerm",
+      "class": "RC-TermPropertyClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -2640,7 +2658,7 @@
       "title": "SpecIF:sameAs",
       "revision": "41",
       "changedBy": "od",
-      "class": "RC-PredicateTerm",
+      "class": "RC-TermStatementClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -2666,7 +2684,7 @@
       "title": "owl:sameAs",
       "revision": "40",
       "changedBy": "od",
-      "class": "RC-PredicateTerm",
+      "class": "RC-TermStatementClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -2692,7 +2710,7 @@
       "title": "SpecIF:isAntonymOf",
       "description": "According to Wikipedia, \"the term antonym (and the related antonymy) is commonly taken to be synonymous with opposite, but antonym also has other more restricted meanings. Graded (or gradable) antonyms are word pairs whose meanings are opposite and which lie on a continuous spectrum (_hot_, _cold_). Complementary antonyms are word pairs whose meanings are opposite but whose meanings do not lie on a continuous spectrum (_push_, _pull_). Relational antonyms are word pairs where opposite makes sense only in the context of the relationship between the two meanings (_teacher_, _pupil_)\".",
       "revision": "193",
-      "class": "RC-PredicateTerm",
+      "class": "RC-TermStatementClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -2718,7 +2736,7 @@
       "title": "SpecIF:isInverseOf",
       "description": "A term is the inverse of another term.For example, a system 'B' contains a component '11', thus '11' isContainedBy 'B'.",
       "revision": "193",
-      "class": "RC-PredicateTerm",
+      "class": "RC-TermStatementClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -2744,7 +2762,7 @@
       "title": "SpecIF:isSynonymOf",
       "revision": "39",
       "changedBy": "od",
-      "class": "RC-PredicateTerm",
+      "class": "RC-TermStatementClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -2770,7 +2788,7 @@
       "title": "SpecIF:mentions",
       "revision": "38",
       "changedBy": "od",
-      "class": "RC-PredicateTerm",
+      "class": "RC-TermStatementClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -2796,7 +2814,7 @@
       "title": "SpecIF:commentRefersTo",
       "revision": "38",
       "changedBy": "od",
-      "class": "RC-PredicateTerm",
+      "class": "RC-TermStatementClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -2822,7 +2840,7 @@
       "title": "SpecIF:refersTo",
       "revision": "38",
       "changedBy": "od",
-      "class": "RC-PredicateTerm",
+      "class": "RC-TermStatementClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -2848,7 +2866,7 @@
       "title": "SpecIF:inheritsFrom",
       "description": "A model-element class inherits from another. For example a data-object of class [[FMC:State]] inherits from another data-object, as shown in a UML Class Diagram).",
       "revision": "37",
-      "class": "RC-PredicateTerm",
+      "class": "RC-TermStatementClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -2874,7 +2892,7 @@
       "title": "SysML:isGeneralizationOf",
       "description": "An [[FMC:Actor]] is a generalization of another [[FMC:Actor]]; similarly for [[FMC:State]] and [[FMC:Event]].",
       "revision": "36",
-      "class": "RC-PredicateTerm",
+      "class": "RC-TermStatementClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -2904,7 +2922,7 @@
       "title": "SysML:isSpecializationOf",
       "description": "An [[FMC:Actor]] is a specialization of another [[FMC:Actor]]; similarly for [[FMC:State]] and [[FMC:Event]].",
       "revision": "36",
-      "class": "RC-PredicateTerm",
+      "class": "RC-TermStatementClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -2934,7 +2952,7 @@
       "title": "SysML:includes",
       "revision": "36",
       "changedBy": "od",
-      "class": "RC-PredicateTerm",
+      "class": "RC-TermStatementClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -2960,7 +2978,7 @@
       "title": "SysML:extends",
       "revision": "36",
       "changedBy": "od",
-      "class": "RC-PredicateTerm",
+      "class": "RC-TermStatementClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -2986,7 +3004,7 @@
       "title": "SysML:uses",
       "revision": "36",
       "changedBy": "od",
-      "class": "RC-PredicateTerm",
+      "class": "RC-TermStatementClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -3008,7 +3026,7 @@
       "title": "SysML:isAggregatedBy",
       "revision": "36",
       "changedBy": "od",
-      "class": "RC-PredicateTerm",
+      "class": "RC-TermStatementClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -3034,7 +3052,7 @@
       "title": "SysML:isComposedOf",
       "revision": "36",
       "changedBy": "od",
-      "class": "RC-PredicateTerm",
+      "class": "RC-TermStatementClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -3060,7 +3078,7 @@
       "title": "SysML:isAssociatedWith",
       "description": "A [[FMC:State]] is associated with another [[FMC:State]] (e.g. a class is associated with another class, as shown in a UML Class Diagram).",
       "revision": "36",
-      "class": "RC-PredicateTerm",
+      "class": "RC-TermStatementClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -3086,7 +3104,7 @@
       "title": "SysML:isAllocatedTo",
       "revision": "36",
       "changedBy": "od",
-      "class": "RC-PredicateTerm",
+      "class": "RC-TermStatementClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -3112,7 +3130,7 @@
       "title": "SpecIF:contradicts",
       "revision": "35",
       "changedBy": "od",
-      "class": "RC-PredicateTerm",
+      "class": "RC-TermStatementClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -3138,7 +3156,7 @@
       "title": "SpecIF:duplicates",
       "revision": "34",
       "changedBy": "od",
-      "class": "RC-PredicateTerm",
+      "class": "RC-TermStatementClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -3164,7 +3182,7 @@
       "title": "IREB:refines",
       "description": "A [[IREB:Requirement]] refines another [[IREB:Requirement]].",
       "revision": "33",
-      "class": "RC-PredicateTerm",
+      "class": "RC-TermStatementClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -3190,7 +3208,7 @@
       "title": "SysML:isDerivedFrom",
       "revision": "33",
       "changedBy": "od",
-      "class": "RC-PredicateTerm",
+      "class": "RC-TermStatementClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -3216,7 +3234,7 @@
       "title": "SysML:traces",
       "revision": "33",
       "changedBy": "od",
-      "class": "RC-PredicateTerm",
+      "class": "RC-TermStatementClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -3242,7 +3260,7 @@
       "title": "SpecIF:dependsOn",
       "revision": "32",
       "changedBy": "od",
-      "class": "RC-PredicateTerm",
+      "class": "RC-TermStatementClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -3268,7 +3286,7 @@
       "title": "SpecIF:triggers",
       "description": "A [[FMC:Event]] 'triggers' a [[FMC:Actor]].",
       "revision": "31",
-      "class": "RC-PredicateTerm",
+      "class": "RC-TermStatementClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -3298,7 +3316,7 @@
       "title": "SpecIF:signals",
       "description": "A [[FMC:Actor]] 'signals' a [[FMC:Event]].",
       "revision": "30",
-      "class": "RC-PredicateTerm",
+      "class": "RC-TermStatementClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -3328,7 +3346,7 @@
       "title": "SpecIF:precedes",
       "description": "A [[FMC:Actor]] 'precedes' a [[FMC:Actor]]; e.g. in a business process or activity flow.",
       "revision": "190",
-      "class": "RC-PredicateTerm",
+      "class": "RC-TermStatementClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -3354,7 +3372,7 @@
       "title": "SpecIF:follows",
       "revision": "29",
       "changedBy": "od",
-      "class": "RC-PredicateTerm",
+      "class": "RC-TermStatementClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -3380,7 +3398,7 @@
       "title": "FMC:modifies",
       "description": "A [[FMC:Actor]] writes _and_ reads a [[FMC:State]].",
       "revision": "28",
-      "class": "RC-PredicateTerm",
+      "class": "RC-TermStatementClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -3406,7 +3424,7 @@
       "title": "SpecIF:stores",
       "revision": "28",
       "changedBy": "od",
-      "class": "RC-PredicateTerm",
+      "class": "RC-TermStatementClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -3432,7 +3450,7 @@
       "title": "SpecIF:writes",
       "revision": "27",
       "changedBy": "od",
-      "class": "RC-PredicateTerm",
+      "class": "RC-TermStatementClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -3458,7 +3476,7 @@
       "title": "SpecIF:reads",
       "revision": "26",
       "changedBy": "od",
-      "class": "RC-PredicateTerm",
+      "class": "RC-TermStatementClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -3484,7 +3502,7 @@
       "title": "oslc_rm:constrainedBy",
       "revision": "71",
       "changedBy": "od",
-      "class": "RC-PredicateTerm",
+      "class": "RC-TermStatementClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -3506,7 +3524,7 @@
       "title": "oslc_rm:constrains",
       "revision": "72",
       "changedBy": "od",
-      "class": "RC-PredicateTerm",
+      "class": "RC-TermStatementClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -3528,7 +3546,7 @@
       "title": "oslc_rm:decomposedBy",
       "revision": "69",
       "changedBy": "od",
-      "class": "RC-PredicateTerm",
+      "class": "RC-TermStatementClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -3550,7 +3568,7 @@
       "title": "oslc_rm:decomposes",
       "revision": "70",
       "changedBy": "od",
-      "class": "RC-PredicateTerm",
+      "class": "RC-TermStatementClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -3572,7 +3590,7 @@
       "title": "oslc_rm:validatedBy",
       "revision": "68",
       "changedBy": "od",
-      "class": "RC-PredicateTerm",
+      "class": "RC-TermStatementClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -3594,7 +3612,7 @@
       "title": "oslc_rm:implementedBy",
       "revision": "67",
       "changedBy": "od",
-      "class": "RC-PredicateTerm",
+      "class": "RC-TermStatementClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -3616,7 +3634,7 @@
       "title": "oslc_rm:trackedBy",
       "revision": "66",
       "changedBy": "od",
-      "class": "RC-PredicateTerm",
+      "class": "RC-TermStatementClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -3638,7 +3656,7 @@
       "title": "oslc_rm:affectedBy",
       "revision": "65",
       "changedBy": "od",
-      "class": "RC-PredicateTerm",
+      "class": "RC-TermStatementClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -3660,7 +3678,7 @@
       "title": "oslc_rm:specifiedBy",
       "revision": "63",
       "changedBy": "od",
-      "class": "RC-PredicateTerm",
+      "class": "RC-TermStatementClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -3682,7 +3700,7 @@
       "title": "oslc_rm:specifies",
       "revision": "64",
       "changedBy": "od",
-      "class": "RC-PredicateTerm",
+      "class": "RC-TermStatementClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -3704,7 +3722,7 @@
       "title": "oslc_rm:elaboratedBy",
       "revision": "62",
       "changedBy": "od",
-      "class": "RC-PredicateTerm",
+      "class": "RC-TermStatementClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -3726,7 +3744,7 @@
       "title": "oslc_rm:elaborates",
       "revision": "63",
       "changedBy": "od",
-      "class": "RC-PredicateTerm",
+      "class": "RC-TermStatementClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -3748,7 +3766,7 @@
       "title": "oslc_rm:satisfiedBy",
       "revision": "24",
       "changedBy": "od",
-      "class": "RC-PredicateTerm",
+      "class": "RC-TermStatementClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -3770,7 +3788,7 @@
       "title": "oslc_rm:satisfies",
       "revision": "164",
       "changedBy": "od",
-      "class": "RC-PredicateTerm",
+      "class": "RC-TermStatementClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -3796,7 +3814,7 @@
       "title": "SpecIF:implements",
       "revision": "26",
       "changedBy": "od",
-      "class": "RC-PredicateTerm",
+      "class": "RC-TermStatementClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -3822,7 +3840,7 @@
       "title": "SpecIF:satisfies",
       "revision": "25",
       "changedBy": "od",
-      "class": "RC-PredicateTerm",
+      "class": "RC-TermStatementClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -3848,7 +3866,7 @@
       "title": "SpecIF:contains",
       "revision": "163",
       "changedBy": "od",
-      "class": "RC-PredicateTerm",
+      "class": "RC-TermStatementClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -3874,7 +3892,7 @@
       "title": "SpecIF:shows",
       "revision": "21",
       "changedBy": "od",
-      "class": "RC-PredicateTerm",
+      "class": "RC-TermStatementClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -3895,30 +3913,12 @@
       ]
     },
     {
-      "id": "F-Resource_Class_Names",
-      "changedAt": "2021-10-12T12:37:46.567Z",
-      "title": "Resource Class Terms",
-      "description": "A resource represents an artefact, e.g. a model element or a requirement. The terms listed in this chapter may be used to distinguish different classes (types) of artefacts constituting a system specification. A resource may serve as subject or as object in a subject-predicate-object statement. Each resource class may define an individual set of properties for carrying the information 'payload'.A resource class corresponds to a 'SPEC-OBJECT-TYPE' and a resource is a 'SPEC-OBJECT' in the Requirements Interchange Format (ReqIF). In ArchiMate® 3.0, a resource is an Element.",
-      "revision": "201",
-      "class": "RC-Heading",
-      "properties": [
-        {
-          "class": "PC-Name",
-          "value": "Resource Class Terms"
-        },
-        {
-          "class": "PC-Description",
-          "value": "<p>A resource represents an artefact, e.g. a model element or a requirement. The terms listed in this chapter may be used to distinguish different classes (types) of artefacts constituting a system specification. A resource may serve as subject or as object in a subject-predicate-object statement. Each resource class may define an individual set of properties for carrying the information 'payload'.</p><p>A resource class corresponds to a 'SPEC-OBJECT-TYPE' and a resource is a 'SPEC-OBJECT' in the Requirements Interchange Format (ReqIF). In ArchiMate® 3.0, a resource is an <a href=\"http://pubs.opengroup.org/architecture/archimate3-doc/chap04.html\"><em>Element</em></a>.</p>"
-        }
-      ]
-    },
-    {
       "id": "R-65Rp2clJpdHWUbqNgbpxgKkccjt",
       "changedAt": "2018-02-17T14:51:51+01:00",
       "title": "SpecIF:BillOfMaterials",
       "revision": "43",
       "changedBy": "od",
-      "class": "RC-ResourceTerm",
+      "class": "RC-TermResourceClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -3944,7 +3944,7 @@
       "title": "SpecIF:Outline",
       "revision": "42",
       "changedBy": "od",
-      "class": "RC-ResourceTerm",
+      "class": "RC-TermResourceClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -3970,7 +3970,7 @@
       "title": "SpecIF:Hierarchy",
       "revision": "41",
       "changedBy": "od",
-      "class": "RC-ResourceTerm",
+      "class": "RC-TermResourceClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -3996,7 +3996,7 @@
       "title": "foaf:Person",
       "revision": "20",
       "changedBy": "od",
-      "class": "RC-ResourceTerm",
+      "class": "RC-TermResourceClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -4022,7 +4022,7 @@
       "title": "IREB:Risk",
       "description": "An event that threatens the success of an endeavor, e.g., of developing or operating a system. A risk is typically assessed in terms of its probability and potential damage.",
       "revision": "18",
-      "class": "RC-ResourceTerm",
+      "class": "RC-TermResourceClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -4048,7 +4048,7 @@
       "title": "SpecIF:Issue",
       "revision": "17",
       "changedBy": "od",
-      "class": "RC-ResourceTerm",
+      "class": "RC-TermResourceClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -4074,7 +4074,7 @@
       "title": "SpecIF:Note",
       "revision": "16",
       "changedBy": "od",
-      "class": "RC-ResourceTerm",
+      "class": "RC-TermResourceClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -4100,7 +4100,7 @@
       "title": "bpmn:group",
       "description": "BPMN: An arbitrary set of objects can be defined as a Group to show that they logically belong together. Like all BPMN 'artifacts', a group does not influence execution semantics. In PBMN, a group can be freely applied, even across pool boundaries. (source: BPMN Reference)",
       "revision": "196",
-      "class": "RC-ResourceTerm",
+      "class": "RC-TermResourceClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -4126,7 +4126,7 @@
       "title": "SpecIF:Collection",
       "description": "A 'Collection' is a logic (often conceptual) group of resources linked with a [[SpecIF:contains]] statement. It corresponds to a 'Group' in BPMN Diagrams. BPMN: An arbitrary set of objects can be defined as a Group to show that they logically belong together. (source: BPMN Tool)",
       "revision": "143",
-      "class": "RC-ResourceTerm",
+      "class": "RC-TermResourceClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -4152,7 +4152,7 @@
       "title": "SpecIF:Comment",
       "revision": "15",
       "changedBy": "od",
-      "class": "RC-ResourceTerm",
+      "class": "RC-TermResourceClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -4178,7 +4178,7 @@
       "title": "SpecIF:Feature",
       "revision": "14",
       "changedBy": "od",
-      "class": "RC-ResourceTerm",
+      "class": "RC-TermResourceClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -4204,7 +4204,7 @@
       "title": "IREB:Requirement",
       "description": "A 'Requirement' is a singular documented physical and functional need that a particular design, product or process must be able to perform.  (source: Wikipedia)Definition:A condition or capability needed by a user to solve a problem or achieve an objective.A condition or capability that must be met or possessed by a system or system component to satisfy a contract, standard, specification, or other formally imposed documents.A documented representation of a condition or capability as in (1) or (2).Note: The definition above is the classic one from IEEE Std 610.12 of 1990. Alternatively, we also give a more modern definition:A need perceived by a stakeholder.A capability or property that a system shall have.A documented representation of a need, capability or property.",
       "revision": "13",
-      "class": "RC-ResourceTerm",
+      "class": "RC-TermResourceClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -4230,7 +4230,7 @@
       "title": "FMC:Event",
       "revision": "12",
       "changedBy": "od",
-      "class": "RC-ResourceTerm",
+      "class": "RC-TermResourceClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -4256,7 +4256,7 @@
       "title": "FMC:State",
       "revision": "11",
       "changedBy": "od",
-      "class": "RC-ResourceTerm",
+      "class": "RC-TermResourceClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -4282,7 +4282,7 @@
       "title": "FMC:Actor",
       "revision": "158",
       "changedBy": "od",
-      "class": "RC-ResourceTerm",
+      "class": "RC-TermResourceClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -4308,7 +4308,7 @@
       "title": "FMC:Plan",
       "revision": "9",
       "changedBy": "od",
-      "class": "RC-ResourceTerm",
+      "class": "RC-TermResourceClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -4334,7 +4334,7 @@
       "title": "SpecIF:View",
       "revision": "8",
       "changedBy": "od",
-      "class": "RC-ResourceTerm",
+      "class": "RC-TermResourceClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -4360,7 +4360,7 @@
       "title": "SpecIF:Diagram",
       "revision": "7",
       "changedBy": "od",
-      "class": "RC-ResourceTerm",
+      "class": "RC-TermResourceClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -4386,7 +4386,7 @@
       "title": "SpecIF:Paragraph",
       "revision": "6",
       "changedBy": "od",
-      "class": "RC-ResourceTerm",
+      "class": "RC-TermResourceClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -4412,7 +4412,7 @@
       "title": "SpecIF:Heading",
       "revision": "5",
       "changedBy": "od",
-      "class": "RC-ResourceTerm",
+      "class": "RC-TermResourceClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -4438,7 +4438,7 @@
       "title": "Introduction",
       "description": "The SpecIF Vocabulary (or Glossary) collects terms used in the domain of systems engineering and requirements management. Agreed-upon terms help both collaborators to communicate more clearly and systems to match data fields automatically. SpecIF adopts terms and their definitions from other initiatives, for example from the Dublin Core Metadata Initiative (DCMI), the Open Services for Lifecycle Collaboration (OSLC) and the International Requirements Engineering Board (IREB). The ProSTEP iViP association has also defined a set of attribute names to be used in ReqIF data, but those are not freely available and cannot be referenced here.All terms carry a namespace, which is the first part separated with ':' or '.' ― they are thus easily recognized in text and data fields. For display, systems may choose to replace SpecIF terms by domain or language specific words. This collection itself is structured according to SpecIF using it's vocabulary. Hence, the titles are recognized as such, because they are tagged with \"[[dcterms:title]]\", whereas paragraphs like this one are tagged with \"[[dcterms:description]]\".The terms have a lifecycle status as follows:experimental: The term is being used in first projects, but has not yet any normative maturity.submitted: The term has been submitted for adoption.released: The term has been adopted for use with SpecIF and is preferred among equivalent terms.equivalent: The term has been adopted for use with SpecIF, but the released term is preferred.deprecated: The term shall not any more be used with SpecIF; use the released term.The Specification Interchange Facility (SpecIF) is the result of an initiative by the Gesellschaft für Systems Engineering (GfSE), the German chapter of The International Council on Systems Engineering (INCOSE).All information provided here is made available according to Creative Commons 4.0 CC BY-SA or the license chosen by the respective publishers. We appreciate any contribution or proposal; please contact Dr. Oskar von Dungern.",
       "revision": "149",
-      "class": "RC-Heading",
+      "class": "RC-Folder",
       "properties": [
         {
           "class": "PC-Name",
@@ -4457,7 +4457,7 @@
       "description": "A [[FMC:Actor]] 'serves' a FMC:Actor.",
       "revision": "26",
       "changedBy": "od",
-      "class": "RC-PredicateTerm",
+      "class": "RC-TermStatementClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -4483,7 +4483,7 @@
       "title": "SpecIF:hasEnumValue",
       "description": "A property has an enumerated value.",
       "revision": "37",
-      "class": "RC-PredicateTerm",
+      "class": "RC-TermStatementClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -4513,7 +4513,7 @@
       "title": "SpecIF:isEligibleAsSubject",
       "description": "A resource-term statement-term is eligible as a subject of a predicate-term.\n\nOr concretely: A resource or statement of this class is eligible as the predicate's subject.",
       "revision": "37",
-      "class": "RC-PredicateTerm",
+      "class": "RC-TermStatementClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -4543,7 +4543,7 @@
       "title": "SpecIF:isEligibleAsObject",
       "description": "A resource-term or statement-term is eligible as a object of a predicate-term.\n\nOr concretely: A resource or statement of this class is eligible as the predicate's object.",
       "revision": "37",
-      "class": "RC-PredicateTerm",
+      "class": "RC-TermStatementClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -4572,7 +4572,7 @@
       "changedAt": "2021-10-12T12:49:42.678Z",
       "title": "SpecIF:TermResourceClass",
       "description": "A term for SpecIF resources, often used as title of a resourceClass to denote the class type.",
-      "class": "RC-ResourceTerm",
+      "class": "RC-TermResourceClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -4597,7 +4597,7 @@
       "changedAt": "2021-10-12T12:49:50.388Z",
       "title": "SpecIF:TermStatementClass",
       "description": "A term for SpecIF statements, often used as title of a statementClass to denote the class type.",
-      "class": "RC-ResourceTerm",
+      "class": "RC-TermResourceClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -4622,7 +4622,7 @@
       "changedAt": "2021-10-12T12:49:57.075Z",
       "title": "SpecIF:TermProperty",
       "description": "A term for SpecIF properties, often used as title of a propertyClass to denote the class type.",
-      "class": "RC-ResourceTerm",
+      "class": "RC-TermResourceClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -4647,7 +4647,7 @@
       "changedAt": "2021-10-12T12:50:03.765Z",
       "title": "SpecIF:TermPropertyValue",
       "description": "A term for SpecIF property values, often used in enumerated dataTypes.",
-      "class": "RC-ResourceTerm",
+      "class": "RC-TermResourceClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -4672,7 +4672,7 @@
       "changedAt": "2021-11-07T18:57:20.426Z",
       "title": "SpecIF:sendsTo",
       "description": "A [[FMC:Actor]] 'sends' a message to a [[FMC:Actor]].",
-      "class": "RC-PredicateTerm",
+      "class": "RC-TermStatementClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -4701,7 +4701,7 @@
       "changedAt": "2021-11-07T18:57:50.530Z",
       "title": "SpecIF:receivesFrom",
       "description": "A [[FMC:Actor]] 'receives' a message from a [[FMC:Actor]].",
-      "class": "RC-PredicateTerm",
+      "class": "RC-TermStatementClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -4730,7 +4730,7 @@
       "changedAt": "2021-11-07T18:59:41.158Z",
       "title": "SpecIF:communicatesWith",
       "description": "A [[FMC:Actor]] 'communicates' with a [[FMC:Actor]].",
-      "class": "RC-PredicateTerm",
+      "class": "RC-TermStatementClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -4759,7 +4759,7 @@
       "changedAt": "2021-11-07T19:11:04.490Z",
       "title": "SpecIF:influences",
       "description": "The influence relationship represents that an element affects the implementation or achievement of some motivation element.",
-      "class": "RC-PredicateTerm",
+      "class": "RC-TermStatementClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -4789,7 +4789,7 @@
       "title": "SysML:isSpecialisationOf",
       "description": "An FMC:Actor is a specialization of another FMC:Actor; similarly for FMC:State and FMC:Event.",
       "revision": "36",
-      "class": "RC-PredicateTerm",
+      "class": "RC-TermStatementClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -4819,7 +4819,7 @@
       "title": "SysML:isGeneralisationOf",
       "description": "An FMC:Actor is a generalization of another FMC:Actor; similarly for FMC:State and FMC:Event.",
       "revision": "36",
-      "class": "RC-PredicateTerm",
+      "class": "RC-TermStatementClass",
       "properties": [
         {
           "class": "PC-Name",
@@ -5268,7 +5268,7 @@
         },
         {
           "id": "N-YpyUlWVLwxYblBgWOr154btbA9u",
-          "resource": "F-Resource_Class_Names",
+          "resource": "F-Resource_Class_Terms",
           "changedAt": "2018-02-17T14:52:28+01:00",
           "nodes": [
             {
@@ -5416,7 +5416,7 @@
         },
         {
           "id": "N-blM4lfyHM55YlbfBZ3NWj4SYwa3",
-          "resource": "F-Statement_Class_Names",
+          "resource": "F-Statement_Class_Terms",
           "changedAt": "2018-02-17T14:52:25+01:00",
           "nodes": [
             {
@@ -5777,7 +5777,7 @@
         },
         {
           "id": "N-33z8X0jqbMdrd8PJDKyt2ke4yAB",
-          "resource": "F-Property_Names",
+          "resource": "F-Property_Class_Terms",
           "changedAt": "2018-02-17T14:52:17+01:00",
           "nodes": [
             {
@@ -6077,7 +6077,7 @@
         },
         {
           "id": "N-GXf6xVO7XO5ciMypRwD5WDR6DHR",
-          "resource": "F-Property_Values",
+          "resource": "F-Property_Values_Terms",
           "changedAt": "2018-02-17T14:52:16+01:00",
           "nodes": [
             {
