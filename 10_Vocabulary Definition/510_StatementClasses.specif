@@ -8,8 +8,45 @@
     ],
     "isExtension": true,
     "dataTypes": [],
+    "propertyClasses": [],
     "resourceClasses": [],
     "statementClasses": [
+        {
+            "id": "SC-isPartOfNamespace",
+            "revision": "1.2",
+            "title": "SpecIF:isPartOfNamespace",
+            "description": [
+                {
+                    "text": "Subject is part of namespace (object)."
+                }
+            ],
+            "instantiation": [ "auto", "user" ],
+            "replaces": [],
+            "changedAt": "2022-07-06T13:37:00Z",
+            "subjectClasses": [
+                {
+                    "id": "RC-TermResourceClass"
+                },
+                {
+                    "id": "RC-TermStatementClass"
+                },
+                {
+                    "id": "RC-TermPropertyClass"
+                },
+                {
+                    "id": "SpecIF:TermPropertyValue"
+                },
+                {
+                    "id": "RC-TermDataType"
+                }
+            ],
+            "objectClasses": [
+                {
+                    "id": "RC-Namespace"
+                }
+            ]
+
+        },
         {
             "id": "SC-isSynonymousResource",
             "title": "SpecIF:isSynonymOf",
@@ -19,19 +56,17 @@
                 }
             ],
             "instantiation": [ "user" ],
-            "revision": "1.0",
+            "revision": "1.2",
             "replaces": [],
             "changedAt": "2017-12-12T21:16:17+01:00",
             "subjectClasses": [
                 {
-                    "id": "RC-ResourceTerm",
-                    "revision": "1.1"
+                    "id": "RC-TermResourceClass"
                 }
             ],
             "objectClasses": [
                 {
-                    "id": "RC-ResourceTerm",
-                    "revision": "1.1"
+                    "id": "RC-TermResourceClass"
                 }
             ]
         },
@@ -44,19 +79,67 @@
                 }
             ],
             "instantiation": [ "user" ],
-            "revision": "1.0",
+            "revision": "1.2",
             "replaces": [],
             "changedAt": "2017-12-12T21:16:54+01:00",
             "subjectClasses": [
                 {
-                    "id": "RC-PredicateTerm",
-                    "revision": "1.1"
+                    "id": "RC-TermStatementClass"
                 }
             ],
             "objectClasses": [
                 {
-                    "id": "RC-PredicateTerm",
-                    "revision": "1.1"
+                    "id": "RC-TermStatementClass"
+                }
+            ]
+        },
+        {
+            "id": "SC-isEligibleAsSubject",
+            "changedAt": "2018-12-09T21:18:11+01:00",
+            "title": "SpecIF:isEligibleAsSubject",
+            "description": [
+                {
+                    "text": "A resource or statement of this class is eligible as the predicate's subject."
+                }
+            ],
+            "revision": "1.2",
+            "instantiation": [ "user" ],
+            "subjectClasses": [
+                {
+                    "id": "RC-TermResourceClass"
+                },
+                {
+                    "id": "RC-TermStatementClass"
+                }
+            ],
+            "objectClasses": [
+                {
+                    "id": "RC-TermStatementClass"
+                }
+            ]
+        },
+        {
+            "id": "SC-isEligibleAsObject",
+            "changedAt": "2018-12-09T21:18:11+01:00",
+            "title": "SpecIF:isEligibleAsObject",
+            "description": [
+                {
+                    "text": "A resource or statement of this class is eligible as the predicate's object."
+                }
+            ],
+            "revision": "1.2",
+            "instantiation": [ "user" ],
+            "subjectClasses": [
+                {
+                    "id": "RC-TermResourceClass"
+                },
+                {
+                    "id": "RC-TermStatementClass"
+                }
+            ],
+            "objectClasses": [
+                {
+                    "id": "RC-TermStatementClass"
                 }
             ]
         },
@@ -69,19 +152,17 @@
                 }
             ],
             "instantiation": [ "user" ],
-            "revision": "1.0",
+            "revision": "1.2",
             "replaces": [],
             "changedAt": "2017-12-12T21:18:11+01:00",
             "subjectClasses": [
                 {
-                    "id": "RC-PropertyTerm",
-                    "revision": "1.1"
+                    "id": "RC-TermPropertyClass"
                 }
             ],
             "objectClasses": [
                 {
-                    "id": "RC-PropertyTerm",
-                    "revision": "1.1"
+                    "id": "RC-TermPropertyClass"
                 }
             ]
         },
@@ -94,48 +175,133 @@
                 }
             ],
             "instantiation": [ "user" ],
-            "revision": "1.0",
+            "revision": "1.2",
             "replaces": [],
             "changedAt": "2018-12-09T21:18:11+01:00",
             "subjectClasses": [
                 {
-                    "id": "RC-ValueTerm",
-                    "revision": "1.1"
+                    "id": "RC-TermPropertyValue"
                 }
             ],
             "objectClasses": [
                 {
-                    "id": "RC-ValueTerm",
-                    "revision": "1.1"
+                    "id": "RC-TermPropertyValue"
                 }
             ]
         },
         {
-            "id": "SC-isInverseOf",
-            "title": "SpecIF:isInverseOf",
+            "id": "SC-isAntonymousPredicate",
+            "changedAt": "2018-03-21T18:06:20+01:00",
+            "title": "SpecIF:isAntonymOf",
             "description": [
                 {
-                    "text": "Two terms are the inverse of each other, such as 'contains' and 'isContainedBy'."
+                    "text": "Antonymous predicate-term representing the opposite to each other, such as 'contains' and 'isContainedBy'."
                 }
             ],
-            "instantiation": [ "user" ],
-            "revision": "1.0",
-            "replaces": [],
-            "changedAt": "2018-03-21T18:06:20+01:00",
+            "revision": "1.2",
             "changedBy": "od",
+            "instantiation": [ "user" ],
             "subjectClasses": [
                 {
-                    "id": "RC-PredicateTerm",
-                    "revision": "1.1"
+                    "id": "RC-TermStatementClass"
                 }
             ],
             "objectClasses": [
                 {
-                    "id": "RC-PredicateTerm",
-                    "revision": "1.1"
+                    "id": "RC-TermStatementClass"
                 }
             ]
-        }        
+        },
+        {
+            "id": "SC-isAntonymousValue",
+            "changedAt": "2018-12-09T21:18:11+01:00",
+            "title": "SpecIF:isAntonymOf",
+            "description": [
+                {
+                    "text": "Antonymous value-term representing the opposite to each other."
+                }
+            ],
+            "revision": "1.2",
+            "instantiation": [ "user" ],
+            "subjectClasses": [
+                {
+                    "id": "RC-TermPropertyValue"
+                }
+            ],
+            "objectClasses": [
+                {
+                    "id": "RC-TermPropertyValue"
+                }
+            ]
+        },
+        {
+            "id": "SC-hasEnumValue",
+            "changedAt": "2018-12-09T21:18:11+01:00",
+            "title": "SpecIF:hasEnumValue",
+            "description": [
+                {
+                    "text": "A property-term has an enumerated value."
+                }
+            ],
+            "revision": "1.2",
+            "instantiation": [ "user" ],
+            "subjectClasses": [
+                {
+                    "id": "RC-TermPropertyClass"
+                }
+            ],
+            "objectClasses": [
+                {
+                    "id": "RC-TermPropertyValue"
+                }
+            ]
+        },
+        {
+            "id": "SC-isSpecializationOfResource",
+            "changedAt": "2018-03-21T18:06:20+01:00",
+            "title": "SpecIF:isSpecializationOf",
+            "description": [
+                {
+                    "text": "A term is a specialization of another, such as 'Passenger Car' and 'Vehicle'."
+                }
+            ],
+            "revision": "1.2",
+            "changedBy": "od",
+            "instantiation": [ "user" ],
+            "subjectClasses": [
+                {
+                    "id": "RC-TermResourceClass"
+                }
+            ],
+            "objectClasses": [
+                {
+                    "id": "RC-TermResourceClass"
+                }
+            ]
+        },
+        {
+            "id": "SC-isSpecializationOfPredicate",
+            "changedAt": "2018-03-21T18:06:20+01:00",
+            "title": "SpecIF:isSpecializationOf",
+            "description": [
+                {
+                    "text": "A predicate term is a specialization of another, such as 'is aggregated by' and 'contains'."
+                }
+            ],
+            "revision": "1.2",
+            "changedBy": "od",
+            "instantiation": [ "user" ],
+            "subjectClasses": [
+                {
+                    "id": "RC-TermStatementClass"
+                }
+            ],
+            "objectClasses": [
+                {
+                    "id": "RC-TermStatementClass"
+                }
+            ]
+        }
     ],
     "resources": [],
     "statements": [],

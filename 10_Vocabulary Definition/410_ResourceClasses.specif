@@ -8,99 +8,176 @@
     ],
     "isExtension": true,
     "dataTypes": [],
+    "propertyClasses": [],
     "resourceClasses": [
         {
-            "id": "RC-ResourceTerm",
+            "id": "RC-Namespace",
+            "revision": "1.2",
+            "title": "SpecIF:Namespace",
+            "description": [
+                {
+                    "text": "The definition of a term namespace for the SpecIF vocabulary"
+                }
+            ],
+            "instantiation": [ "auto", "user" ],
+            "changedAt": "2022-07-06T13:26:00Z",
+            "propertyClasses": [
+                {
+                    "id": "PC-Name",
+                    "revision": "1.1"
+                },
+                {
+                    "id": "PC-Description",
+                    "revision": "1.1"
+                },
+                {
+                    "id": "PC-Origin",
+                    "revision": "1.1"
+                },
+                {
+                    "id": "PC-TermStatus",
+                    "revision": "1.2"
+                }
+            ]
+        },
+        {
+            "id": "RC-TermResourceClass",
+            "changedAt": "2017-06-10T15:47:24+02:00",
             "title": "SpecIF:TermResourceClass",
             "description": [
                 {
-                    "text": "A term for resources (objects, entities) belonging to the SpecIF vocabulary"
+                    "text": "A term for resources belonging to the SpecIF vocabulary"
                 }
             ],
-            "revision": "1.1",
-            "replaces": [],
-            "isHeading": false,
-            "instantiation": [
-                "auto",
-                "user"
-            ],
+            "revision": "1.2",
+            "instantiation": [ "auto", "user" ],
             "propertyClasses": [
                 {
                     "id": "PC-Name",
                     "revision": "1.1"
                 },
                 {
+                    "id": "PC-VisibleId",
+                    "revision": "1.1"
+                },
+                {
+                    "id": "PC-Revision",
+                    "revision": "1.2"
+                },
+                {
                     "id": "PC-Description",
                     "revision": "1.1"
+                },
+                {
+                    "id": "PC-IsHeading",
+                    "revision": "1.2"
+                },
+                {
+                    "id": "PC-Instantiation",
+                    "revision": "1.2"
                 },
                 {
                     "id": "PC-Origin",
                     "revision": "1.1"
                 },
                 {
-                    "id": "PC-LifeCycleStatus",
-                    "revision": "1.1"
+                    "id": "PC-Domain",
+                    "revision": "1.2"
+                },
+                {
+                    "id": "PC-TermStatus",
+                    "revision": "1.2"
                 }
-            ],
-            "changedAt": "2021-06-27T15:47:24+02:00"
+            ]
         },
         {
-            "id": "RC-PredicateTerm",
+            "id": "RC-TermStatementClass",
+            "changedAt": "2017-06-10T15:47:24+02:00",
             "title": "SpecIF:TermStatementClass",
             "description": [
                 {
-                    "text": "A term for statements (relations) belonging to the SpecIF vocabulary"
+                    "text": "A term for statements belonging to the SpecIF vocabulary"
                 }
             ],
-            "revision": "1.1",
-            "replaces": [],
-            "isHeading": false,
-            "instantiation": [
-                "auto",
-                "user"
-            ],
+            "revision": "1.2",
+            "instantiation": [ "auto", "user" ],
             "propertyClasses": [
                 {
                     "id": "PC-Name",
                     "revision": "1.1"
                 },
                 {
+                    "id": "PC-VisibleId",
+                    "revision": "1.1"
+                },
+                {
+                    "id": "PC-Revision",
+                    "revision": "1.2"
+                },
+                {
                     "id": "PC-Description",
                     "revision": "1.1"
+                },
+                {
+                    "id": "PC-IsHeading",
+                    "revision": "1.2"
+                },
+                {
+                    "id": "PC-Instantiation",
+                    "revision": "1.2"
                 },
                 {
                     "id": "PC-Origin",
                     "revision": "1.1"
                 },
                 {
-                    "id": "PC-LifeCycleStatus",
-                    "revision": "1.1"
+                    "id": "PC-Domain",
+                    "revision": "1.2"
+                },
+                {
+                    "id": "PC-TermStatus",
+                    "revision": "1.2"
                 }
-            ],
-            "changedAt": "2021-06-27T15:47:24+02:00"
+            ]
         },
         {
-            "id": "RC-TermProperty",
-            "title": "SpecIF:PropertyTerm",
+            "id": "RC-TermPropertyClass",
+            "changedAt": "2017-06-10T15:47:24+02:00",
+            "title": "SpecIF:TermPropertyClass",
             "description": [
                 {
-                    "text": "A term for user-defined properties (attributes) belonging to the SpecIF vocabulary"
+                    "text": "A term for properties belonging to the SpecIF vocabulary"
                 }
             ],
-            "revision": "1.1",
-            "replaces": [],
-            "isHeading": false,
-            "instantiation": [
-                "auto",
-                "user"
-            ],
+            "revision": "1.2",
+            "instantiation": [ "auto", "user" ],
             "propertyClasses": [
                 {
                     "id": "PC-Name",
                     "revision": "1.1"
                 },
                 {
+                    "id": "PC-VisibleId",
+                    "revision": "1.1"
+                },
+                {
+                    "id": "PC-Revision",
+                    "revision": "1.2"
+                },
+                {
                     "id": "PC-Description",
+                    "revision": "1.1"
+                },
+                {
+                    "id": "PC-Unit",
+                    "revision": "1.2"
+                },
+                {
+                    "id": "PC-Multiple",
+                    "revision": "1.2"
+                },
+                {
+                    "id": "PC-Value",
                     "revision": "1.1"
                 },
                 {
@@ -108,21 +185,62 @@
                     "revision": "1.1"
                 },
                 {
-                    "id": "PC-LifeCycleStatus",
-                    "revision": "1.1"
+                    "id": "PC-Domain",
+                    "revision": "1.2"
+                },
+                {
+                    "id": "PC-TermStatus",
+                    "revision": "1.2"
                 }
-            ],
-            "changedAt": "2021-06-27T15:47:24+02:00"
+            ]
         },
         {
-            "id": "RC-ValueTerm",
+            "id": "RC-TermPropertyValue",
+            "changedAt": "2018-02-05T00:29:45+01:00",
             "title": "SpecIF:TermPropertyValue",
             "description": [
                 {
                     "text": "A term for property values belonging to the SpecIF vocabulary"
                 }
             ],
-            "revision": "1.1",
+            "revision": "1.2",
+            "instantiation": [ "auto", "user" ],
+            "propertyClasses": [
+                {
+                    "id": "PC-Name",
+                    "revision": "1.1"
+                },
+                {
+                    "id": "PC-VisibleId",
+                    "revision": "1.1"
+                },
+                {
+                    "id": "PC-Description",
+                    "revision": "1.1"
+                },
+                {
+                    "id": "PC-Origin",
+                    "revision": "1.1"
+                },
+                {
+                    "id": "PC-Domain",
+                    "revision": "1.2"
+                },
+                {
+                    "id": "PC-TermStatus",
+                    "revision": "1.2"
+                }
+            ]
+        },
+        {
+            "id": "RC-TermDataType",
+            "title": "SpecIF:TermDataType",
+            "description": [
+                {
+                    "text": "A term for data types belonging to the SpecIF vocabulary"
+                }
+            ],
+            "revision": "1.2",
             "replaces": [],
             "isHeading": false,
             "instantiation": [
@@ -135,16 +253,48 @@
                     "revision": "1.1"
                 },
                 {
+                    "id": "PC-VisibleId",
+                    "revision": "1.1"
+                },
+                {
+                    "id": "PC-Revision",
+                    "revision": "1.2"
+                },
+                {
+                    "id": "PC-Type",
+                    "revision": "1.1"
+                },
+                {
+                    "id": "PC-IsEnumeration",
+                    "revision": "1.2"
+                },
+                {
                     "id": "PC-Description",
                     "revision": "1.1"
+                },
+                {
+                    "id": "PC-MinInclusive",
+                    "revision": "1.2"
+                },
+                {
+                    "id": "PC-MaxInclusive",
+                    "revision": "1.2"
+                },
+                {
+                    "id": "PC-FractionDigits",
+                    "revision": "1.2"
                 },
                 {
                     "id": "PC-Origin",
                     "revision": "1.1"
                 },
                 {
-                    "id": "PC-LifeCycleStatus",
-                    "revision": "1.1"
+                    "id": "PC-Domain",
+                    "revision": "1.2"
+                },
+                {
+                    "id": "PC-TermStatus",
+                    "revision": "1.2"
                 }
             ],
             "changedAt": "2021-06-27T00:29:45+01:00"

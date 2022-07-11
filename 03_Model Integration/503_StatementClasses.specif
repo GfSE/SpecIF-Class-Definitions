@@ -92,6 +92,32 @@
             "changedAt": "2016-05-26T08:59:00+02:00"
         },
         {
+            "id": "SC-orderedContains",
+            "title": "SpecIF:orderedContains",
+            "description": [
+                {
+                    "text": "Statement: Model element contains model element in a specific order, defined by the index property."
+                }
+            ],
+            "revision": "1.2",
+            "replaces": [],
+            "extends": {
+                "id": "SC-contains",
+                "revision": "1.1"
+            },
+            "instantiation": [
+                "auto",
+                "user"
+            ],
+            "propertyClasses": [
+                {
+                    "id": "PC-Index",
+                    "revision": "1.2"
+                }
+            ],
+            "changedAt": "2021-11-22T08:59:00+02:00"
+        },
+        {
             "id": "SC-serves",
             "title": "SpecIF:serves",
             "description": [
@@ -183,7 +209,8 @@
             "revision": "1.1",
             "replaces": [],
             "instantiation": [
-                "auto", "user"
+                "auto",
+                "user"
             ],
             "subjectClasses": [
                 {
@@ -210,7 +237,8 @@
             "revision": "1.1",
             "replaces": [],
             "instantiation": [
-                "auto", "user"
+                "auto",
+                "user"
             ],
             "subjectClasses": [
                 {

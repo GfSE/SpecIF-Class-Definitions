@@ -61,6 +61,22 @@
             "changedAt": "2016-05-26T08:59:00+02:00"
         },
         {
+            "id": "DT-PositiveInteger",
+            "title": "PositiveInteger",
+            "description": [
+                {
+                    "text": "An unsigned integer.",
+                    "format": "plain",
+                    "language": "en"
+                }
+            ],
+            "revision": "1.2",
+            "replaces": [],
+            "type": "xs:integer",
+            "minInclusive": 0,
+            "changedAt": "2021-11-22T08:59:00+02:00"
+        },
+        {
             "id": "DT-Real",
             "title": "Real",
             "description": [

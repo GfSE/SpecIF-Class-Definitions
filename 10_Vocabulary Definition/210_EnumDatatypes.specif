@@ -1,0 +1,201 @@
+{
+    "$schema": "https://specif.de/v1.1/schema.json",
+    "id": "_5489DC08-F820-409D-A474-56F5A98803AC",
+    "title": [
+        {
+            "text": "SpecIF enumeration datatype definitions for domain 10_Vocabulary Definition",
+            "language": "en",
+            "format": "plain"
+        }
+    ],
+    "isExtension": false,
+    "createdAt": "2022-07-06T19:54:35.0432812+01:00",
+    "dataTypes": [
+        {
+            "id": "DT-TermStatus",
+            "changedAt": "2017-06-10T17:30:52+02:00",
+            "title": "SpecIF:Status",
+            "description": [
+                {
+                    "text": "The status of the term."
+                }
+            ],
+            "revision": "1.2",
+            "type": "xs:string",
+            "enumeration": [
+                {
+                    "id": "V-TermStatus-6",
+                    "value": [
+                        {
+                            "text": "SpecIF:LifecycleStatusReleased"
+                        }
+                    ]
+                },
+                {
+                    "id": "V-TermStatus-5",
+                    "value": [
+                        {
+                            "text": "equivalent"
+                        }
+                    ]
+                },
+                {
+                    "id": "V-TermStatus-3",
+                    "value": [
+                        {
+                            "text": "SpecIF:LifecycleStatusSubmitted"
+                        }
+                    ]
+                },
+                {
+                    "id": "V-TermStatus-1",
+                    "value": [
+                        {
+                            "text": "experimental"
+                        }
+                    ]
+                },
+                {
+                    "id": "V-TermStatus-9",
+                    "value": [
+                        {
+                            "text": "SpecIF:LifecycleStatusDeprecated"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "DT-Domain",
+            "changedAt": "2021-03-25T10:30:52+02:00",
+            "title": "Domain",
+            "description": [
+                {
+                    "text": "The application domain of the term."
+                }
+            ],
+            "revision": "1.2",
+            "type": "xs:string",
+            "enumeration": [
+                {
+                    "id": "V-Domain-1",
+                    "value": [
+                        {
+                            "text": "Base"
+                        }
+                    ]
+                },
+                {
+                    "id": "V-Domain-2",
+                    "value": [
+                        {
+                            "text": "Requirement Engineering"
+                        }
+                    ]
+                },
+                {
+                    "id": "V-Domain-3",
+                    "value": [
+                        {
+                            "text": "Automotive Stakeholder Request Clarification Process"
+                        }
+                    ]
+                },
+                {
+                    "id": "V-Domain-4",
+                    "value": [
+                        {
+                            "text": "System Model Integration"
+                        }
+                    ]
+                },
+                {
+                    "id": "V-Domain-5",
+                    "value": [
+                        {
+                            "text": "Variant Management"
+                        }
+                    ]
+                },
+                {
+                    "id": "V-Domain-6",
+                    "value": [
+                        {
+                            "text": "Issue Management"
+                        }
+                    ]
+                },
+                {
+                    "id": "V-Domain-7",
+                    "value": [
+                        {
+                            "text": "Agile Development"
+                        }
+                    ]
+                },
+                {
+                    "id": "V-Domain-8",
+                    "value": [
+                        {
+                            "text": "System Testing"
+                        }
+                    ]
+                },
+                {
+                    "id": "V-Domain-9",
+                    "value": [
+                        {
+                            "text": "Product Lifecycle Management"
+                        }
+                    ]
+                },
+                {
+                    "id": "V-Domain-39",
+                    "value": [
+                        {
+                            "text": "Vocabularies"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "DT-Instantiation",
+            "title": "SpecIF:Instantiation",
+            "description": [
+                {
+                    "text": "Enumerated values for instantiation (user, auto, both and none)."
+                }
+            ],
+            "revision": "1.2",
+            "replaces": [],
+            "type": "xs:string",
+            "enumeration": [
+                {
+                    "id": "V-Instantiation-0",
+                    "value": [
+                        {
+                            "text": "SpecIF:InstantiationUser"
+                        }
+                    ]
+                },
+                {
+                    "id": "V-Instantiation-1",
+                    "value": [
+                        {
+                            "text": "SpecIF:InstantiationAuto"
+                        }
+                    ]
+                }
+            ],
+            "multiple": true,
+            "changedAt": "2021-11-22T08:59:00+02:00"
+        }
+    ],
+    "propertyClasses": [],
+    "resourceClasses": [],
+    "statementClasses": [],
+    "resources": [],
+    "statements": [],
+    "hierarchies": []
+}
