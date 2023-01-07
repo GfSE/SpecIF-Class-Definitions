@@ -85,6 +85,7 @@
             ],
             "revision": "1.2",
             "replaces": ["1.1"],
+            "format": "xhtml",
             "dataType": {
                 "id": "DT-Text",
                 "revision": "1.1"
