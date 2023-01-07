@@ -96,6 +96,46 @@
             "changedAt": "2021-06-27T18:59:00+01:00"
         },
         {
+            "id": "RC-TestStep",
+            "title": "U2TP:TestStep",
+            "description": [
+                {
+                    "text": "The smallest atomic (i.e., indivisible) part of a test case specification that is executed by a a test execution system during test case execution."
+                }
+            ],
+            "revision": "1.2",
+            "replaces": ["1.1"],
+            "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAABaUlEQVRIx72WP48BQRjGfyMk6EUkEgUJUZNIJGiFSuITqJUKjUShV/gW19JpNjQ6pUJDJ0FBJBrmirnNnluDc3u7yZvd952Z55l5/80KXnukxi6eLRSvgEoNvBDPsXQEUgeq3am4jyecAH9EIpwC15EIJ8HvkYi/gG+3sFio73gcIhH9SaSUlkSjyK8sskm3izydkPW6fWwysTDMLPTe21mpBLsd7Pcwm0EwCMWiGkskoNeDjw8Ih6HZBL8fxmO4XvUpeVcMQ+0kmby1l8vK3mrd2i+XWx2QnneCmE6rd78P7TZsNkr3eBw6wfGILBQs3/t8yE7Hvt6Mw68JTBkOkfm8RTQYOOQiM5iVCkynUKsp3TDsc73vEDQakMlALgfnMyyXyh4KPeic72TRd4nFkKuV3f8PK/lwgPkcAgHIZi37bgejEazXSk+loFpV9fCzkoXTfUhH8O/NzpV27cqF48qV6cql79hvyyeAgFLJbczVZwAAAABJRU5ErkJggg==",
+            "isHeading": false,
+            "propertyClasses": [
+                {
+                    "id": "PC-Name",
+                    "revision": "1.1"
+                },
+                {
+                    "id": "PC-Description",
+                    "revision": "1.1"
+                },
+                {
+                    "id": "PC-TestData",
+                    "revision": "1.2"
+                },
+                {
+                    "id": "PC-ExpectedResult",
+                    "revision": "1.2"
+                },
+                {
+                    "id": "PC-TestVerdict",
+                    "revision": "1.1"
+                },
+                {
+                    "id": "PC-TestResultReason",
+                    "revision": "1.1"
+                }
+            ],
+            "changedAt": "2023-01-07T13:59:00+01:00"
+        },
+        {
             "id": "RC-TestModel",
             "title": "U2TP:TestModel",
             "description": [

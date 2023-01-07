@@ -43,6 +43,23 @@
             "changedAt": "2021-06-27T20:32:25.411Z"
         },
         {
+            "id": "PC-ExpectedResult",
+            "revision": "1.2",
+            "replaces": ["1.1"],
+            "title": "ISTQB:ExpectedResult",
+            "description": [
+                {
+                    "text": "The predicted observable behavior of a component or system executing under specified conditions, based on its specification or another source. [After ISO 29119]"
+                }
+            ],
+            "format": "xhtml",
+            "dataType": {
+                "id": "DT-Text",
+                "revision": "1.1"
+            },
+            "changedAt": "2023-01-07T13:32:25.411Z"
+        },
+        {
             "id": "PC-TestData",
             "title": "ISTQB:TestData",
             "description": [
@@ -57,6 +74,22 @@
                 "revision": "1.1"
             },
             "changedAt": "2021-06-27T20:32:25.411Z"
+        },
+        {
+            "id": "PC-TestData",
+            "title": "ISTQB:TestData",
+            "description": [
+                {
+                    "text": "Data created or selected to satisfy the execution preconditions and inputs to execute one or more test cases. [After ISO 29119]"
+                }
+            ],
+            "revision": "1.2",
+            "replaces": ["1.1"],
+            "dataType": {
+                "id": "DT-Text",
+                "revision": "1.1"
+            },
+            "changedAt": "2023-01-07T13:32:25.411Z"
         },
         {
             "id": "PC-TestResultReason",
