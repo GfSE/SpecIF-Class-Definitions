@@ -8,7 +8,7 @@
   ],
   "isExtension": false,
   "generator": "SpecIFicator Vocabulary Generator",
-  "createdAt": "2022-07-11T16:12:30.9502732+02:00",
+  "createdAt": "2023-02-09T09:45:50.1759737+01:00",
   "dataTypes": [
     {
       "id": "DT-Boolean",
@@ -579,8 +579,7 @@
         "id": "DT-ShortString",
         "revision": "1.1"
       },
-      "format": "plain",
-      "values": []
+      "format": "plain"
     },
     {
       "id": "PC-Name",
@@ -599,8 +598,7 @@
         "id": "DT-ShortString",
         "revision": "1.1"
       },
-      "format": "plain",
-      "values": []
+      "format": "plain"
     },
     {
       "id": "PC-Description",
@@ -619,8 +617,7 @@
         "id": "DT-Text",
         "revision": "1.1"
       },
-      "format": "xhtml",
-      "values": []
+      "format": "xhtml"
     },
     {
       "id": "PC-Origin",
@@ -639,8 +636,7 @@
         "id": "DT-ShortString",
         "revision": "1.1"
       },
-      "format": "plain",
-      "values": []
+      "format": "plain"
     },
     {
       "id": "PC-Diagram",
@@ -659,8 +655,7 @@
         "id": "DT-Text",
         "revision": "1.1"
       },
-      "format": "xhtml",
-      "values": []
+      "format": "xhtml"
     },
     {
       "id": "PC-Notation",
@@ -679,8 +674,7 @@
         "id": "DT-ShortString",
         "revision": "1.1"
       },
-      "format": "plain",
-      "values": []
+      "format": "plain"
     },
     {
       "id": "PC-LifeCycleStatus",
@@ -699,8 +693,7 @@
         "id": "DT-LifeCycleStatus",
         "revision": "1.1"
       },
-      "format": "plain",
-      "values": []
+      "format": "plain"
     },
     {
       "id": "PC-Priority",
@@ -719,8 +712,7 @@
         "id": "DT-Priority",
         "revision": "1.1"
       },
-      "format": "plain",
-      "values": []
+      "format": "plain"
     },
     {
       "id": "PC-Discipline",
@@ -740,8 +732,7 @@
         "revision": "1.1"
       },
       "multiple": true,
-      "format": "plain",
-      "values": []
+      "format": "plain"
     },
     {
       "id": "PC-Responsible",
@@ -760,8 +751,7 @@
         "id": "DT-ShortString",
         "revision": "1.1"
       },
-      "format": "plain",
-      "values": []
+      "format": "plain"
     },
     {
       "id": "PC-DueDate",
@@ -780,8 +770,7 @@
         "id": "DT-DateTime",
         "revision": "1.1"
       },
-      "format": "plain",
-      "values": []
+      "format": "plain"
     },
     {
       "id": "PC-Stereotype",
@@ -800,8 +789,7 @@
         "id": "DT-ShortString",
         "revision": "1.1"
       },
-      "format": "plain",
-      "values": []
+      "format": "plain"
     },
     {
       "id": "PC-Abbreviation",
@@ -820,8 +808,7 @@
         "id": "DT-ShortString",
         "revision": "1.1"
       },
-      "format": "plain",
-      "values": []
+      "format": "plain"
     },
     {
       "id": "PC-Type",
@@ -840,8 +827,7 @@
         "id": "DT-ShortString",
         "revision": "1.1"
       },
-      "format": "plain",
-      "values": []
+      "format": "plain"
     },
     {
       "id": "PC-Alias",
@@ -860,8 +846,7 @@
         "id": "DT-ShortString",
         "revision": "1.1"
       },
-      "format": "plain",
-      "values": []
+      "format": "plain"
     },
     {
       "id": "PC-Value",
@@ -880,8 +865,7 @@
         "id": "DT-Text",
         "revision": "1.1"
       },
-      "format": "plain",
-      "values": []
+      "format": "plain"
     },
     {
       "id": "PC-RequirementType",
@@ -898,8 +882,7 @@
         "id": "DT-RequirementType",
         "revision": "1.1"
       },
-      "format": "plain",
-      "values": []
+      "format": "plain"
     },
     {
       "id": "PC-Perspective",
@@ -916,8 +899,7 @@
         "id": "DT-Perspective",
         "revision": "1.1"
       },
-      "format": "plain",
-      "values": []
+      "format": "plain"
     },
     {
       "id": "PC-Visibility",
@@ -937,8 +919,7 @@
         "revision": "1.1"
       },
       "multiple": false,
-      "format": "plain",
-      "values": []
+      "format": "plain"
     },
     {
       "id": "PC-ImplementationLanguage",
@@ -955,8 +936,7 @@
         "id": "DT-ShortString",
         "revision": "1.1"
       },
-      "format": "plain",
-      "values": []
+      "format": "plain"
     }
   ],
   "resourceClasses": [
@@ -1736,6 +1716,25 @@
           "revision": "1.1"
         }
       ],
+      "isHeading": false,
+      "instantiation": [
+        "auto",
+        "user"
+      ]
+    },
+    {
+      "id": "SC-contains",
+      "revision": "1.2",
+      "replaces": [
+        "1.1"
+      ],
+      "title": "SpecIF:contains",
+      "description": [
+        {
+          "text": "Statement: Subject contains object."
+        }
+      ],
+      "changedAt": "2023-02-09T08:42:00+01:00",
       "isHeading": false,
       "instantiation": [
         "auto",

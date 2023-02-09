@@ -8,7 +8,7 @@
   ],
   "isExtension": false,
   "generator": "SpecIFicator Vocabulary Generator",
-  "createdAt": "2022-07-11T16:12:31.5279312+02:00",
+  "createdAt": "2023-02-09T09:45:50.9088592+01:00",
   "dataTypes": [
     {
       "id": "DT-SupplierStatus",
@@ -589,8 +589,7 @@
         "id": "DT-SupplierStatus",
         "revision": "1.1"
       },
-      "format": "plain",
-      "values": []
+      "format": "plain"
     },
     {
       "id": "PC-SupplierComment",
@@ -603,8 +602,7 @@
         "id": "DT-Text",
         "revision": "1.1"
       },
-      "format": "plain",
-      "values": []
+      "format": "plain"
     },
     {
       "id": "PC-OemStatus",
@@ -617,8 +615,7 @@
         "id": "DT-OemStatus",
         "revision": "1.1"
       },
-      "format": "plain",
-      "values": []
+      "format": "plain"
     },
     {
       "id": "PC-OemComment",
@@ -631,8 +628,7 @@
         "id": "DT-Text",
         "revision": "1.1"
       },
-      "format": "plain",
-      "values": []
+      "format": "plain"
     },
     {
       "id": "PC-IssStatus",
@@ -645,8 +641,7 @@
         "id": "DT-IssStatus",
         "revision": "1.1"
       },
-      "format": "plain",
-      "values": []
+      "format": "plain"
     },
     {
       "id": "PC-FeatureKind",
@@ -664,8 +659,7 @@
         "id": "DT-FeatureKind",
         "revision": "1.1"
       },
-      "format": "plain",
-      "values": []
+      "format": "plain"
     },
     {
       "id": "PC-FeatureSelectionState",
@@ -683,8 +677,7 @@
         "id": "DT-FeatureSelectionState",
         "revision": "1.1"
       },
-      "format": "plain",
-      "values": []
+      "format": "plain"
     },
     {
       "id": "PC-Index",
@@ -703,8 +696,7 @@
         "id": "DT-PositiveInteger",
         "revision": "1.2"
       },
-      "format": "plain",
-      "values": []
+      "format": "plain"
     },
     {
       "id": "PC-Revision",
@@ -723,8 +715,7 @@
         "id": "DT-ShortString",
         "revision": "1.1"
       },
-      "format": "plain",
-      "values": []
+      "format": "plain"
     },
     {
       "id": "PC-IsHeading",
@@ -743,8 +734,7 @@
         "id": "DT-Boolean",
         "revision": "1.1"
       },
-      "format": "plain",
-      "values": []
+      "format": "plain"
     },
     {
       "id": "PC-Unit",
@@ -763,8 +753,7 @@
         "id": "DT-ShortString",
         "revision": "1.1"
       },
-      "format": "plain",
-      "values": []
+      "format": "plain"
     },
     {
       "id": "PC-Multiple",
@@ -783,8 +772,7 @@
         "id": "DT-Boolean",
         "revision": "1.1"
       },
-      "format": "plain",
-      "values": []
+      "format": "plain"
     },
     {
       "id": "PC-MinInclusive",
@@ -803,8 +791,7 @@
         "id": "DT-Integer",
         "revision": "1.1"
       },
-      "format": "plain",
-      "values": []
+      "format": "plain"
     },
     {
       "id": "PC-MaxInclusive",
@@ -823,8 +810,7 @@
         "id": "DT-Integer",
         "revision": "1.1"
       },
-      "format": "plain",
-      "values": []
+      "format": "plain"
     },
     {
       "id": "PC-FractionDigits",
@@ -843,8 +829,7 @@
         "id": "DT-Integer",
         "revision": "1.1"
       },
-      "format": "plain",
-      "values": []
+      "format": "plain"
     },
     {
       "id": "PC-IsEnumeration",
@@ -863,8 +848,7 @@
         "id": "DT-Boolean",
         "revision": "1.1"
       },
-      "format": "plain",
-      "values": []
+      "format": "plain"
     },
     {
       "id": "PC-TermStatus",
@@ -876,8 +860,7 @@
         "id": "DT-TermStatus",
         "revision": "1.2"
       },
-      "format": "plain",
-      "values": []
+      "format": "plain"
     },
     {
       "id": "PC-Domain",
@@ -890,8 +873,7 @@
         "revision": "1.2"
       },
       "multiple": true,
-      "format": "plain",
-      "values": []
+      "format": "plain"
     },
     {
       "id": "PC-Instantiation",
@@ -910,8 +892,7 @@
         "id": "DT-Instantiation",
         "revision": "1.2"
       },
-      "format": "plain",
-      "values": []
+      "format": "plain"
     },
     {
       "id": "PC-TestVerdict",
@@ -928,8 +909,7 @@
         "id": "DT-TestVerdict",
         "revision": "1.1"
       },
-      "format": "plain",
-      "values": []
+      "format": "plain"
     },
     {
       "id": "PC-ExpectedResult",
@@ -946,8 +926,26 @@
         "id": "DT-Text",
         "revision": "1.1"
       },
-      "format": "plain",
-      "values": []
+      "format": "plain"
+    },
+    {
+      "id": "PC-ExpectedResult",
+      "revision": "1.2",
+      "replaces": [
+        "1.1"
+      ],
+      "title": "ISTQB:ExpectedResult",
+      "description": [
+        {
+          "text": "The predicted observable behavior of a component or system executing under specified conditions, based on its specification or another source. [After ISO 29119]"
+        }
+      ],
+      "changedAt": "2023-01-07T13:32:25.411Z",
+      "dataType": {
+        "id": "DT-Text",
+        "revision": "1.1"
+      },
+      "format": "xhtml"
     },
     {
       "id": "PC-TestData",
@@ -964,8 +962,26 @@
         "id": "DT-Text",
         "revision": "1.1"
       },
-      "format": "plain",
-      "values": []
+      "format": "plain"
+    },
+    {
+      "id": "PC-TestData",
+      "revision": "1.2",
+      "replaces": [
+        "1.1"
+      ],
+      "title": "ISTQB:TestData",
+      "description": [
+        {
+          "text": "Data created or selected to satisfy the execution preconditions and inputs to execute one or more test cases. [After ISO 29119]"
+        }
+      ],
+      "changedAt": "2023-01-07T13:32:25.411Z",
+      "dataType": {
+        "id": "DT-Text",
+        "revision": "1.1"
+      },
+      "format": "xhtml"
     },
     {
       "id": "PC-TestResultReason",
@@ -982,8 +998,7 @@
         "id": "DT-Text",
         "revision": "1.1"
       },
-      "format": "plain",
-      "values": []
+      "format": "plain"
     },
     {
       "id": "PC-TestPrecondition",
@@ -1000,8 +1015,7 @@
         "id": "DT-Text",
         "revision": "1.1"
       },
-      "format": "plain",
-      "values": []
+      "format": "plain"
     },
     {
       "id": "PC-TestObject",
@@ -1018,8 +1032,7 @@
         "id": "DT-Text",
         "revision": "1.1"
       },
-      "format": "plain",
-      "values": []
+      "format": "plain"
     },
     {
       "id": "PC-ApiURL",
@@ -1036,8 +1049,7 @@
         "id": "DT-URL",
         "revision": "1.1"
       },
-      "format": "plain",
-      "values": []
+      "format": "plain"
     },
     {
       "id": "PC-SpecIfProject",
@@ -1054,8 +1066,7 @@
         "id": "DT-ShortString",
         "revision": "1.1"
       },
-      "format": "plain",
-      "values": []
+      "format": "plain"
     },
     {
       "id": "PC-SpecIfEventType",
@@ -1072,8 +1083,7 @@
         "id": "DT-SpecIfEventType",
         "revision": "1.1"
       },
-      "format": "plain",
-      "values": []
+      "format": "plain"
     },
     {
       "id": "PC-SpecIfId",
@@ -1090,8 +1100,7 @@
         "id": "DT-ShortString",
         "revision": "1.1"
       },
-      "format": "plain",
-      "values": []
+      "format": "plain"
     },
     {
       "id": "PC-SpecIfRevision",
@@ -1108,8 +1117,7 @@
         "id": "DT-ShortString",
         "revision": "1.1"
       },
-      "format": "plain",
-      "values": []
+      "format": "plain"
     },
     {
       "id": "PC-SpecIfClassId",
@@ -1126,8 +1134,7 @@
         "id": "DT-ShortString",
         "revision": "1.1"
       },
-      "format": "plain",
-      "values": []
+      "format": "plain"
     },
     {
       "id": "PC-SpecIfClassRevision",
@@ -1144,8 +1151,7 @@
         "id": "DT-ShortString",
         "revision": "1.1"
       },
-      "format": "plain",
-      "values": []
+      "format": "plain"
     }
   ],
   "resourceClasses": [
@@ -1849,6 +1855,48 @@
         {
           "id": "PC-ExpectedResult",
           "revision": "1.1"
+        },
+        {
+          "id": "PC-TestVerdict",
+          "revision": "1.1"
+        },
+        {
+          "id": "PC-TestResultReason",
+          "revision": "1.1"
+        }
+      ]
+    },
+    {
+      "id": "RC-TestStep",
+      "revision": "1.2",
+      "replaces": [
+        "1.1"
+      ],
+      "title": "U2TP:TestStep",
+      "description": [
+        {
+          "text": "The smallest atomic (i.e., indivisible) part of a test case specification that is executed by a a test execution system during test case execution."
+        }
+      ],
+      "changedAt": "2023-01-07T13:59:00+01:00",
+      "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAABaUlEQVRIx72WP48BQRjGfyMk6EUkEgUJUZNIJGiFSuITqJUKjUShV/gW19JpNjQ6pUJDJ0FBJBrmirnNnluDc3u7yZvd952Z55l5/80KXnukxi6eLRSvgEoNvBDPsXQEUgeq3am4jyecAH9EIpwC15EIJ8HvkYi/gG+3sFio73gcIhH9SaSUlkSjyK8sskm3izydkPW6fWwysTDMLPTe21mpBLsd7Pcwm0EwCMWiGkskoNeDjw8Ih6HZBL8fxmO4XvUpeVcMQ+0kmby1l8vK3mrd2i+XWx2QnneCmE6rd78P7TZsNkr3eBw6wfGILBQs3/t8yE7Hvt6Mw68JTBkOkfm8RTQYOOQiM5iVCkynUKsp3TDsc73vEDQakMlALgfnMyyXyh4KPeic72TRd4nFkKuV3f8PK/lwgPkcAgHIZi37bgejEazXSk+loFpV9fCzkoXTfUhH8O/NzpV27cqF48qV6cql79hvyyeAgFLJbczVZwAAAABJRU5ErkJggg==",
+      "isHeading": false,
+      "propertyClasses": [
+        {
+          "id": "PC-Name",
+          "revision": "1.1"
+        },
+        {
+          "id": "PC-Description",
+          "revision": "1.1"
+        },
+        {
+          "id": "PC-TestData",
+          "revision": "1.2"
+        },
+        {
+          "id": "PC-ExpectedResult",
+          "revision": "1.2"
         },
         {
           "id": "PC-TestVerdict",

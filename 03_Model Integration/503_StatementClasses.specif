@@ -92,6 +92,22 @@
             "changedAt": "2016-05-26T08:59:00+02:00"
         },
         {
+            "id": "SC-contains",
+            "title": "SpecIF:contains",
+            "description": [
+                {
+                    "text": "Statement: Subject contains object."
+                }
+            ],
+            "revision": "1.2",
+            "replaces": [ "1.1" ],
+            "instantiation": [
+                "auto",
+                "user"
+            ],
+            "changedAt": "2023-02-09T09:42:00+02:00"
+        },
+        {
             "id": "SC-orderedContains",
             "title": "SpecIF:orderedContains",
             "description": [
