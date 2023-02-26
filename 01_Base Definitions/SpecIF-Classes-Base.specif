@@ -13,7 +13,7 @@
   ],
   "generator": "SpecIF Editor",
   "generatorVersion": "1.1.h",
-  "createdAt": "2023-02-26T23:12:04.118Z",
+  "createdAt": "2023-02-26T23:47:23.136Z",
   "rights": {
     "title": "Creative Commons 4.0 CC BY-SA",
     "url": "https://creativecommons.org/licenses/by-sa/4.0/"
@@ -343,7 +343,11 @@
       ],
       "isHeading": false,
       "icon": "🗅",
-      "propertyClasses": []
+      "propertyClasses": [
+        {
+          "id": "PC-Description"
+        }
+      ]
     },
     {
       "id": "RC-SpecifOutline",
@@ -505,7 +509,7 @@
           "text": "<p>A resource 'refers to' any other resource.</p>"
         }
       ],
-      "changedAt": "2023-02-21T21:52:46.358Z",
+      "changedAt": "2023-02-26T23:18:28.570Z",
       "instantiation": [],
       "isUndirected": false
     },
@@ -521,7 +525,7 @@
           "text": "<p>A [[SpecIF:Comment]] 'refers to' any other resource.</p>"
         }
       ],
-      "changedAt": "2023-02-21T22:14:53.396Z",
+      "changedAt": "2023-02-26T23:18:50.990Z",
       "instantiation": [
         "auto"
       ],
