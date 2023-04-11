@@ -1,19 +1,24 @@
 {
+  "@Context": "http://purl.org/dc/terms/",
   "id": "P-SpecifClasses-Base",
   "$schema": "https://specif.de/v1.1/schema.json",
   "title": [
     {
-      "text": "SpecIF Classes"
+      "text": "SpecIF Classes for Base",
+      "format": "plain",
+      "language": "en"
     }
   ],
   "description": [
     {
-      "text": "A set of SpecIF Classes derived from a SpecIF Ontology for the domain Base."
+      "text": "A set of SpecIF Classes derived from a SpecIF Ontology for the domain Base.",
+      "format": "plain",
+      "language": "en"
     }
   ],
-  "generator": "SpecIF Editor",
-  "generatorVersion": "1.1.h",
-  "createdAt": "2023-02-26T23:47:23.136Z",
+  "generator": "SpecIF Modellintegrator und Editor",
+  "generatorVersion": "1.1.l",
+  "createdAt": "2023-04-11T08:22:12.962Z",
   "rights": {
     "title": "Creative Commons 4.0 CC BY-SA",
     "url": "https://creativecommons.org/licenses/by-sa/4.0/"
@@ -49,7 +54,7 @@
       "type": "xs:string"
     },
     {
-      "id": "DT-String-LE32-SpecifLifecyclestatus",
+      "id": "DT-LifeCycleStatus",
       "title": "SpecIF:LifecycleStatus",
       "description": [
         {
@@ -60,7 +65,7 @@
       "type": "xs:string",
       "enumeration": [
         {
-          "id": "V-SpecifLifecyclestatus-0",
+          "id": "V-LifeCycleStatus-0",
           "value": [
             {
               "text": "SpecIF:LifecycleStatusInitial"
@@ -68,7 +73,7 @@
           ]
         },
         {
-          "id": "V-SpecifLifecyclestatus-1",
+          "id": "V-LifeCycleStatus-1",
           "value": [
             {
               "text": "SpecIF:LifecycleStatusDrafted"
@@ -76,7 +81,7 @@
           ]
         },
         {
-          "id": "V-SpecifLifecyclestatus-2",
+          "id": "V-LifeCycleStatus-2",
           "value": [
             {
               "text": "SpecIF:LifecycleStatusSubmitted"
@@ -84,7 +89,7 @@
           ]
         },
         {
-          "id": "V-SpecifLifecyclestatus-3",
+          "id": "V-LifeCycleStatus-3",
           "value": [
             {
               "text": "SpecIF:LifecycleStatusApproved"
@@ -92,7 +97,7 @@
           ]
         },
         {
-          "id": "V-SpecifLifecyclestatus-4",
+          "id": "V-LifeCycleStatus-4",
           "value": [
             {
               "text": "SpecIF:LifecycleStatusReady"
@@ -100,7 +105,7 @@
           ]
         },
         {
-          "id": "V-SpecifLifecyclestatus-5",
+          "id": "V-LifeCycleStatus-5",
           "value": [
             {
               "text": "SpecIF:LifecycleStatusDone"
@@ -108,7 +113,7 @@
           ]
         },
         {
-          "id": "V-SpecifLifecyclestatus-6",
+          "id": "V-LifeCycleStatus-6",
           "value": [
             {
               "text": "SpecIF:LifecycleStatusValidated"
@@ -116,7 +121,7 @@
           ]
         },
         {
-          "id": "V-SpecifLifecyclestatus-7",
+          "id": "V-LifeCycleStatus-7",
           "value": [
             {
               "text": "SpecIF:LifecycleStatusReleased"
@@ -124,7 +129,7 @@
           ]
         },
         {
-          "id": "V-SpecifLifecyclestatus-8",
+          "id": "V-LifeCycleStatus-8",
           "value": [
             {
               "text": "SpecIF:LifecycleStatusDeprecated"
@@ -132,7 +137,7 @@
           ]
         },
         {
-          "id": "V-SpecifLifecyclestatus-9",
+          "id": "V-LifeCycleStatus-9",
           "value": [
             {
               "text": "SpecIF:LifecycleStatusWithdrawn"
@@ -140,7 +145,7 @@
           ]
         },
         {
-          "id": "V-SpecifLifecyclestatus-10",
+          "id": "V-LifeCycleStatus-10",
           "value": [
             {
               "text": "SpecIF:LifecycleStatusPostponed"
@@ -148,7 +153,7 @@
           ]
         },
         {
-          "id": "V-SpecifLifecyclestatus-11",
+          "id": "V-LifeCycleStatus-11",
           "value": [
             {
               "text": "SpecIF:LifecycleStatusRejected"
@@ -158,19 +163,6 @@
       ],
       "revision": "1.3",
       "changedAt": "2023-02-26T14:43:10.458Z"
-    },
-    {
-      "id": "DT-String-LE32",
-      "changedAt": "2023-02-11T08:59:00+02:00",
-      "title": "String[32]",
-      "description": [
-        {
-          "text": "String with length <=32"
-        }
-      ],
-      "revision": "1.3",
-      "type": "xs:string",
-      "maxLength": 32
     }
   ],
   "propertyClasses": [
@@ -188,8 +180,7 @@
         "id": "DT-ShortString",
         "revision": "1.1"
       },
-      "format": "plain",
-      "multiple": false
+      "format": "plain"
     },
     {
       "id": "PC-Description",
@@ -205,8 +196,7 @@
         "id": "DT-Text",
         "revision": "1.1"
       },
-      "format": "xhtml",
-      "multiple": false
+      "format": "xhtml"
     },
     {
       "id": "PC-Type",
@@ -222,8 +212,7 @@
         "id": "DT-ShortString",
         "revision": "1.1"
       },
-      "format": "plain",
-      "multiple": false
+      "format": "plain"
     },
     {
       "id": "PC-Diagram",
@@ -253,28 +242,10 @@
       ],
       "changedAt": "2023-02-26T14:43:10.458Z",
       "dataType": {
-        "id": "DT-String-LE32-SpecifLifecyclestatus",
+        "id": "DT-LifeCycleStatus",
         "revision": "1.3"
       },
-      "format": "plain",
-      "multiple": false
-    },
-    {
-      "id": "PC-Notation",
-      "revision": "1.3",
-      "title": "SpecIF:Notation",
-      "description": [
-        {
-          "text": "The notation used by a model diagram, e.g. 'BPMN 2.0', 'SysML Activity Diagram' or 'FMC Block Diagram'."
-        }
-      ],
-      "changedAt": "2023-02-26T21:06:48.930Z",
-      "dataType": {
-        "id": "DT-String-LE32",
-        "revision": "1.3"
-      },
-      "format": "plain",
-      "multiple": false
+      "format": "plain"
     }
   ],
   "resourceClasses": [
@@ -287,12 +258,11 @@
           "text": "<p>A 'Paragraph' is an unspecified information in a document at any level.</p>"
         }
       ],
-      "changedAt": "2023-02-26T20:36:39.762Z",
+      "changedAt": "2023-03-06T07:26:03.008Z",
       "instantiation": [
         "auto",
         "user"
       ],
-      "isHeading": false,
       "propertyClasses": [
         {
           "id": "PC-Name"
@@ -320,7 +290,7 @@
           "text": "<p>A 'Heading' is a chapter title at any level.</p>"
         }
       ],
-      "changedAt": "2023-02-26T20:37:02.022Z",
+      "changedAt": "2023-03-06T07:26:13.687Z",
       "instantiation": [
         "auto",
         "user"
@@ -341,7 +311,6 @@
       "instantiation": [
         "auto"
       ],
-      "isHeading": false,
       "icon": "🗅",
       "propertyClasses": [
         {
@@ -352,151 +321,25 @@
     {
       "id": "RC-SpecifOutline",
       "revision": "1.3",
+      "extends": {
+        "id": "RC-Paragraph"
+      },
       "title": "SpecIF:Outline",
       "description": [
         {
           "text": "<p>A root of a document structure with references to resources.</p>"
         }
       ],
-      "changedAt": "2023-02-26T23:05:23.654Z",
+      "changedAt": "2023-03-27T07:58:46.583Z",
       "instantiation": [
-        "auto"
+        "user"
       ],
       "isHeading": true,
       "propertyClasses": [
         {
-          "id": "PC-Name"
-        },
-        {
-          "id": "PC-Description"
-        },
-        {
-          "id": "PC-Type"
+          "id": "PC-LifeCycleStatus"
         }
       ]
-    },
-    {
-      "id": "RC-SpecifModelelement",
-      "revision": "1.3",
-      "title": "SpecIF:ModelElement",
-      "changedAt": "2023-02-26T23:06:37.397Z",
-      "instantiation": [],
-      "isHeading": false,
-      "propertyClasses": [
-        {
-          "id": "PC-Name"
-        },
-        {
-          "id": "PC-Description"
-        },
-        {
-          "id": "PC-Type"
-        }
-      ]
-    },
-    {
-      "id": "RC-Actor",
-      "revision": "1.3",
-      "extends": {
-        "id": "RC-SpecifModelelement"
-      },
-      "title": "FMC:Actor",
-      "description": [
-        {
-          "text": "<p>An 'Actor' is a fundamental model element type representing an active entity, be it an activity, a process step, a function, a system component or a role.</p><p>It is advised to specify the particular use of FMC:Actor with a [[dcterms:type]] property. The values of that property can be defined terms, such as [[bpmn:timer]].</p>"
-        }
-      ],
-      "changedAt": "2023-02-26T21:19:26.072Z",
-      "instantiation": [
-        "auto"
-      ],
-      "isHeading": false,
-      "icon": "&#9632;",
-      "propertyClasses": []
-    },
-    {
-      "id": "RC-State",
-      "revision": "1.3",
-      "extends": {
-        "id": "RC-SpecifModelelement"
-      },
-      "title": "FMC:State",
-      "description": [
-        {
-          "text": "<p>A 'State' is a fundamental model element type representing a passive entity, be it a value, a condition, an information storage or even a physical shape.</p>"
-        }
-      ],
-      "changedAt": "2023-02-26T21:20:24.438Z",
-      "instantiation": [
-        "auto"
-      ],
-      "isHeading": false,
-      "icon": "&#9679;",
-      "propertyClasses": []
-    },
-    {
-      "id": "RC-Event",
-      "revision": "1.3",
-      "extends": {
-        "id": "RC-SpecifModelelement"
-      },
-      "title": "FMC:Event",
-      "description": [
-        {
-          "text": "<p>An 'Event' is a fundamental model element type representing a time reference, a change in condition/value or more generally a synchronization primitive.</p>"
-        }
-      ],
-      "changedAt": "2023-02-26T21:21:17.752Z",
-      "instantiation": [
-        "auto"
-      ],
-      "isHeading": false,
-      "icon": "&#11047;",
-      "propertyClasses": []
-    },
-    {
-      "id": "RC-SpecifView",
-      "revision": "1.3",
-      "extends": {
-        "id": "RC-Paragraph"
-      },
-      "title": "SpecIF:View",
-      "description": [
-        {
-          "text": "<p>A 'View' is a graphical model view with a specific communication purpose, e.g. a business process or system composition.</p>"
-        }
-      ],
-      "changedAt": "2023-02-26T21:17:34.803Z",
-      "instantiation": [
-        "auto"
-      ],
-      "isHeading": false,
-      "icon": "&#9635;",
-      "propertyClasses": [
-        {
-          "id": "PC-Notation"
-        }
-      ]
-    },
-    {
-      "id": "RC-Collection",
-      "revision": "1.3",
-      "extends": {
-        "id": "RC-SpecifModelelement"
-      },
-      "title": "SpecIF:Collection",
-      "description": [
-        {
-          "text": "<p>A 'Collection' is a logic (often conceptual) group of resources linked with a [[SpecIF:contains]] statement. It corresponds to a <a href=\"https://camunda.com/bpmn/reference/\">'Group'</a> in BPMN Diagrams.</p><p>BPMN: An arbitrary set of objects can be defined as a Group to show that they logically belong together. <small>(<i>source: <a href=\"http://www.bpmn-tool.com/en/tutorial/\">BPMN Tool</a></i>)</small></p>"
-        }
-      ],
-      "changedAt": "2023-02-26T21:25:04.042Z",
-      "instantiation": [
-        "auto"
-      ],
-      "isHeading": false,
-      "icon": "⬚",
-      "propertyClasses": []
     }
   ],
   "statementClasses": [
@@ -509,9 +352,8 @@
           "text": "<p>A resource 'refers to' any other resource.</p>"
         }
       ],
-      "changedAt": "2023-02-26T23:18:28.570Z",
-      "instantiation": [],
-      "isUndirected": false
+      "changedAt": "2023-03-15T09:19:52.173Z",
+      "instantiation": []
     },
     {
       "id": "SC-SpecifCommentrefersto",
@@ -529,7 +371,6 @@
       "instantiation": [
         "auto"
       ],
-      "isUndirected": false,
       "subjectClasses": [
         {
           "id": "RC-Comment"
@@ -556,6 +397,12 @@
         },
         {
           "id": "RC-Collection"
+        },
+        {
+          "id": "RC-FmcPlan"
+        },
+        {
+          "id": "RC-ArchimateViewpoint"
         }
       ]
     }
