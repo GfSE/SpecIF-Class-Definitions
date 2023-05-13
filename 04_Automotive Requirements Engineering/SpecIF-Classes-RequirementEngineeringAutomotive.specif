@@ -17,8 +17,8 @@
     }
   ],
   "generator": "SpecIF Modellintegrator und Editor",
-  "generatorVersion": "1.1.l",
-  "createdAt": "2023-04-11T08:29:02.543Z",
+  "generatorVersion": "1.1.p",
+  "createdAt": "2023-05-13T12:36:01.177Z",
   "rights": {
     "title": "Creative Commons 4.0 CC BY-SA",
     "url": "https://creativecommons.org/licenses/by-sa/4.0/"
@@ -161,7 +161,7 @@
           ]
         }
       ],
-      "revision": "1.3",
+      "revision": "1.2",
       "changedAt": "2023-02-26T14:43:10.458Z"
     },
     {
@@ -216,7 +216,7 @@
           ]
         }
       ],
-      "revision": "1.3",
+      "revision": "1.2",
       "changedAt": "2023-03-06T08:27:49.256Z"
     },
     {
@@ -271,7 +271,7 @@
           ]
         }
       ],
-      "revision": "1.3",
+      "revision": "1.2",
       "changedAt": "2023-03-06T08:27:59.451Z"
     },
     {
@@ -318,7 +318,7 @@
           ]
         }
       ],
-      "revision": "1.3",
+      "revision": "1.2",
       "changedAt": "2023-03-10T07:48:02.442Z"
     },
     {
@@ -389,7 +389,7 @@
           ]
         }
       ],
-      "revision": "1.3",
+      "revision": "1.2",
       "changedAt": "2023-03-27T17:58:46.590Z"
     },
     {
@@ -444,7 +444,7 @@
           ]
         }
       ],
-      "revision": "1.3",
+      "revision": "1.2",
       "changedAt": "2023-03-27T17:57:36.536Z"
     },
     {
@@ -499,7 +499,7 @@
           ]
         }
       ],
-      "revision": "1.3",
+      "revision": "1.2",
       "changedAt": "2023-04-01T14:11:23.173Z"
     }
   ],
@@ -571,7 +571,7 @@
     },
     {
       "id": "PC-LifeCycleStatus",
-      "revision": "1.3",
+      "revision": "1.2",
       "title": "SpecIF:LifecycleStatus",
       "description": [
         {
@@ -581,13 +581,13 @@
       "changedAt": "2023-02-26T14:43:10.458Z",
       "dataType": {
         "id": "DT-LifeCycleStatus",
-        "revision": "1.3"
+        "revision": "1.2"
       },
       "format": "plain"
     },
     {
       "id": "PC-Priority",
-      "revision": "1.3",
+      "revision": "1.2",
       "title": "SpecIF:Priority",
       "description": [
         {
@@ -597,13 +597,13 @@
       "changedAt": "2023-03-06T08:27:49.256Z",
       "dataType": {
         "id": "DT-Priority",
-        "revision": "1.3"
+        "revision": "1.2"
       },
       "format": "plain"
     },
     {
       "id": "PC-Discipline",
-      "revision": "1.3",
+      "revision": "1.2",
       "title": "SpecIF:EngineeringDiscipline",
       "description": [
         {
@@ -613,14 +613,14 @@
       "changedAt": "2023-03-06T08:27:59.451Z",
       "dataType": {
         "id": "DT-Discipline",
-        "revision": "1.3"
+        "revision": "1.2"
       },
       "format": "plain",
       "multiple": true
     },
     {
       "id": "PC-SpecifStakeholdergroup",
-      "revision": "1.3",
+      "revision": "1.2",
       "title": "SpecIF:StakeholderGroup",
       "description": [
         {
@@ -630,35 +630,35 @@
       "changedAt": "2023-03-10T07:48:02.442Z",
       "dataType": {
         "id": "DT-SpecifStakeholdergroup",
-        "revision": "1.3"
+        "revision": "1.2"
       },
       "format": "plain"
     },
     {
       "id": "PC-CustomerStatus",
-      "revision": "1.3",
+      "revision": "1.2",
       "title": "ReqIF-WF.CustomerStatus",
       "changedAt": "2023-03-27T17:58:46.590Z",
       "dataType": {
         "id": "DT-CustomerStatus",
-        "revision": "1.3"
+        "revision": "1.2"
       },
       "format": "plain"
     },
     {
       "id": "PC-SupplierStatus",
-      "revision": "1.3",
+      "revision": "1.2",
       "title": "ReqIF-WF.SupplierStatus",
       "changedAt": "2023-03-27T17:57:36.536Z",
       "dataType": {
         "id": "DT-SupplierStatus",
-        "revision": "1.3"
+        "revision": "1.2"
       },
       "format": "plain"
     },
     {
       "id": "PC-SupplierComment",
-      "revision": "1.3",
+      "revision": "1.2",
       "title": "ReqIF-WF.SupplierComment",
       "changedAt": "2023-03-27T17:58:04.415Z",
       "dataType": {
@@ -670,7 +670,7 @@
     },
     {
       "id": "PC-RequirementType",
-      "revision": "1.3",
+      "revision": "1.2",
       "title": "IREB:RequirementType",
       "description": [
         {
@@ -680,13 +680,13 @@
       "changedAt": "2023-04-01T14:11:23.173Z",
       "dataType": {
         "id": "DT-RequirementType",
-        "revision": "1.3"
+        "revision": "1.2"
       },
       "format": "plain"
     },
     {
       "id": "PC-CustomerComment",
-      "revision": "1.3",
+      "revision": "1.2",
       "title": "ReqIF-WF.CustomerComment",
       "changedAt": "2023-03-27T17:58:30.691Z",
       "dataType": {
@@ -729,7 +729,7 @@
     },
     {
       "id": "RC-Requirement",
-      "revision": "1.3",
+      "revision": "1.2",
       "extends": {
         "id": "RC-Paragraph"
       },
@@ -778,7 +778,7 @@
     },
     {
       "id": "RC-ReqifwfRequirement",
-      "revision": "1.3",
+      "revision": "1.2",
       "extends": {
         "id": "RC-Requirement"
       },
@@ -830,7 +830,7 @@
     },
     {
       "id": "RC-SpecifOutline",
-      "revision": "1.3",
+      "revision": "1.2",
       "extends": {
         "id": "RC-Paragraph"
       },
@@ -855,7 +855,7 @@
   "statementClasses": [
     {
       "id": "SC-refersTo",
-      "revision": "1.3",
+      "revision": "1.2",
       "title": "SpecIF:refersTo",
       "description": [
         {
@@ -867,7 +867,7 @@
     },
     {
       "id": "SC-OslcrmSatisfiedby",
-      "revision": "1.3",
+      "revision": "1.2",
       "title": "oslc_rm:satisfiedBy",
       "description": [
         {
@@ -903,7 +903,7 @@
     },
     {
       "id": "SC-SpecifDependson",
-      "revision": "1.3",
+      "revision": "1.2",
       "title": "SpecIF:dependsOn",
       "description": [
         {
@@ -933,7 +933,7 @@
     },
     {
       "id": "SC-SysmlTraces",
-      "revision": "1.3",
+      "revision": "1.2",
       "title": "SysML:traces",
       "description": [
         {
@@ -963,7 +963,7 @@
     },
     {
       "id": "SC-SysmlIsderivedfrom",
-      "revision": "1.3",
+      "revision": "1.2",
       "title": "SysML:isDerivedFrom",
       "description": [
         {
@@ -993,7 +993,7 @@
     },
     {
       "id": "SC-IrebRefines",
-      "revision": "1.3",
+      "revision": "1.2",
       "title": "IREB:refines",
       "description": [
         {
@@ -1023,7 +1023,7 @@
     },
     {
       "id": "SC-SpecifDuplicates",
-      "revision": "1.3",
+      "revision": "1.2",
       "title": "SpecIF:duplicates",
       "description": [
         {
@@ -1054,7 +1054,7 @@
     },
     {
       "id": "SC-SpecifContradicts",
-      "revision": "1.3",
+      "revision": "1.2",
       "title": "SpecIF:contradicts",
       "description": [
         {
@@ -1085,7 +1085,7 @@
     },
     {
       "id": "SC-SpecifCommentrefersto",
-      "revision": "1.3",
+      "revision": "1.2",
       "extends": {
         "id": "SC-refersTo"
       },

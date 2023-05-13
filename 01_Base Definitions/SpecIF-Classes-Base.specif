@@ -17,8 +17,8 @@
     }
   ],
   "generator": "SpecIF Modellintegrator und Editor",
-  "generatorVersion": "1.1.l",
-  "createdAt": "2023-04-11T08:22:12.962Z",
+  "generatorVersion": "1.1.p",
+  "createdAt": "2023-05-13T12:18:26.652Z",
   "rights": {
     "title": "Creative Commons 4.0 CC BY-SA",
     "url": "https://creativecommons.org/licenses/by-sa/4.0/"
@@ -161,7 +161,7 @@
           ]
         }
       ],
-      "revision": "1.3",
+      "revision": "1.2",
       "changedAt": "2023-02-26T14:43:10.458Z"
     }
   ],
@@ -233,7 +233,7 @@
     },
     {
       "id": "PC-LifeCycleStatus",
-      "revision": "1.3",
+      "revision": "1.2",
       "title": "SpecIF:LifecycleStatus",
       "description": [
         {
@@ -243,7 +243,7 @@
       "changedAt": "2023-02-26T14:43:10.458Z",
       "dataType": {
         "id": "DT-LifeCycleStatus",
-        "revision": "1.3"
+        "revision": "1.2"
       },
       "format": "plain"
     }
@@ -320,7 +320,7 @@
     },
     {
       "id": "RC-SpecifOutline",
-      "revision": "1.3",
+      "revision": "1.2",
       "extends": {
         "id": "RC-Paragraph"
       },
@@ -345,7 +345,7 @@
   "statementClasses": [
     {
       "id": "SC-refersTo",
-      "revision": "1.3",
+      "revision": "1.2",
       "title": "SpecIF:refersTo",
       "description": [
         {
@@ -357,7 +357,7 @@
     },
     {
       "id": "SC-SpecifCommentrefersto",
-      "revision": "1.3",
+      "revision": "1.2",
       "extends": {
         "id": "SC-refersTo"
       },
