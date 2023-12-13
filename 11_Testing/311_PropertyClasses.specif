@@ -45,7 +45,7 @@
         {
             "id": "PC-ExpectedResult",
             "revision": "1.2",
-            "replaces": ["1.1"],
+            "replaces": [ "1.1" ],
             "title": "ISTQB:ExpectedResult",
             "description": [
                 {
@@ -84,7 +84,7 @@
                 }
             ],
             "revision": "1.2",
-            "replaces": ["1.1"],
+            "replaces": [ "1.1" ],
             "format": "xhtml",
             "dataType": {
                 "id": "DT-Text",
@@ -107,6 +107,23 @@
                 "revision": "1.1"
             },
             "changedAt": "2021-06-27T20:32:25.411Z"
+        },
+        {
+            "id": "PC-TestResultReason",
+            "title": "U2TP:ReasonMessage",
+            "description": [
+                {
+                    "text": "A textual note, describing a reason for a test result."
+                }
+            ],
+            "revision": "1.2",
+            "replaces": [ "1.1" ],
+            "format": "xhtml",
+            "dataType": {
+                "id": "DT-Text",
+                "revision": "1.1"
+            },
+            "changedAt": "2023-12-13T16:32:25.411Z"
         },
         {
             "id": "PC-TestPrecondition",
