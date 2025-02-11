@@ -17,8 +17,8 @@
     }
   ],
   "generator": "SpecIF Modellintegrator und Editor",
-  "generatorVersion": "1.1.p",
-  "createdAt": "2023-05-13T12:18:26.652Z",
+  "generatorVersion": "1.1.q.4",
+  "createdAt": "2023-10-01T21:19:46.274Z",
   "rights": {
     "title": "Creative Commons 4.0 CC BY-SA",
     "url": "https://creativecommons.org/licenses/by-sa/4.0/"
@@ -54,7 +54,7 @@
       "type": "xs:string"
     },
     {
-      "id": "DT-LifeCycleStatus",
+      "id": "DT-LifecycleStatus",
       "title": "SpecIF:LifecycleStatus",
       "description": [
         {
@@ -65,7 +65,7 @@
       "type": "xs:string",
       "enumeration": [
         {
-          "id": "V-LifeCycleStatus-0",
+          "id": "V-LifecycleStatus-0",
           "value": [
             {
               "text": "SpecIF:LifecycleStatusInitial"
@@ -73,7 +73,7 @@
           ]
         },
         {
-          "id": "V-LifeCycleStatus-1",
+          "id": "V-LifecycleStatus-1",
           "value": [
             {
               "text": "SpecIF:LifecycleStatusDrafted"
@@ -81,7 +81,7 @@
           ]
         },
         {
-          "id": "V-LifeCycleStatus-2",
+          "id": "V-LifecycleStatus-2",
           "value": [
             {
               "text": "SpecIF:LifecycleStatusSubmitted"
@@ -89,7 +89,7 @@
           ]
         },
         {
-          "id": "V-LifeCycleStatus-3",
+          "id": "V-LifecycleStatus-3",
           "value": [
             {
               "text": "SpecIF:LifecycleStatusApproved"
@@ -97,7 +97,7 @@
           ]
         },
         {
-          "id": "V-LifeCycleStatus-4",
+          "id": "V-LifecycleStatus-4",
           "value": [
             {
               "text": "SpecIF:LifecycleStatusReady"
@@ -105,7 +105,7 @@
           ]
         },
         {
-          "id": "V-LifeCycleStatus-5",
+          "id": "V-LifecycleStatus-5",
           "value": [
             {
               "text": "SpecIF:LifecycleStatusDone"
@@ -113,7 +113,7 @@
           ]
         },
         {
-          "id": "V-LifeCycleStatus-6",
+          "id": "V-LifecycleStatus-6",
           "value": [
             {
               "text": "SpecIF:LifecycleStatusValidated"
@@ -121,7 +121,7 @@
           ]
         },
         {
-          "id": "V-LifeCycleStatus-7",
+          "id": "V-LifecycleStatus-7",
           "value": [
             {
               "text": "SpecIF:LifecycleStatusReleased"
@@ -129,7 +129,7 @@
           ]
         },
         {
-          "id": "V-LifeCycleStatus-8",
+          "id": "V-LifecycleStatus-8",
           "value": [
             {
               "text": "SpecIF:LifecycleStatusDeprecated"
@@ -137,7 +137,7 @@
           ]
         },
         {
-          "id": "V-LifeCycleStatus-9",
+          "id": "V-LifecycleStatus-9",
           "value": [
             {
               "text": "SpecIF:LifecycleStatusWithdrawn"
@@ -145,7 +145,7 @@
           ]
         },
         {
-          "id": "V-LifeCycleStatus-10",
+          "id": "V-LifecycleStatus-10",
           "value": [
             {
               "text": "SpecIF:LifecycleStatusPostponed"
@@ -153,7 +153,7 @@
           ]
         },
         {
-          "id": "V-LifeCycleStatus-11",
+          "id": "V-LifecycleStatus-11",
           "value": [
             {
               "text": "SpecIF:LifecycleStatusRejected"
@@ -162,7 +162,7 @@
         }
       ],
       "revision": "1.2",
-      "changedAt": "2023-02-26T14:43:10.458Z"
+      "changedAt": "2023-08-15T07:44:45.541Z"
     }
   ],
   "propertyClasses": [
@@ -172,10 +172,11 @@
       "title": "dcterms:title",
       "description": [
         {
-          "text": "<p>A name given to the resource. <small>(<i>source: <a href=\"http://purl.org/dc/elements/1.1/title\">DCMI</a></i>)</small></p><p>Title (reference: Dublin Core) of the resource represented as rich text in XHTML content. SHOULD include only content that is valid inside an XHTML 'span' element. <small>(<i>source: <a href=\"http://open-services.net/\">OSLC</a></i>)</small></p>"
+          "text": "<p>A name given to the resource. <small>(<i>source: <a href=\"http://purl.org/dc/elements/1.1/title\">DCMI</a></i>)</small></p><p>Title (reference: Dublin Core) of the resource represented as rich text in XHTML content. SHOULD include only content that is valid inside an XHTML 'span' element. <small>(<i>source: <a href=\"http://open-services.net/\">OSLC</a></i>)</small></p>",
+          "language": "en"
         }
       ],
-      "changedAt": "2023-02-26T14:32:21.640Z",
+      "changedAt": "2023-05-22T22:51:56.698Z",
       "dataType": {
         "id": "DT-ShortString",
         "revision": "1.1"
@@ -188,10 +189,11 @@
       "title": "dcterms:description",
       "description": [
         {
-          "text": "<p>An account of the resource. <small>(<i>source: <a href=\"http://purl.org/dc/elements/1.1/description\">DCMI</a></i>)</small></p><p>Descriptive text (reference: Dublin Core) about resource represented as rich text in XHTML content. SHOULD include only content that is valid and suitable inside an XHTML 'div' element. <small>(<i>source: <a href=\"http://open-services.net/\">OSLC</a></i>)</small></p>"
+          "text": "<p>An account of the resource. <small>(<i>source: <a href=\"http://purl.org/dc/elements/1.1/description\">DCMI</a></i>)</small></p><p>Descriptive text (reference: Dublin Core) about resource represented as rich text in XHTML content. SHOULD include only content that is valid and suitable inside an XHTML 'div' element. <small>(<i>source: <a href=\"http://open-services.net/\">OSLC</a></i>)</small></p>",
+          "language": "en"
         }
       ],
-      "changedAt": "2023-02-26T14:37:25.217Z",
+      "changedAt": "2023-05-22T22:54:51.783Z",
       "dataType": {
         "id": "DT-Text",
         "revision": "1.1"
@@ -204,7 +206,8 @@
       "title": "dcterms:type",
       "description": [
         {
-          "text": "<p>The nature or genre of the resource. <small>(<i>source: <a href=\"http://purl.org/dc/elements/1.1/type\">DCMI</a></i>)</small></p><p>Recommended best practice is to use a controlled vocabulary such as the DCMI Type Vocabulary [DCMITYPE]. To describe the file format, physical medium, or dimensions of the resource, use the Format element.</p><p>For example, a [[FMC:Actor]] may represent a <i>System Function</i>, a <i>System Component</i> or a <i>User Role</i>. Similarly, in the context of process modelling, a FMC:Actor may represent a <i>Process Step</i> or again a <i>User Role</i>. So, all of these are meaningful values for a FMC:Actor's property named dcterms:type.</p>"
+          "text": "<p>The nature or genre of the resource. <small>(<i>source: <a href=\"http://purl.org/dc/elements/1.1/type\">DCMI</a></i>)</small></p><p>Recommended best practice is to use a controlled vocabulary such as the DCMI Type Vocabulary [DCMITYPE]. To describe the file format, physical medium, or dimensions of the resource, use the Format element.</p><p>For example, a [[FMC:Actor]] may represent a <i>System Function</i>, a <i>System Component</i> or a <i>User Role</i>. Similarly, in the context of process modelling, a FMC:Actor may represent a <i>Process Step</i> or again a <i>User Role</i>. So, all of these are meaningful values for a FMC:Actor's property named dcterms:type.</p>",
+          "language": "en"
         }
       ],
       "changedAt": "2023-02-26T20:18:04.451Z",
@@ -220,7 +223,8 @@
       "title": "SpecIF:Diagram",
       "description": [
         {
-          "text": "One or more diagrams illustrating the resource."
+          "text": "One or more diagrams illustrating the resource.",
+          "language": "en"
         }
       ],
       "changedAt": "2023-02-26T14:40:17.601Z",
@@ -232,17 +236,26 @@
       "multiple": true
     },
     {
-      "id": "PC-LifeCycleStatus",
+      "id": "PC-LifecycleStatus",
       "revision": "1.2",
       "title": "SpecIF:LifecycleStatus",
       "description": [
         {
-          "text": "The 'Lifecycle Status' of the resource."
+          "text": "The 'Lifecycle Status' of the resource.",
+          "language": "en"
+        },
+        {
+          "text": "Der 'Lebenszyklusstatus' der Ressource.",
+          "language": "de"
+        },
+        {
+          "text": "L'état du cycle de vie de la ressource.",
+          "language": "fr"
         }
       ],
-      "changedAt": "2023-02-26T14:43:10.458Z",
+      "changedAt": "2023-08-15T07:44:45.541Z",
       "dataType": {
-        "id": "DT-LifeCycleStatus",
+        "id": "DT-LifecycleStatus",
         "revision": "1.2"
       },
       "format": "plain"
@@ -255,10 +268,15 @@
       "title": "SpecIF:Paragraph",
       "description": [
         {
-          "text": "<p>A 'Paragraph' is an unspecified information in a document at any level.</p>"
+          "text": "<p>A 'Paragraph' is an unspecified information in a document at any level.</p>",
+          "language": "en"
+        },
+        {
+          "text": "<p>Ein 'Textabschnitt' in einem Dokument auf beliebiger Ebene.</p>",
+          "language": "de"
         }
       ],
-      "changedAt": "2023-03-06T07:26:03.008Z",
+      "changedAt": "2023-07-16T09:30:25.850Z",
       "instantiation": [
         "auto",
         "user"
@@ -281,16 +299,21 @@
     {
       "id": "RC-Folder",
       "revision": "1.1",
-      "extends": {
-        "id": "RC-Paragraph"
-      },
       "title": "SpecIF:Heading",
       "description": [
         {
-          "text": "<p>A 'Heading' is a chapter title at any level.</p>"
+          "text": "A 'Heading' is a chapter title at any level with optional description.",
+          "language": "en"
+        },
+        {
+          "text": "Eine 'Überschrift' in einem Dokument ist der Titel eines Kapitels. Sie kann eine Beschreibung haben, die als Einleitung oder Zusammenfassung des Kapitels genutzt werden kann.",
+          "language": "de"
         }
       ],
-      "changedAt": "2023-03-06T07:26:13.687Z",
+      "changedAt": "2023-07-16T09:27:26.048Z",
+      "extends": {
+        "id": "RC-Paragraph"
+      },
       "instantiation": [
         "auto",
         "user"
@@ -304,10 +327,11 @@
       "title": "SpecIF:Comment",
       "description": [
         {
-          "text": "A 'Comment' is reader feedback referring to a model element ('resource' or 'statement' in general)."
+          "text": "A 'Comment' is reader feedback referring to a model element ('resource' or 'statement' in general).",
+          "language": "en"
         }
       ],
-      "changedAt": "2023-02-26T23:04:11.542Z",
+      "changedAt": "2023-07-16T11:08:22.640Z",
       "instantiation": [
         "auto"
       ],
@@ -321,25 +345,37 @@
     {
       "id": "RC-SpecifOutline",
       "revision": "1.2",
-      "extends": {
-        "id": "RC-Paragraph"
-      },
       "title": "SpecIF:Outline",
       "description": [
         {
-          "text": "<p>A root of a document structure with references to resources.</p>"
+          "text": "<p>A root of a document structure with references to resources.</p>",
+          "language": "en"
         }
       ],
-      "changedAt": "2023-03-27T07:58:46.583Z",
+      "changedAt": "2023-07-16T12:29:09.201Z",
+      "extends": {
+        "id": "RC-Paragraph"
+      },
       "instantiation": [
         "user"
       ],
       "isHeading": true,
       "propertyClasses": [
         {
-          "id": "PC-LifeCycleStatus"
+          "id": "PC-LifecycleStatus"
         }
       ]
+    },
+    {
+      "id": "RC-SpecifUnreferencedresources",
+      "revision": "1.2",
+      "title": "SpecIF:UnreferencedResources",
+      "changedAt": "2023-06-08T14:47:36.276Z",
+      "instantiation": [
+        "auto"
+      ],
+      "isHeading": true,
+      "propertyClasses": []
     }
   ],
   "statementClasses": [
@@ -349,25 +385,27 @@
       "title": "SpecIF:refersTo",
       "description": [
         {
-          "text": "<p>A resource 'refers to' any other resource.</p>"
+          "text": "<p>A resource 'refers to' any other resource.</p>",
+          "language": "en"
         }
       ],
-      "changedAt": "2023-03-15T09:19:52.173Z",
+      "changedAt": "2023-07-16T15:40:57.453Z",
       "instantiation": []
     },
     {
       "id": "SC-SpecifCommentrefersto",
       "revision": "1.2",
-      "extends": {
-        "id": "SC-refersTo"
-      },
       "title": "SpecIF:commentRefersTo",
       "description": [
         {
-          "text": "<p>A [[SpecIF:Comment]] 'refers to' any other resource.</p>"
+          "text": "<p>A [[SpecIF:Comment]] 'refers to' any other resource.</p>",
+          "language": "en"
         }
       ],
-      "changedAt": "2023-02-26T23:18:50.990Z",
+      "changedAt": "2023-07-16T15:43:23.947Z",
+      "extends": {
+        "id": "SC-refersTo"
+      },
       "instantiation": [
         "auto"
       ],
@@ -405,6 +443,37 @@
           "id": "RC-ArchimateViewpoint"
         }
       ]
+    },
+    {
+      "id": "SC-SpecifIssuerefersto",
+      "revision": "1.2",
+      "title": "SpecIF:issueRefersTo",
+      "description": [
+        {
+          "text": "<p>A [[SpecIF:Issue]] 'refers to' any other resource.</p>",
+          "language": "en"
+        }
+      ],
+      "changedAt": "2023-07-16T15:43:33.028Z",
+      "extends": {
+        "id": "SC-refersTo"
+      },
+      "instantiation": [
+        "auto"
+      ]
+    },
+    {
+      "id": "SC-SpecifMentions",
+      "revision": "38",
+      "title": "SpecIF:mentions",
+      "description": [
+        {
+          "text": "<p>A resource's text refers to another resource (e.g. by hyperlink).</p>",
+          "language": "en"
+        }
+      ],
+      "changedAt": "2023-07-16T15:23:17.433Z",
+      "instantiation": []
     }
   ],
   "resources": [],
