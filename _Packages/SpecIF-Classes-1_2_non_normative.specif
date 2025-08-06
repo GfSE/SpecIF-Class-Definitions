@@ -2319,7 +2319,7 @@
       ],
       "changedAt": "2021-06-27T08:59:00+02:00",
       "extends": {
-        "id": "RC_Feature",
+        "id": "RC-Feature",
         "revision": "1.1"
       },
       "icon": "",
