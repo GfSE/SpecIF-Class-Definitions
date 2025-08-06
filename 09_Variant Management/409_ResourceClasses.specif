@@ -92,7 +92,7 @@
             "revision": "1.1",
             "replaces": [],
             "extends": {
-                "id": "RC_Feature",
+                "id": "RC-Feature",
                 "revision": "1.1"
             },
             "icon": "",
